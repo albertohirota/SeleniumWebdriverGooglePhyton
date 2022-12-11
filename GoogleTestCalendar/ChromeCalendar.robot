@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 
 
+
 *** Variables ***
 
 
@@ -9,6 +10,7 @@ Library  SeleniumLibrary
 TC201_ValidatenewCalendarEvent
     Create Webdriver    chrome    executable_path:""    
     Open Browser    https://google.com/    chrome
+    
 
 
 *** Keywords ***
