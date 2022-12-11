@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221210 16:02:06.196" rpa="false" schemaversion="3">
+<suite id="s1" name="SeleniumWebdriverGooglePhyton" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverGooglePhyton">
+<suite id="s1-s1" name="GoogleTestCases" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverGooglePhyton\GoogleTestCases">
+<suite id="s1-s1-s1" name="TestCases" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverGooglePhyton\GoogleTestCases\TestCases.robot">
+<test id="s1-s1-s1-t1" name="LoginTest" line="9">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>chrome</arg>
+<arg>executable_path:""</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221210 16:02:06.725" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg timestamp="20221210 16:02:06.726" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221210 16:02:06.726" level="FAIL">TypeError: 'module' object is not callable</msg>
+<status status="FAIL" starttime="20221210 16:02:06.724" endtime="20221210 16:02:06.732"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20221210 16:02:06.733" endtime="20221210 16:02:06.733"/>
+</kw>
+<status status="FAIL" starttime="20221210 16:02:06.722" endtime="20221210 16:02:06.734">TypeError: 'module' object is not callable</status>
+</test>
+<status status="FAIL" starttime="20221210 16:02:06.337" endtime="20221210 16:02:06.737"/>
+</suite>
+<status status="FAIL" starttime="20221210 16:02:06.331" endtime="20221210 16:02:06.742"/>
+</suite>
+<status status="FAIL" starttime="20221210 16:02:06.259" endtime="20221210 16:02:06.746"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="SeleniumWebdriverGooglePhyton">SeleniumWebdriverGooglePhyton</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="GoogleTestCases">SeleniumWebdriverGooglePhyton.GoogleTestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TestCases">SeleniumWebdriverGooglePhyton.GoogleTestCases.TestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
