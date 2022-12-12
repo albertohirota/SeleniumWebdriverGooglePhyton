@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Test Setup
+Test Teardown
 
 
 *** Variables ***

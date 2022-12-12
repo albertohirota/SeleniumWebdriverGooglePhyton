@@ -9,7 +9,6 @@ from selenium.webdriver.firefox.service import Service as FirefoxServices
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from webdriver_manager.firefox import GeckoDriverManager 
 from enum import Enum
-import time
 
 class Browser(Enum):
     CHROME = 1
@@ -17,29 +16,48 @@ class Browser(Enum):
     FIREFOX = 3
 
 class Driver:
-    def __init__(self, browser) -> None:
-        self.browser = browser
+    Instance = None
 
-    def Initialize(browser):
+    def __init__(self):
+        pass
+
+    def Initialize(self, browser):
         match browser:
             case Browser.CHROME:
                 options = ChromeOptions()
                 driver = webdriver.Chrome(service=ChromeServices(ChromeDriverManager().install()),options=options)
-                driver.maximize_window()
-                driver.get("https://google.com")
+                self.Instance = driver
             case Browser.EDGE:
-                print(Browser.EDGE)
+                options = EdgeOptions()
+                driver = webdriver.Edge(service=EdgeServices(EdgeChromiumDriverManager().install()),options=options)
+                self.Instance = driver
             case Browser.FIREFOX:
-                print (Browser.FIREFOX)
+                options = FirefoxOptions()
+                driver = webdriver.Firefox(service=FirefoxServices(GeckoDriverManager().install()),options=options)
+                self.Instance = driver
             case __:
                 print("Error in the Browser")
-        time.sleep(5)
+
+        self.Instance.maximize_window()
+        self.Instance.implicitly_wait(10)
         #TODO: Add logging here
-        
+    
+    def CloseBrowser(self):
+        self.Instance.close()
+        # TODO add log
+    
+    def InstanceClose(self):
+        self.Instance.quit()
+        # TODO add Log
         
 
-print("Test")
-Driver.Initialize(Browser.CHROME)
+#test = Driver()
+#test.Initialize(Browser.CHROME)
+#rr = test.Instance
+
+
+
+
     
 
 

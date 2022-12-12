@@ -1,0 +1,20 @@
+1670780490764	geckodriver	INFO	Listening on 127.0.0.1:59249
+1670780493831	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59250" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileHjYOga"
+1670780495627	Marionette	INFO	Marionette enabled
+1670780495638	Marionette	INFO	Listening on port 59268
+Read port: 59268
+WebDriver BiDi listening on ws://127.0.0.1:59250
+1670780495942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileHjYOga\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59250/devtools/browser/a2516f03-fc60-4b39-ae58-5582b20ff2bf
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670780552530	geckodriver	INFO	Listening on 127.0.0.1:59480
+1670780555585	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59481" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileZVNZ7c"
+1670780556214	Marionette	INFO	Marionette enabled
+1670780556222	Marionette	INFO	Listening on port 59495
+Read port: 59495
+WebDriver BiDi listening on ws://127.0.0.1:59481
+1670780556497	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileZVNZ7c\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59481/devtools/browser/1c885bd5-88a5-48ac-afec-3f7a55262416
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
