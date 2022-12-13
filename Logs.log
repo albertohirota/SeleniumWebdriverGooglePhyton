@@ -708,3 +708,55 @@ DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 2022/12/13 08:11:50 AM DEBUG:http://localhost:62798 "POST /session/f5e86e017acc6ffc313939f270aafe31/url HTTP/1.1" 200 14
 2022/12/13 08:11:50 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 2022/12/13 08:11:50 AM DEBUG:Finished Request
+2022/12/13 04:15:20 PM INFO:====== WebDriver manager ======
+2022/12/13 04:15:22 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/13 04:15:24 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/13 04:15:27 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/13 04:16:36 PM INFO:====== WebDriver manager ======
+2022/12/13 04:16:37 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/13 04:16:38 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/13 04:16:40 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/13 05:29:29 PM INFO:====== WebDriver manager ======
+2022/12/13 05:29:30 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/13 05:29:31 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/13 05:29:33 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/13 05:29:33 PM INFO:Loading Sites.CALENDAR
+2022/12/13 05:29:33 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/13 05:29:34 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/13 05:29:34 PM INFO:Waiting element be Clickable, element//*[@id='identifierId'] ...
+2022/12/13 05:29:34 PM INFO:Element found: 
+2022/12/13 05:29:35 PM INFO:Waiting seconds: 1
+2022/12/13 05:29:36 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="b5f2b38d67379ed4485f215b0e8b7aae", element="35d04131-cbdb-4620-9747-f7f697ed43c4")>
+2022/12/13 05:29:36 PM INFO:Clicking element...
+2022/12/13 05:29:36 PM INFO:Waiting element be Clickable, element//div[@id='identifierNext'] ...
+2022/12/13 05:29:36 PM INFO:Element found: 
+2022/12/13 05:29:36 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="b5f2b38d67379ed4485f215b0e8b7aae", element="81041024-8c23-40dd-b080-58b47bc607e9")>
+2022/12/13 05:29:36 PM INFO:Waiting seconds: 4
+2022/12/13 05:29:40 PM INFO:Sending keys: Selenium1 - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/13 05:29:40 PM INFO:Waiting element be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/13 05:32:44 PM INFO:====== WebDriver manager ======
+2022/12/13 05:32:45 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/13 05:32:46 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/13 05:32:48 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/13 05:32:48 PM INFO:Loading Sites.CALENDAR
+2022/12/13 05:32:48 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/13 05:32:50 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/13 05:32:50 PM INFO:Waiting element be Clickable, element//*[@id='identifierId'] ...
+2022/12/13 05:32:50 PM INFO:Element found: 
+2022/12/13 05:32:51 PM INFO:Waiting seconds: 1
+2022/12/13 05:32:52 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="69c68db8-dc98-48a1-8e74-9f6533c34718")>
+2022/12/13 05:32:52 PM INFO:Clicking element...
+2022/12/13 05:32:52 PM INFO:Waiting element be Clickable, element//div[@id='identifierNext'] ...
+2022/12/13 05:32:52 PM INFO:Element found: 
+2022/12/13 05:32:52 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="17690c91-77f8-422a-a3ad-d6a4737f486c")>
+2022/12/13 05:32:52 PM INFO:Waiting seconds: 4
+2022/12/13 05:32:56 PM INFO:Sending keys: Selenium1 - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/13 05:32:56 PM INFO:Waiting element be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/13 05:32:56 PM INFO:Element found: 
+2022/12/13 05:32:56 PM INFO:Waiting seconds: 1
+2022/12/13 05:32:57 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="bd5a0787-2475-48e4-a393-560f70731cbd")>
+2022/12/13 05:32:57 PM INFO:Clicking element...
+2022/12/13 05:32:57 PM INFO:Waiting element be Clickable, element//*[@id='passwordNext'] ...
+2022/12/13 05:32:57 PM INFO:Element found: 
+2022/12/13 05:32:57 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="bd2e27fb-6102-432e-ae1f-bebce62dd7ab")>
+2022/12/13 05:32:57 PM INFO:Waiting seconds: 4

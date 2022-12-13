@@ -53,16 +53,24 @@ class Driver:
 
         Instance.maximize_window()
         Instance.implicitly_wait(10)
-        logging.info("Browser should be opened: "+str(browser))
+        Driver.LogInfo("Browser should be opened: "+str(browser))
            
     def CloseBrowser(self):
         Instance.close()
-        logging.info("Browser Closed")
+        Driver.LogInfo("Browser Closed")
     
     def InstanceClose(self):
         Instance.quit()
-        logging.info("Instance Quit")
+        Driver.LogInfo("Instance Quit")
 
+    def LogInfo(text):
+        logging.info(text)
+
+    def LogWarn(text):
+        logging.warning(text)
+
+    def LogError(text):
+        logging.error(text)
 
         
 

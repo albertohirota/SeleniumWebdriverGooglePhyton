@@ -2,10 +2,11 @@ import sys
 import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
-from GoogleFramework.Base.CommonFunction import CommonFunction
+from Base.CommonFunction import CommonFunction
 from enum import Enum
-
-
+from selenium.webdriver.common.by import By
+from Base.Driver import Driver
+from Base.Driver import Browser
 
 class Sites(Enum):
     GMAIL = 1
@@ -22,38 +23,51 @@ class GoogleLogin(CommonFunction):
     SheetUrl = "https://docs.google.com/spreadsheets/u/0/?tgif=d"
     SlideUrl = "https://docs.google.com/presentation/u/0/?tgif=d"
     DriveUrl = "https://drive.google.com/drive/my-drive?ths=true"
-    userName = "eiti.hirota@gmail.com"
-    password = "Selenium1"
+    u = "eiti.hirota@gmail.com"
+    p = "Selenium1"
+    un = "//*[@id='identifierId']"
+    nextButton = "//div[@id='identifierNext']"
+    pa = "//input[@name='password' or @name='Passwd']"
+    logonButton = "//*[@id='passwordNext']"
 
     def __init__(self):
         pass
-
-    def GoToGoogleSite(self, site, driverInstance):
-        match site:
-            case Sites.GMAIL:
-                self.LoginToSite(self.GmailUrl, driverInstance)
-            case Sites.CALENDAR:
-                self.LoginToSite(self.CalendarUrl, driverInstance)
-            case Sites.DRIVE:
-                self.LoginToSite(self.DriveUrl, driverInstance)
-            case Sites.DOCS:
-                self.LoginToSite(self.DocUrl, driverInstance)
-            case Sites.SHEETS:
-                self.LoginToSite(self.SheetUrl, driverInstance)
-            case Sites.SLIDES:
-                self.LoginToSite(self.SlideUrl, driverInstance)
-            case __:
-                print("Error in the Website")
     
     def __UserLog():
-        print("User Login")
+        CommonFunction.SendKey(By.XPATH, GoogleLogin.un, GoogleLogin.u)
+        CommonFunction.Click(By.XPATH, GoogleLogin.nextButton)
+        CommonFunction.Delay(4)
 
     def __UserPas():
-        print("user Password")
+        CommonFunction.SendKey(By.XPATH, GoogleLogin.pa, GoogleLogin.p)
+        CommonFunction.Click(By.XPATH, GoogleLogin.logonButton)
+        CommonFunction.Delay(4)
 
-    def LoginToSite(self, url, instance):
+    def LoginToSite(url):
         CommonFunction.GoToSite(url)
-        __UserLog()
-        __UserPas()
+        GoogleLogin.__UserLog()
+        GoogleLogin.__UserPas()
+
+    def GoAndLogGoogleSite(site):
+        CommonFunction.LogInfo("Loading "+ str(site))
+        match site:
+            case Sites.GMAIL:
+                GoogleLogin.LoginToSite(GoogleLogin.GmailUrl)
+            case Sites.CALENDAR:
+                GoogleLogin.LoginToSite(GoogleLogin.CalendarUrl)
+            case Sites.DRIVE:
+                GoogleLogin.LoginToSite(GoogleLogin.DriveUrl)
+            case Sites.DOCS:
+                GoogleLogin.LoginToSite(GoogleLogin.DocUrl)
+            case Sites.SHEETS:
+                GoogleLogin.LoginToSite(GoogleLogin.SheetUrl)
+            case Sites.SLIDES:
+                GoogleLogin.LoginToSite(GoogleLogin.SlideUrl)
+            case __:
+                CommonFunction.LogError("Website not valid: "+ str(site))
+    
+    
 
 
+Driver().Initialize(Browser.CHROME)
+GoogleLogin.GoAndLogGoogleSite(Sites.CALENDAR)
