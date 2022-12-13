@@ -10,51 +10,51 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Base.Driver import Driver
 import time
-from Base.Driver import Browser
-
 
 class CommonFunction(Driver):
-
-    def LogInfo(text):
-        super().logging.info(text)
-
-    def LogWarn(text):
-        super().logging.warning(text)
-
-    def LogError(text):
-        super().logging.error(text)
 
     def Delay(seconds):
         CommonFunction.LogInfo("Waiting seconds: " + str(seconds))
         time.sleep(seconds)   
     
-    def WaitElementBePresent(by, time = 10):
-        CommonFunction.LogInfo("Waiting element be Clickable, element"+ str(by) + " ...")
-        element = WebDriverWait(Driver.get_Instance(), time).until(EC.element_to_be_clickable((By.XPATH, by)))
-        CommonFunction.LogInfo("Element found: "+ str())
+    def WaitElementBePresent(strategy, by, time = 10):
+        CommonFunction.LogInfo("Waiting element to be Clickable, element"+ str(by) + " ...")
+        try:
+            element = WebDriverWait(Driver.get_Instance(), time).until(EC.element_to_be_clickable((strategy, by)))
+            CommonFunction.LogInfo("Element found: "+ str(element))
+        except:
+            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
+            return null
         return element
 
-    def SendKey(by, text):
+    def SendKey(strategy, by, text):
         CommonFunction.LogInfo("Sending keys: "+ text +" - In the element: "+ str(by) + " ...")
-        element = CommonFunction.WaitElementBePresent(by)
-        element.send_keys(text)
-        CommonFunction.Delay(1)
-        CommonFunction.LogInfo("Key sent")
+        try:
+            element = CommonFunction.WaitElementBePresent(strategy, by)
+            element.send_keys(text)
+            CommonFunction.Delay(1)
+            CommonFunction.LogInfo("Key sent to element: "+ str(element))
+        except:
+            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
 
-    def FindElement(by):
+    def FindElement(strategy, by):
         try:
             CommonFunction.LogInfo("Looking for element: " + str(by) + " ...")
-            element = Driver.get_Instance().find_element(by)
+            element = Driver.get_Instance().find_element(strategy, by)
             CommonFunction.LogInfo("Element found: " + str(element))
         except:
             CommonFunction.LogError("Element NOT FOUND: "+ str(by))
         
         return element
     
-    def Click(by):
+    def Click(strategy, by):
         CommonFunction.LogInfo("Clicking element...")
-        element = CommonFunction.WaitElementBePresent(by)
-        element.click()
+        try:
+            element = CommonFunction.WaitElementBePresent(strategy, by)
+            element.click()
+            CommonFunction.LogInfo("Element clicked: " + str(element))
+        except:
+            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
 
     def GoToSite(url):
         CommonFunction.LogInfo("Going to site: "+ url)
