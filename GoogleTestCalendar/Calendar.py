@@ -5,8 +5,8 @@ sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 from GoogleFramework.Base.Driver import Driver
 from GoogleFramework.Base.Driver import Browser
-from GoogleFramework.Base.GoogleLogin import GoogleLogin
-from GoogleFramework.Base.GoogleLogin import Sites
+from GoogleFramework.Pages.LoginPage import GoogleLogin
+from GoogleFramework.Pages.LoginPage import Sites
 
 #import clr, System
 #from System import String
@@ -23,17 +23,8 @@ def TC201():
     print("Test1")
     tes = Driver()
     tes.Initialize(Browser.CHROME)
-
     ddd = GoogleLogin()
     ddd.GoToGoogleSite(Sites.CALENDAR,tes.Instance)
-
-    #tes.Instance.get("http://www.yahoo.com")
-    
-
-
-
-
-
 
 
 
