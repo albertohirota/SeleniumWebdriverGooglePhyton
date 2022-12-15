@@ -9,7 +9,16 @@ from selenium.webdriver.firefox.service import Service as FirefoxServices
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from webdriver_manager.firefox import GeckoDriverManager 
 from enum import Enum
-import time
+import logging
+
+logging.basicConfig(
+    filename='Logs.log', 
+    format='%(asctime)s %(levelname)s:%(message)s',
+    datefmt='%Y/%m/%d %I:%M:%S %p',
+    encoding='utf-8',
+    level=logging.INFO)
+
+Instance = None
 
 class Browser(Enum):
     CHROME = 1
@@ -17,29 +26,62 @@ class Browser(Enum):
     FIREFOX = 3
 
 class Driver:
-    def __init__(self, browser) -> None:
-        self.browser = browser
 
-    def Initialize(browser):
+    def __init__(self):
+        pass
+    
+    def get_Instance():
+        return Instance
+
+    def Initialize(self, browser):
+        global Instance
         match browser:
             case Browser.CHROME:
                 options = ChromeOptions()
                 driver = webdriver.Chrome(service=ChromeServices(ChromeDriverManager().install()),options=options)
-                driver.maximize_window()
-                driver.get("https://google.com")
+                Instance = driver
             case Browser.EDGE:
-                print(Browser.EDGE)
+                options = EdgeOptions()
+                driver = webdriver.Edge(service=EdgeServices(EdgeChromiumDriverManager().install()),options=options)
+                Instance = driver
             case Browser.FIREFOX:
-                print (Browser.FIREFOX)
+                options = FirefoxOptions()
+                driver = webdriver.Firefox(service=FirefoxServices(GeckoDriverManager().install()),options=options)
+                Instance = driver
             case __:
                 print("Error in the Browser")
-        time.sleep(5)
-        #TODO: Add logging here
-        
+
+        Instance.maximize_window()
+        Instance.implicitly_wait(10)
+        Driver.LogInfo("Browser should be opened: "+str(browser))
+           
+    def CloseBrowser(self):
+        Instance.close()
+        Driver.LogInfo("Browser Closed")
+    
+    def InstanceClose(self):
+        Instance.quit()
+        Driver.LogInfo("Instance Quit")
+
+    def LogInfo(text):
+        logging.info(text)
+
+    def LogWarn(text):
+        logging.warning(text)
+
+    def LogError(text):
+        logging.error(text)
+
         
 
-print("Test")
-Driver.Initialize(Browser.CHROME)
+#test = Driver()
+#test.Initialize(Browser.CHROME)
+#Instance.get("https://google.com")
+
+
+
+
+
     
 
 
