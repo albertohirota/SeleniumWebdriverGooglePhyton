@@ -1,751 +1,3 @@
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 25308
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52423/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:52423
-DEBUG:urllib3.connectionpool:http://localhost:52423 "POST /session HTTP/1.1" 200 791
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir25308_1671326103"},"goog:chromeOptions":{"debuggerAddress":"localhost:52427"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"5e17fc1de444728a396d132f3740d79b"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52423/session/5e17fc1de444728a396d132f3740d79b/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:52423 "POST /session/5e17fc1de444728a396d132f3740d79b/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52423/session/5e17fc1de444728a396d132f3740d79b/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:52423 "POST /session/5e17fc1de444728a396d132f3740d79b/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 9680
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52554/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:52554
-DEBUG:urllib3.connectionpool:http://localhost:52554 "POST /session HTTP/1.1" 200 789
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir9680_596321225"},"goog:chromeOptions":{"debuggerAddress":"localhost:52558"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"32cb5e9352ac2cc3ec200b4dc3a92ff4"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52554/session/32cb5e9352ac2cc3ec200b4dc3a92ff4/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:52554 "POST /session/32cb5e9352ac2cc3ec200b4dc3a92ff4/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52554/session/32cb5e9352ac2cc3ec200b4dc3a92ff4/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:52554 "POST /session/32cb5e9352ac2cc3ec200b4dc3a92ff4/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 27064
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52864/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:52864
-DEBUG:urllib3.connectionpool:http://localhost:52864 "POST /session HTTP/1.1" 200 790
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir27064_328250299"},"goog:chromeOptions":{"debuggerAddress":"localhost:52868"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"0f8e04ff7fecf99d33e2f0b2bf9f0938"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52864/session/0f8e04ff7fecf99d33e2f0b2bf9f0938/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:52864 "POST /session/0f8e04ff7fecf99d33e2f0b2bf9f0938/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52864/session/0f8e04ff7fecf99d33e2f0b2bf9f0938/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:52864 "POST /session/0f8e04ff7fecf99d33e2f0b2bf9f0938/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 22476
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53051/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53051
-DEBUG:urllib3.connectionpool:http://localhost:53051 "POST /session HTTP/1.1" 200 789
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir22476_53294454"},"goog:chromeOptions":{"debuggerAddress":"localhost:53055"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"33e61034f29c8116e19fef846f72e948"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53051/session/33e61034f29c8116e19fef846f72e948/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:53051 "POST /session/33e61034f29c8116e19fef846f72e948/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53051/session/33e61034f29c8116e19fef846f72e948/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:53051 "POST /session/33e61034f29c8116e19fef846f72e948/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 34128
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53341/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53341
-DEBUG:urllib3.connectionpool:http://localhost:53341 "POST /session HTTP/1.1" 200 790
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir34128_717976241"},"goog:chromeOptions":{"debuggerAddress":"localhost:53345"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"187d17a94a7dbc326b88cc3463e25458"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53341/session/187d17a94a7dbc326b88cc3463e25458/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:53341 "POST /session/187d17a94a7dbc326b88cc3463e25458/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53341/session/187d17a94a7dbc326b88cc3463e25458/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:53341 "POST /session/187d17a94a7dbc326b88cc3463e25458/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 28040
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53759/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53759
-DEBUG:urllib3.connectionpool:http://localhost:53759 "POST /session HTTP/1.1" 200 790
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir28040_599115780"},"goog:chromeOptions":{"debuggerAddress":"localhost:53764"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"3bad27e48b93e43d8ad83670028d9592"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53759/session/3bad27e48b93e43d8ad83670028d9592/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:53759 "POST /session/3bad27e48b93e43d8ad83670028d9592/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53759/session/3bad27e48b93e43d8ad83670028d9592/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:53759 "POST /session/3bad27e48b93e43d8ad83670028d9592/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:root:Browser should be opened: Browser.CHROME
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 35756
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53878/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53878
-DEBUG:urllib3.connectionpool:http://localhost:53878 "POST /session HTTP/1.1" 200 790
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir35756_522937301"},"goog:chromeOptions":{"debuggerAddress":"localhost:53882"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"58b94358577fabb62a48235384d854e4"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53878/session/58b94358577fabb62a48235384d854e4/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:53878 "POST /session/58b94358577fabb62a48235384d854e4/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53878/session/58b94358577fabb62a48235384d854e4/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:53878 "POST /session/58b94358577fabb62a48235384d854e4/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:root:Browser should be opened: Browser.CHROME
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 8724
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:54291/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:54291
-DEBUG:urllib3.connectionpool:http://localhost:54291 "POST /session HTTP/1.1" 200 789
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir8724_219448432"},"goog:chromeOptions":{"debuggerAddress":"localhost:54297"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"6d65e8379a787b53121b243a53b98a6f"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:54291/session/6d65e8379a787b53121b243a53b98a6f/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:54291 "POST /session/6d65e8379a787b53121b243a53b98a6f/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:54291/session/6d65e8379a787b53121b243a53b98a6f/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:54291 "POST /session/6d65e8379a787b53121b243a53b98a6f/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:root:Browser should be opened: Browser.CHROME
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:54291/session/6d65e8379a787b53121b243a53b98a6f/url {"url": "https://google.com"}
-DEBUG:urllib3.connectionpool:http://localhost:54291 "POST /session/6d65e8379a787b53121b243a53b98a6f/url HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:WDM:====== WebDriver manager ======
-INFO:WDM:Get LATEST chromedriver version for google-chrome 108.0.5359
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-DEBUG:urllib3.connectionpool:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-INFO:WDM:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 1444
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59447/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:59447
-DEBUG:urllib3.connectionpool:http://localhost:59447 "POST /session HTTP/1.1" 200 789
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir1444_401923590"},"goog:chromeOptions":{"debuggerAddress":"localhost:59450"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"6dde83fe1b13dc6b18cd94057146dfa8"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59447/session/6dde83fe1b13dc6b18cd94057146dfa8/window/maximize {}
-DEBUG:urllib3.connectionpool:http://localhost:59447 "POST /session/6dde83fe1b13dc6b18cd94057146dfa8/window/maximize HTTP/1.1" 200 52
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59447/session/6dde83fe1b13dc6b18cd94057146dfa8/timeouts {"implicit": 10000}
-DEBUG:urllib3.connectionpool:http://localhost:59447 "POST /session/6dde83fe1b13dc6b18cd94057146dfa8/timeouts HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-INFO:root:Browser should be opened: Browser.CHROME
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:59447/session/6dde83fe1b13dc6b18cd94057146dfa8/url {"url": "https://google.com"}
-DEBUG:urllib3.connectionpool:http://localhost:59447 "POST /session/6dde83fe1b13dc6b18cd94057146dfa8/url HTTP/1.1" 200 14
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-2022/12/12 04:47:04 PM ====== WebDriver manager ======
-2022/12/12 04:47:05 PM Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 04:47:05 PM Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 04:47:05 PM https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 04:47:06 PM Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 04:47:06 PM Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 19896
-2022/12/12 04:47:07 PM POST http://localhost:60333/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 04:47:07 PM Starting new HTTP connection (1): localhost:60333
-2022/12/12 04:47:08 PM http://localhost:60333 "POST /session HTTP/1.1" 200 791
-2022/12/12 04:47:08 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir19896_1417853222"},"goog:chromeOptions":{"debuggerAddress":"localhost:60336"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"3c431141bcb682c7a3b9f1c1d08529fa"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:47:08 PM Finished Request
-2022/12/12 04:47:08 PM POST http://localhost:60333/session/3c431141bcb682c7a3b9f1c1d08529fa/window/maximize {}
-2022/12/12 04:47:08 PM http://localhost:60333 "POST /session/3c431141bcb682c7a3b9f1c1d08529fa/window/maximize HTTP/1.1" 200 52
-2022/12/12 04:47:08 PM Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:47:08 PM Finished Request
-2022/12/12 04:47:08 PM POST http://localhost:60333/session/3c431141bcb682c7a3b9f1c1d08529fa/timeouts {"implicit": 10000}
-2022/12/12 04:47:08 PM http://localhost:60333 "POST /session/3c431141bcb682c7a3b9f1c1d08529fa/timeouts HTTP/1.1" 200 14
-2022/12/12 04:47:08 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:47:08 PM Finished Request
-2022/12/12 04:47:08 PM Browser should be opened: Browser.CHROME
-2022/12/12 04:47:08 PM POST http://localhost:60333/session/3c431141bcb682c7a3b9f1c1d08529fa/url {"url": "https://google.com"}
-2022/12/12 04:47:09 PM http://localhost:60333 "POST /session/3c431141bcb682c7a3b9f1c1d08529fa/url HTTP/1.1" 200 14
-2022/12/12 04:47:09 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:47:09 PM Finished Request
-2022/12/12 04:48:14 PM INFO:====== WebDriver manager ======
-2022/12/12 04:48:14 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 04:48:14 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 04:48:14 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 04:48:15 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 04:48:15 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 26736
-2022/12/12 04:48:16 PM DEBUG:POST http://localhost:60492/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 04:48:16 PM DEBUG:Starting new HTTP connection (1): localhost:60492
-2022/12/12 04:48:17 PM DEBUG:http://localhost:60492 "POST /session HTTP/1.1" 200 789
-2022/12/12 04:48:17 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir26736_78271875"},"goog:chromeOptions":{"debuggerAddress":"localhost:60496"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"1f9e141809cf676dfa67d0936950e7fb"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:48:17 PM DEBUG:Finished Request
-2022/12/12 04:48:17 PM DEBUG:POST http://localhost:60492/session/1f9e141809cf676dfa67d0936950e7fb/window/maximize {}
-2022/12/12 04:48:17 PM DEBUG:http://localhost:60492 "POST /session/1f9e141809cf676dfa67d0936950e7fb/window/maximize HTTP/1.1" 200 52
-2022/12/12 04:48:17 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:48:17 PM DEBUG:Finished Request
-2022/12/12 04:48:17 PM DEBUG:POST http://localhost:60492/session/1f9e141809cf676dfa67d0936950e7fb/timeouts {"implicit": 10000}
-2022/12/12 04:48:17 PM DEBUG:http://localhost:60492 "POST /session/1f9e141809cf676dfa67d0936950e7fb/timeouts HTTP/1.1" 200 14
-2022/12/12 04:48:17 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:48:17 PM DEBUG:Finished Request
-2022/12/12 04:48:17 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 04:48:17 PM DEBUG:POST http://localhost:60492/session/1f9e141809cf676dfa67d0936950e7fb/url {"url": "https://google.com"}
-2022/12/12 04:48:18 PM DEBUG:http://localhost:60492 "POST /session/1f9e141809cf676dfa67d0936950e7fb/url HTTP/1.1" 200 14
-2022/12/12 04:48:18 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:48:18 PM DEBUG:Finished Request
-2022/12/12 04:50:42 PM INFO:====== WebDriver manager ======
-2022/12/12 04:50:43 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 04:50:43 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 04:50:43 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 04:50:44 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 04:50:44 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 7860
-2022/12/12 04:50:44 PM DEBUG:POST http://localhost:60788/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 04:50:44 PM DEBUG:Starting new HTTP connection (1): localhost:60788
-2022/12/12 04:50:46 PM DEBUG:http://localhost:60788 "POST /session HTTP/1.1" 200 790
-2022/12/12 04:50:46 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir7860_1255175204"},"goog:chromeOptions":{"debuggerAddress":"localhost:60805"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8f6062ed2aba442a5bc8d09b67e570d6"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:50:46 PM DEBUG:Finished Request
-2022/12/12 04:50:46 PM DEBUG:POST http://localhost:60788/session/8f6062ed2aba442a5bc8d09b67e570d6/window/maximize {}
-2022/12/12 04:50:46 PM DEBUG:http://localhost:60788 "POST /session/8f6062ed2aba442a5bc8d09b67e570d6/window/maximize HTTP/1.1" 200 52
-2022/12/12 04:50:46 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:50:46 PM DEBUG:Finished Request
-2022/12/12 04:50:46 PM DEBUG:POST http://localhost:60788/session/8f6062ed2aba442a5bc8d09b67e570d6/timeouts {"implicit": 10000}
-2022/12/12 04:50:46 PM DEBUG:http://localhost:60788 "POST /session/8f6062ed2aba442a5bc8d09b67e570d6/timeouts HTTP/1.1" 200 14
-2022/12/12 04:50:46 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:50:46 PM DEBUG:Finished Request
-2022/12/12 04:51:28 PM INFO:====== WebDriver manager ======
-2022/12/12 04:51:29 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 04:51:29 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 04:51:29 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 04:51:30 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 04:51:30 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 12860
-2022/12/12 04:51:30 PM DEBUG:POST http://localhost:60893/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 04:51:30 PM DEBUG:Starting new HTTP connection (1): localhost:60893
-2022/12/12 04:51:31 PM DEBUG:http://localhost:60893 "POST /session HTTP/1.1" 200 791
-2022/12/12 04:51:31 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir12860_2003660753"},"goog:chromeOptions":{"debuggerAddress":"localhost:60897"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"d88f82e595370d475fe98b185cd5f14a"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:51:31 PM DEBUG:Finished Request
-2022/12/12 04:51:31 PM DEBUG:POST http://localhost:60893/session/d88f82e595370d475fe98b185cd5f14a/window/maximize {}
-2022/12/12 04:51:32 PM DEBUG:http://localhost:60893 "POST /session/d88f82e595370d475fe98b185cd5f14a/window/maximize HTTP/1.1" 200 52
-2022/12/12 04:51:32 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:51:32 PM DEBUG:Finished Request
-2022/12/12 04:51:32 PM DEBUG:POST http://localhost:60893/session/d88f82e595370d475fe98b185cd5f14a/timeouts {"implicit": 10000}
-2022/12/12 04:51:32 PM DEBUG:http://localhost:60893 "POST /session/d88f82e595370d475fe98b185cd5f14a/timeouts HTTP/1.1" 200 14
-2022/12/12 04:51:32 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:51:32 PM DEBUG:Finished Request
-2022/12/12 04:51:32 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 04:51:32 PM DEBUG:POST http://localhost:60893/session/d88f82e595370d475fe98b185cd5f14a/url {"url": "https://google.com"}
-2022/12/12 04:51:33 PM DEBUG:http://localhost:60893 "POST /session/d88f82e595370d475fe98b185cd5f14a/url HTTP/1.1" 200 14
-2022/12/12 04:51:33 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:51:33 PM DEBUG:Finished Request
-2022/12/12 04:59:05 PM INFO:====== WebDriver manager ======
-2022/12/12 04:59:06 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 04:59:06 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 04:59:06 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 04:59:07 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 04:59:07 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 15180
-2022/12/12 04:59:07 PM DEBUG:POST http://localhost:61854/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 04:59:07 PM DEBUG:Starting new HTTP connection (1): localhost:61854
-2022/12/12 04:59:09 PM DEBUG:http://localhost:61854 "POST /session HTTP/1.1" 200 791
-2022/12/12 04:59:09 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir15180_1473857771"},"goog:chromeOptions":{"debuggerAddress":"localhost:61857"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"2f848b54dead0a1b8181d0203daddfad"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:59:09 PM DEBUG:Finished Request
-2022/12/12 04:59:09 PM DEBUG:POST http://localhost:61854/session/2f848b54dead0a1b8181d0203daddfad/window/maximize {}
-2022/12/12 04:59:09 PM DEBUG:http://localhost:61854 "POST /session/2f848b54dead0a1b8181d0203daddfad/window/maximize HTTP/1.1" 200 52
-2022/12/12 04:59:09 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:59:09 PM DEBUG:Finished Request
-2022/12/12 04:59:09 PM DEBUG:POST http://localhost:61854/session/2f848b54dead0a1b8181d0203daddfad/timeouts {"implicit": 10000}
-2022/12/12 04:59:09 PM DEBUG:http://localhost:61854 "POST /session/2f848b54dead0a1b8181d0203daddfad/timeouts HTTP/1.1" 200 14
-2022/12/12 04:59:09 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:59:09 PM DEBUG:Finished Request
-2022/12/12 04:59:09 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 04:59:09 PM DEBUG:POST http://localhost:61854/session/2f848b54dead0a1b8181d0203daddfad/url {"url": "https://google.com"}
-2022/12/12 04:59:10 PM DEBUG:http://localhost:61854 "POST /session/2f848b54dead0a1b8181d0203daddfad/url HTTP/1.1" 200 14
-2022/12/12 04:59:10 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 04:59:10 PM DEBUG:Finished Request
-2022/12/12 05:04:58 PM INFO:====== WebDriver manager ======
-2022/12/12 05:04:58 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:04:58 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:04:59 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:04:59 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:04:59 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 22388
-2022/12/12 05:05:00 PM DEBUG:POST http://localhost:62570/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:05:00 PM DEBUG:Starting new HTTP connection (1): localhost:62570
-2022/12/12 05:05:01 PM DEBUG:http://localhost:62570 "POST /session HTTP/1.1" 200 791
-2022/12/12 05:05:01 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir22388_1536062251"},"goog:chromeOptions":{"debuggerAddress":"localhost:62577"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"f2d4fc18e8f2df188aad4a2696da240f"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:05:01 PM DEBUG:Finished Request
-2022/12/12 05:05:01 PM DEBUG:POST http://localhost:62570/session/f2d4fc18e8f2df188aad4a2696da240f/window/maximize {}
-2022/12/12 05:05:01 PM DEBUG:http://localhost:62570 "POST /session/f2d4fc18e8f2df188aad4a2696da240f/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:05:01 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:05:01 PM DEBUG:Finished Request
-2022/12/12 05:05:01 PM DEBUG:POST http://localhost:62570/session/f2d4fc18e8f2df188aad4a2696da240f/timeouts {"implicit": 10000}
-2022/12/12 05:05:01 PM DEBUG:http://localhost:62570 "POST /session/f2d4fc18e8f2df188aad4a2696da240f/timeouts HTTP/1.1" 200 14
-2022/12/12 05:05:01 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:05:01 PM DEBUG:Finished Request
-2022/12/12 05:05:01 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 05:06:59 PM INFO:====== WebDriver manager ======
-2022/12/12 05:07:00 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:07:00 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:07:00 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:07:02 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:07:02 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 24072
-2022/12/12 05:07:02 PM DEBUG:POST http://localhost:63030/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:07:02 PM DEBUG:Starting new HTTP connection (1): localhost:63030
-2022/12/12 05:07:04 PM DEBUG:http://localhost:63030 "POST /session HTTP/1.1" 200 791
-2022/12/12 05:07:04 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir24072_1661948611"},"goog:chromeOptions":{"debuggerAddress":"localhost:63035"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"0c41e264add64678fb1cfb4066c60e41"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:04 PM DEBUG:Finished Request
-2022/12/12 05:07:04 PM DEBUG:POST http://localhost:63030/session/0c41e264add64678fb1cfb4066c60e41/window/maximize {}
-2022/12/12 05:07:04 PM DEBUG:http://localhost:63030 "POST /session/0c41e264add64678fb1cfb4066c60e41/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:07:04 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:04 PM DEBUG:Finished Request
-2022/12/12 05:07:04 PM DEBUG:POST http://localhost:63030/session/0c41e264add64678fb1cfb4066c60e41/timeouts {"implicit": 10000}
-2022/12/12 05:07:04 PM DEBUG:http://localhost:63030 "POST /session/0c41e264add64678fb1cfb4066c60e41/timeouts HTTP/1.1" 200 14
-2022/12/12 05:07:04 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:04 PM DEBUG:Finished Request
-2022/12/12 05:07:04 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 05:07:40 PM INFO:====== WebDriver manager ======
-2022/12/12 05:07:41 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:07:41 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:07:41 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:07:42 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:07:42 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 25468
-2022/12/12 05:07:43 PM DEBUG:POST http://localhost:63132/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:07:43 PM DEBUG:Starting new HTTP connection (1): localhost:63132
-2022/12/12 05:07:44 PM DEBUG:http://localhost:63132 "POST /session HTTP/1.1" 200 789
-2022/12/12 05:07:44 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir25468_93627150"},"goog:chromeOptions":{"debuggerAddress":"localhost:63136"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"3e55e3abeded7eff2c3763543a37c412"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:44 PM DEBUG:Finished Request
-2022/12/12 05:07:44 PM DEBUG:POST http://localhost:63132/session/3e55e3abeded7eff2c3763543a37c412/window/maximize {}
-2022/12/12 05:07:44 PM DEBUG:http://localhost:63132 "POST /session/3e55e3abeded7eff2c3763543a37c412/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:07:44 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:44 PM DEBUG:Finished Request
-2022/12/12 05:07:44 PM DEBUG:POST http://localhost:63132/session/3e55e3abeded7eff2c3763543a37c412/timeouts {"implicit": 10000}
-2022/12/12 05:07:44 PM DEBUG:http://localhost:63132 "POST /session/3e55e3abeded7eff2c3763543a37c412/timeouts HTTP/1.1" 200 14
-2022/12/12 05:07:44 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:07:44 PM DEBUG:Finished Request
-2022/12/12 05:07:44 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 05:17:51 PM INFO:====== WebDriver manager ======
-2022/12/12 05:17:53 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:17:53 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:17:53 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:17:54 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:17:54 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 11248
-2022/12/12 05:17:55 PM DEBUG:POST http://localhost:64521/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:17:55 PM DEBUG:Starting new HTTP connection (1): localhost:64521
-2022/12/12 05:17:56 PM DEBUG:http://localhost:64521 "POST /session HTTP/1.1" 200 791
-2022/12/12 05:17:56 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir11248_1010472496"},"goog:chromeOptions":{"debuggerAddress":"localhost:64532"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"889b8c916cdd71660a61dd614f6e172a"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:17:56 PM DEBUG:Finished Request
-2022/12/12 05:17:56 PM DEBUG:POST http://localhost:64521/session/889b8c916cdd71660a61dd614f6e172a/window/maximize {}
-2022/12/12 05:17:56 PM DEBUG:http://localhost:64521 "POST /session/889b8c916cdd71660a61dd614f6e172a/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:17:56 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:17:56 PM DEBUG:Finished Request
-2022/12/12 05:17:56 PM DEBUG:POST http://localhost:64521/session/889b8c916cdd71660a61dd614f6e172a/timeouts {"implicit": 10000}
-2022/12/12 05:17:56 PM DEBUG:http://localhost:64521 "POST /session/889b8c916cdd71660a61dd614f6e172a/timeouts HTTP/1.1" 200 14
-2022/12/12 05:17:56 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:17:56 PM DEBUG:Finished Request
-2022/12/12 05:17:56 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 05:22:59 PM INFO:====== WebDriver manager ======
-2022/12/12 05:23:00 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:23:00 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:23:00 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:23:01 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:23:01 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 32716
-2022/12/12 05:23:01 PM DEBUG:POST http://localhost:65121/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:23:01 PM DEBUG:Starting new HTTP connection (1): localhost:65121
-2022/12/12 05:23:02 PM DEBUG:http://localhost:65121 "POST /session HTTP/1.1" 200 791
-2022/12/12 05:23:02 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir32716_1076989536"},"goog:chromeOptions":{"debuggerAddress":"localhost:65125"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"24a6c63e01047c85ba1ca947a424f282"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:23:02 PM DEBUG:Finished Request
-2022/12/12 05:23:02 PM DEBUG:POST http://localhost:65121/session/24a6c63e01047c85ba1ca947a424f282/window/maximize {}
-2022/12/12 05:23:03 PM DEBUG:http://localhost:65121 "POST /session/24a6c63e01047c85ba1ca947a424f282/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:23:03 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:23:03 PM DEBUG:Finished Request
-2022/12/12 05:23:03 PM DEBUG:POST http://localhost:65121/session/24a6c63e01047c85ba1ca947a424f282/timeouts {"implicit": 10000}
-2022/12/12 05:23:03 PM DEBUG:http://localhost:65121 "POST /session/24a6c63e01047c85ba1ca947a424f282/timeouts HTTP/1.1" 200 14
-2022/12/12 05:23:03 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:23:03 PM DEBUG:Finished Request
-2022/12/12 05:23:03 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/12 05:41:34 PM INFO:====== WebDriver manager ======
-2022/12/12 05:41:35 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/12 05:41:35 PM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/12 05:41:35 PM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/12 05:41:36 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/12 05:41:36 PM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 31280
-2022/12/12 05:41:37 PM DEBUG:POST http://localhost:51423/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/12 05:41:37 PM DEBUG:Starting new HTTP connection (1): localhost:51423
-2022/12/12 05:41:38 PM DEBUG:http://localhost:51423 "POST /session HTTP/1.1" 200 791
-2022/12/12 05:41:38 PM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir31280_1019954662"},"goog:chromeOptions":{"debuggerAddress":"localhost:51428"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"bac277c4479e482ad6612b0e30a94977"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:41:38 PM DEBUG:Finished Request
-2022/12/12 05:41:38 PM DEBUG:POST http://localhost:51423/session/bac277c4479e482ad6612b0e30a94977/window/maximize {}
-2022/12/12 05:41:38 PM DEBUG:http://localhost:51423 "POST /session/bac277c4479e482ad6612b0e30a94977/window/maximize HTTP/1.1" 200 52
-2022/12/12 05:41:38 PM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:41:38 PM DEBUG:Finished Request
-2022/12/12 05:41:38 PM DEBUG:POST http://localhost:51423/session/bac277c4479e482ad6612b0e30a94977/timeouts {"implicit": 10000}
-2022/12/12 05:41:38 PM DEBUG:http://localhost:51423 "POST /session/bac277c4479e482ad6612b0e30a94977/timeouts HTTP/1.1" 200 14
-2022/12/12 05:41:38 PM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/12 05:41:38 PM DEBUG:Finished Request
-2022/12/12 05:41:38 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:39:19 AM INFO:====== WebDriver manager ======
-2022/12/13 07:39:20 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:39:20 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:39:20 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:39:21 AM INFO:About to download new driver from https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
-2022/12/13 07:39:21 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:39:21 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /108.0.5359.71/chromedriver_win32.zip HTTP/1.1" 200 6904173
-2022/12/13 07:39:23 AM INFO:Driver has been saved in cache [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359]
-2022/12/13 07:39:23 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 19404
-2022/12/13 07:39:24 AM DEBUG:POST http://localhost:56618/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:39:24 AM DEBUG:Starting new HTTP connection (1): localhost:56618
-2022/12/13 07:39:25 AM DEBUG:http://localhost:56618 "POST /session HTTP/1.1" 200 789
-2022/12/13 07:39:25 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir19404_82132792"},"goog:chromeOptions":{"debuggerAddress":"localhost:56622"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"d225dc978834190318ecdcb4ec9a6a72"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:39:25 AM DEBUG:Finished Request
-2022/12/13 07:39:25 AM DEBUG:POST http://localhost:56618/session/d225dc978834190318ecdcb4ec9a6a72/window/maximize {}
-2022/12/13 07:39:25 AM DEBUG:http://localhost:56618 "POST /session/d225dc978834190318ecdcb4ec9a6a72/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:39:25 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:39:25 AM DEBUG:Finished Request
-2022/12/13 07:39:25 AM DEBUG:POST http://localhost:56618/session/d225dc978834190318ecdcb4ec9a6a72/timeouts {"implicit": 10000}
-2022/12/13 07:39:25 AM DEBUG:http://localhost:56618 "POST /session/d225dc978834190318ecdcb4ec9a6a72/timeouts HTTP/1.1" 200 14
-2022/12/13 07:39:25 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:39:25 AM DEBUG:Finished Request
-2022/12/13 07:39:25 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:40:12 AM INFO:====== WebDriver manager ======
-2022/12/13 07:40:13 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:40:13 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:40:13 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:40:14 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:40:14 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 5256
-2022/12/13 07:40:14 AM DEBUG:POST http://localhost:56706/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:40:14 AM DEBUG:Starting new HTTP connection (1): localhost:56706
-2022/12/13 07:40:16 AM DEBUG:http://localhost:56706 "POST /session HTTP/1.1" 200 789
-2022/12/13 07:40:16 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir5256_448424754"},"goog:chromeOptions":{"debuggerAddress":"localhost:56709"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"76b7c78280e2c4ac8faeb7079d8d23d3"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:16 AM DEBUG:Finished Request
-2022/12/13 07:40:16 AM DEBUG:POST http://localhost:56706/session/76b7c78280e2c4ac8faeb7079d8d23d3/window/maximize {}
-2022/12/13 07:40:16 AM DEBUG:http://localhost:56706 "POST /session/76b7c78280e2c4ac8faeb7079d8d23d3/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:40:16 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:16 AM DEBUG:Finished Request
-2022/12/13 07:40:16 AM DEBUG:POST http://localhost:56706/session/76b7c78280e2c4ac8faeb7079d8d23d3/timeouts {"implicit": 10000}
-2022/12/13 07:40:16 AM DEBUG:http://localhost:56706 "POST /session/76b7c78280e2c4ac8faeb7079d8d23d3/timeouts HTTP/1.1" 200 14
-2022/12/13 07:40:16 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:16 AM DEBUG:Finished Request
-2022/12/13 07:40:16 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:40:41 AM INFO:====== WebDriver manager ======
-2022/12/13 07:40:42 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:40:42 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:40:42 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:40:43 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:40:43 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 19508
-2022/12/13 07:40:43 AM DEBUG:POST http://localhost:56763/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:40:43 AM DEBUG:Starting new HTTP connection (1): localhost:56763
-2022/12/13 07:40:45 AM DEBUG:http://localhost:56763 "POST /session HTTP/1.1" 200 791
-2022/12/13 07:40:45 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir19508_1382015326"},"goog:chromeOptions":{"debuggerAddress":"localhost:56766"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"01f48bdc9555f32f0045e1fcd330a0b5"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:45 AM DEBUG:Finished Request
-2022/12/13 07:40:45 AM DEBUG:POST http://localhost:56763/session/01f48bdc9555f32f0045e1fcd330a0b5/window/maximize {}
-2022/12/13 07:40:45 AM DEBUG:http://localhost:56763 "POST /session/01f48bdc9555f32f0045e1fcd330a0b5/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:40:45 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:45 AM DEBUG:Finished Request
-2022/12/13 07:40:45 AM DEBUG:POST http://localhost:56763/session/01f48bdc9555f32f0045e1fcd330a0b5/timeouts {"implicit": 10000}
-2022/12/13 07:40:45 AM DEBUG:http://localhost:56763 "POST /session/01f48bdc9555f32f0045e1fcd330a0b5/timeouts HTTP/1.1" 200 14
-2022/12/13 07:40:45 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:40:45 AM DEBUG:Finished Request
-2022/12/13 07:40:45 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:48:25 AM INFO:====== WebDriver manager ======
-2022/12/13 07:48:25 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:48:25 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:48:26 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:48:26 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:48:26 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 23848
-2022/12/13 07:48:27 AM DEBUG:POST http://localhost:57792/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:48:27 AM DEBUG:Starting new HTTP connection (1): localhost:57792
-2022/12/13 07:48:28 AM DEBUG:http://localhost:57792 "POST /session HTTP/1.1" 200 790
-2022/12/13 07:48:28 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir23848_114619067"},"goog:chromeOptions":{"debuggerAddress":"localhost:57795"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"4f6ac7ac7590f696a559fae121ce7721"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:28 AM DEBUG:Finished Request
-2022/12/13 07:48:28 AM DEBUG:POST http://localhost:57792/session/4f6ac7ac7590f696a559fae121ce7721/window/maximize {}
-2022/12/13 07:48:28 AM DEBUG:http://localhost:57792 "POST /session/4f6ac7ac7590f696a559fae121ce7721/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:48:28 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:28 AM DEBUG:Finished Request
-2022/12/13 07:48:28 AM DEBUG:POST http://localhost:57792/session/4f6ac7ac7590f696a559fae121ce7721/timeouts {"implicit": 10000}
-2022/12/13 07:48:28 AM DEBUG:http://localhost:57792 "POST /session/4f6ac7ac7590f696a559fae121ce7721/timeouts HTTP/1.1" 200 14
-2022/12/13 07:48:28 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:28 AM DEBUG:Finished Request
-2022/12/13 07:48:28 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:48:44 AM INFO:====== WebDriver manager ======
-2022/12/13 07:48:45 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:48:45 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:48:45 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:48:46 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:48:46 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 34112
-2022/12/13 07:48:47 AM DEBUG:POST http://localhost:57848/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:48:47 AM DEBUG:Starting new HTTP connection (1): localhost:57848
-2022/12/13 07:48:48 AM DEBUG:http://localhost:57848 "POST /session HTTP/1.1" 200 790
-2022/12/13 07:48:48 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir34112_372203320"},"goog:chromeOptions":{"debuggerAddress":"localhost:57851"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"7ef7a877a90c507229b41f48d9327c6f"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:48 AM DEBUG:Finished Request
-2022/12/13 07:48:48 AM DEBUG:POST http://localhost:57848/session/7ef7a877a90c507229b41f48d9327c6f/window/maximize {}
-2022/12/13 07:48:48 AM DEBUG:http://localhost:57848 "POST /session/7ef7a877a90c507229b41f48d9327c6f/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:48:48 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:48 AM DEBUG:Finished Request
-2022/12/13 07:48:48 AM DEBUG:POST http://localhost:57848/session/7ef7a877a90c507229b41f48d9327c6f/timeouts {"implicit": 10000}
-2022/12/13 07:48:48 AM DEBUG:http://localhost:57848 "POST /session/7ef7a877a90c507229b41f48d9327c6f/timeouts HTTP/1.1" 200 14
-2022/12/13 07:48:48 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:48:48 AM DEBUG:Finished Request
-2022/12/13 07:48:48 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:53:01 AM INFO:====== WebDriver manager ======
-2022/12/13 07:53:01 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:53:01 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:53:02 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:53:02 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:53:02 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 23844
-2022/12/13 07:53:03 AM DEBUG:POST http://localhost:58481/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:53:03 AM DEBUG:Starting new HTTP connection (1): localhost:58481
-2022/12/13 07:53:04 AM DEBUG:http://localhost:58481 "POST /session HTTP/1.1" 200 789
-2022/12/13 07:53:04 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir23844_36458638"},"goog:chromeOptions":{"debuggerAddress":"localhost:58484"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"d25049ecdd3b2d9e63a7499d56014e46"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:53:04 AM DEBUG:Finished Request
-2022/12/13 07:53:04 AM DEBUG:POST http://localhost:58481/session/d25049ecdd3b2d9e63a7499d56014e46/window/maximize {}
-2022/12/13 07:53:04 AM DEBUG:http://localhost:58481 "POST /session/d25049ecdd3b2d9e63a7499d56014e46/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:53:04 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:53:04 AM DEBUG:Finished Request
-2022/12/13 07:53:04 AM DEBUG:POST http://localhost:58481/session/d25049ecdd3b2d9e63a7499d56014e46/timeouts {"implicit": 10000}
-2022/12/13 07:53:04 AM DEBUG:http://localhost:58481 "POST /session/d25049ecdd3b2d9e63a7499d56014e46/timeouts HTTP/1.1" 200 14
-2022/12/13 07:53:04 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:53:04 AM DEBUG:Finished Request
-2022/12/13 07:53:04 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:56:12 AM INFO:====== WebDriver manager ======
-2022/12/13 07:56:12 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:56:12 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:56:13 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:56:13 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:56:13 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 7816
-2022/12/13 07:56:14 AM DEBUG:POST http://localhost:58938/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:56:14 AM DEBUG:Starting new HTTP connection (1): localhost:58938
-2022/12/13 07:56:15 AM DEBUG:http://localhost:58938 "POST /session HTTP/1.1" 200 789
-2022/12/13 07:56:15 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir7816_297539189"},"goog:chromeOptions":{"debuggerAddress":"localhost:58941"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"0d89e9ff23f7d918f81654c1dd3e3367"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:56:15 AM DEBUG:Finished Request
-2022/12/13 07:56:15 AM DEBUG:POST http://localhost:58938/session/0d89e9ff23f7d918f81654c1dd3e3367/window/maximize {}
-2022/12/13 07:56:15 AM DEBUG:http://localhost:58938 "POST /session/0d89e9ff23f7d918f81654c1dd3e3367/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:56:15 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:56:15 AM DEBUG:Finished Request
-2022/12/13 07:56:15 AM DEBUG:POST http://localhost:58938/session/0d89e9ff23f7d918f81654c1dd3e3367/timeouts {"implicit": 10000}
-2022/12/13 07:56:15 AM DEBUG:http://localhost:58938 "POST /session/0d89e9ff23f7d918f81654c1dd3e3367/timeouts HTTP/1.1" 200 14
-2022/12/13 07:56:15 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:56:15 AM DEBUG:Finished Request
-2022/12/13 07:56:15 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:57:30 AM INFO:====== WebDriver manager ======
-2022/12/13 07:57:30 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 07:57:30 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 07:57:31 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 07:57:32 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 07:57:32 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 22168
-2022/12/13 07:57:32 AM DEBUG:POST http://localhost:59073/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:57:32 AM DEBUG:Starting new HTTP connection (1): localhost:59073
-2022/12/13 07:57:33 AM DEBUG:http://localhost:59073 "POST /session HTTP/1.1" 200 791
-2022/12/13 07:57:33 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir22168_1781084440"},"goog:chromeOptions":{"debuggerAddress":"localhost:59076"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"88bac049a1a9a388f9e2ac49bc4fd67c"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:57:33 AM DEBUG:Finished Request
-2022/12/13 07:57:33 AM DEBUG:POST http://localhost:59073/session/88bac049a1a9a388f9e2ac49bc4fd67c/window/maximize {}
-2022/12/13 07:57:34 AM DEBUG:http://localhost:59073 "POST /session/88bac049a1a9a388f9e2ac49bc4fd67c/window/maximize HTTP/1.1" 200 52
-2022/12/13 07:57:34 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:57:34 AM DEBUG:Finished Request
-2022/12/13 07:57:34 AM DEBUG:POST http://localhost:59073/session/88bac049a1a9a388f9e2ac49bc4fd67c/timeouts {"implicit": 10000}
-2022/12/13 07:57:34 AM DEBUG:http://localhost:59073 "POST /session/88bac049a1a9a388f9e2ac49bc4fd67c/timeouts HTTP/1.1" 200 14
-2022/12/13 07:57:34 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:57:34 AM DEBUG:Finished Request
-2022/12/13 07:57:34 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 07:57:37 AM DEBUG:driver not found in PATH, trying Selenium Manager
-2022/12/13 07:57:37 AM DEBUG:Executing: c:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
-2022/12/13 07:57:38 AM DEBUG:Using driver at: C:\Users\alber\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
-2022/12/13 07:57:38 AM DEBUG:Started executable: `chromedriver` in a child process with pid: 23540
-2022/12/13 07:57:39 AM DEBUG:POST http://localhost:59093/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 07:57:39 AM DEBUG:Starting new HTTP connection (1): localhost:59093
-2022/12/13 07:57:40 AM DEBUG:http://localhost:59093 "POST /session HTTP/1.1" 200 791
-2022/12/13 07:57:40 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir23540_1141937807"},"goog:chromeOptions":{"debuggerAddress":"localhost:59103"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"b23600808d42056061165e7dd8ecb788"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:57:40 AM DEBUG:Finished Request
-2022/12/13 07:57:40 AM DEBUG:POST http://localhost:59093/session/b23600808d42056061165e7dd8ecb788/url {"url": "https://yahoo.com"}
-2022/12/13 07:57:57 AM DEBUG:http://localhost:59093 "POST /session/b23600808d42056061165e7dd8ecb788/url HTTP/1.1" 200 14
-2022/12/13 07:57:57 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 07:57:57 AM DEBUG:Finished Request
-2022/12/13 08:02:48 AM INFO:====== WebDriver manager ======
-2022/12/13 08:02:49 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 08:02:49 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 08:02:50 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 08:02:50 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 08:02:50 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 18144
-2022/12/13 08:02:51 AM DEBUG:POST http://localhost:59703/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 08:02:51 AM DEBUG:Starting new HTTP connection (1): localhost:59703
-2022/12/13 08:02:53 AM DEBUG:http://localhost:59703 "POST /session HTTP/1.1" 200 791
-2022/12/13 08:02:53 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir18144_1365563947"},"goog:chromeOptions":{"debuggerAddress":"localhost:59711"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"cbf837ce290b6a43792756085c5bb72d"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:02:53 AM DEBUG:Finished Request
-2022/12/13 08:02:53 AM DEBUG:POST http://localhost:59703/session/cbf837ce290b6a43792756085c5bb72d/window/maximize {}
-2022/12/13 08:02:53 AM DEBUG:http://localhost:59703 "POST /session/cbf837ce290b6a43792756085c5bb72d/window/maximize HTTP/1.1" 200 52
-2022/12/13 08:02:53 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:02:53 AM DEBUG:Finished Request
-2022/12/13 08:02:53 AM DEBUG:POST http://localhost:59703/session/cbf837ce290b6a43792756085c5bb72d/timeouts {"implicit": 10000}
-2022/12/13 08:02:53 AM DEBUG:http://localhost:59703 "POST /session/cbf837ce290b6a43792756085c5bb72d/timeouts HTTP/1.1" 200 14
-2022/12/13 08:02:53 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:02:53 AM DEBUG:Finished Request
-2022/12/13 08:02:53 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 08:03:33 AM INFO:====== WebDriver manager ======
-2022/12/13 08:03:34 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 08:03:34 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 08:03:34 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 08:03:35 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 08:03:35 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 20212
-2022/12/13 08:03:35 AM DEBUG:POST http://localhost:59783/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 08:03:35 AM DEBUG:Starting new HTTP connection (1): localhost:59783
-2022/12/13 08:03:36 AM DEBUG:http://localhost:59783 "POST /session HTTP/1.1" 200 791
-2022/12/13 08:03:36 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir20212_1802051085"},"goog:chromeOptions":{"debuggerAddress":"localhost:59786"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"1023da6a8734256ea79302091f6653c4"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:03:36 AM DEBUG:Finished Request
-2022/12/13 08:03:36 AM DEBUG:POST http://localhost:59783/session/1023da6a8734256ea79302091f6653c4/window/maximize {}
-2022/12/13 08:03:36 AM DEBUG:http://localhost:59783 "POST /session/1023da6a8734256ea79302091f6653c4/window/maximize HTTP/1.1" 200 52
-2022/12/13 08:03:36 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:03:36 AM DEBUG:Finished Request
-2022/12/13 08:03:36 AM DEBUG:POST http://localhost:59783/session/1023da6a8734256ea79302091f6653c4/timeouts {"implicit": 10000}
-2022/12/13 08:03:36 AM DEBUG:http://localhost:59783 "POST /session/1023da6a8734256ea79302091f6653c4/timeouts HTTP/1.1" 200 14
-2022/12/13 08:03:36 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:03:36 AM DEBUG:Finished Request
-2022/12/13 08:03:36 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 08:03:39 AM DEBUG:POST http://localhost:59783/session/1023da6a8734256ea79302091f6653c4/url {"url": "https://yahoo.com"}
-2022/12/13 08:03:45 AM DEBUG:http://localhost:59783 "POST /session/1023da6a8734256ea79302091f6653c4/url HTTP/1.1" 200 14
-2022/12/13 08:03:45 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:03:45 AM DEBUG:Finished Request
-2022/12/13 08:04:13 AM INFO:====== WebDriver manager ======
-2022/12/13 08:04:14 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 08:04:14 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 08:04:15 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 08:04:16 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 08:04:16 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 16928
-2022/12/13 08:04:16 AM DEBUG:POST http://localhost:50438/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 08:04:16 AM DEBUG:Starting new HTTP connection (1): localhost:50438
-2022/12/13 08:04:18 AM DEBUG:http://localhost:50438 "POST /session HTTP/1.1" 200 791
-2022/12/13 08:04:18 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir16928_1628538663"},"goog:chromeOptions":{"debuggerAddress":"localhost:50441"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"24df916efc39f87ea45a7b55d0540bdf"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:04:18 AM DEBUG:Finished Request
-2022/12/13 08:04:18 AM DEBUG:POST http://localhost:50438/session/24df916efc39f87ea45a7b55d0540bdf/window/maximize {}
-2022/12/13 08:04:18 AM DEBUG:http://localhost:50438 "POST /session/24df916efc39f87ea45a7b55d0540bdf/window/maximize HTTP/1.1" 200 52
-2022/12/13 08:04:18 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:04:18 AM DEBUG:Finished Request
-2022/12/13 08:04:18 AM DEBUG:POST http://localhost:50438/session/24df916efc39f87ea45a7b55d0540bdf/timeouts {"implicit": 10000}
-2022/12/13 08:04:18 AM DEBUG:http://localhost:50438 "POST /session/24df916efc39f87ea45a7b55d0540bdf/timeouts HTTP/1.1" 200 14
-2022/12/13 08:04:18 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:04:18 AM DEBUG:Finished Request
-2022/12/13 08:04:18 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 08:04:21 AM DEBUG:POST http://localhost:50438/session/24df916efc39f87ea45a7b55d0540bdf/url {"url": "https://yahoo.com"}
-2022/12/13 08:04:34 AM DEBUG:http://localhost:50438 "POST /session/24df916efc39f87ea45a7b55d0540bdf/url HTTP/1.1" 200 14
-2022/12/13 08:04:34 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:04:34 AM DEBUG:Finished Request
-2022/12/13 08:09:42 AM INFO:====== WebDriver manager ======
-2022/12/13 08:09:42 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 08:09:42 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 08:09:43 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 08:09:44 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 08:09:44 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 1152
-2022/12/13 08:09:44 AM DEBUG:POST http://localhost:49668/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 08:09:44 AM DEBUG:Starting new HTTP connection (1): localhost:49668
-2022/12/13 08:09:45 AM DEBUG:http://localhost:49668 "POST /session HTTP/1.1" 200 789
-2022/12/13 08:09:45 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir1152_818190938"},"goog:chromeOptions":{"debuggerAddress":"localhost:49671"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"1969dc4803df8bf356c3246196c7bb45"}} | headers=HTTPHeaderDict({'Content-Length': '789', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:09:45 AM DEBUG:Finished Request
-2022/12/13 08:09:45 AM DEBUG:POST http://localhost:49668/session/1969dc4803df8bf356c3246196c7bb45/window/maximize {}
-2022/12/13 08:09:45 AM DEBUG:http://localhost:49668 "POST /session/1969dc4803df8bf356c3246196c7bb45/window/maximize HTTP/1.1" 200 52
-2022/12/13 08:09:45 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:09:45 AM DEBUG:Finished Request
-2022/12/13 08:09:45 AM DEBUG:POST http://localhost:49668/session/1969dc4803df8bf356c3246196c7bb45/timeouts {"implicit": 10000}
-2022/12/13 08:09:45 AM DEBUG:http://localhost:49668 "POST /session/1969dc4803df8bf356c3246196c7bb45/timeouts HTTP/1.1" 200 14
-2022/12/13 08:09:45 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:09:45 AM DEBUG:Finished Request
-2022/12/13 08:09:45 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 08:09:45 AM DEBUG:POST http://localhost:49668/session/1969dc4803df8bf356c3246196c7bb45/url {"url": "https://yahoo.com"}
-2022/12/13 08:09:50 AM DEBUG:http://localhost:49668 "POST /session/1969dc4803df8bf356c3246196c7bb45/url HTTP/1.1" 200 14
-2022/12/13 08:09:50 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:09:50 AM DEBUG:Finished Request
-2022/12/13 08:11:46 AM INFO:====== WebDriver manager ======
-2022/12/13 08:11:47 AM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 08:11:47 AM DEBUG:Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
-2022/12/13 08:11:47 AM DEBUG:https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
-2022/12/13 08:11:48 AM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 08:11:48 AM DEBUG:Started executable: `C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 24300
-2022/12/13 08:11:48 AM DEBUG:POST http://localhost:62798/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
-2022/12/13 08:11:48 AM DEBUG:Starting new HTTP connection (1): localhost:62798
-2022/12/13 08:11:49 AM DEBUG:http://localhost:62798 "POST /session HTTP/1.1" 200 790
-2022/12/13 08:11:49 AM DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\alber\\AppData\\Local\\Temp\\scoped_dir24300_604237443"},"goog:chromeOptions":{"debuggerAddress":"localhost:62801"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"f5e86e017acc6ffc313939f270aafe31"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:11:49 AM DEBUG:Finished Request
-2022/12/13 08:11:49 AM DEBUG:POST http://localhost:62798/session/f5e86e017acc6ffc313939f270aafe31/window/maximize {}
-2022/12/13 08:11:49 AM DEBUG:http://localhost:62798 "POST /session/f5e86e017acc6ffc313939f270aafe31/window/maximize HTTP/1.1" 200 52
-2022/12/13 08:11:49 AM DEBUG:Remote response: status=200 | data={"value":{"height":1066,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:11:49 AM DEBUG:Finished Request
-2022/12/13 08:11:49 AM DEBUG:POST http://localhost:62798/session/f5e86e017acc6ffc313939f270aafe31/timeouts {"implicit": 10000}
-2022/12/13 08:11:49 AM DEBUG:http://localhost:62798 "POST /session/f5e86e017acc6ffc313939f270aafe31/timeouts HTTP/1.1" 200 14
-2022/12/13 08:11:49 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:11:49 AM DEBUG:Finished Request
-2022/12/13 08:11:49 AM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 08:11:49 AM DEBUG:POST http://localhost:62798/session/f5e86e017acc6ffc313939f270aafe31/url {"url": "https://google.com"}
-2022/12/13 08:11:50 AM DEBUG:http://localhost:62798 "POST /session/f5e86e017acc6ffc313939f270aafe31/url HTTP/1.1" 200 14
-2022/12/13 08:11:50 AM DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2022/12/13 08:11:50 AM DEBUG:Finished Request
-2022/12/13 04:15:20 PM INFO:====== WebDriver manager ======
-2022/12/13 04:15:22 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 04:15:24 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 04:15:27 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 04:16:36 PM INFO:====== WebDriver manager ======
-2022/12/13 04:16:37 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 04:16:38 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 04:16:40 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 05:29:29 PM INFO:====== WebDriver manager ======
-2022/12/13 05:29:30 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 05:29:31 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 05:29:33 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 05:29:33 PM INFO:Loading Sites.CALENDAR
-2022/12/13 05:29:33 PM INFO:Going to site: https://calendar.google.com/calendar/
-2022/12/13 05:29:34 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
-2022/12/13 05:29:34 PM INFO:Waiting element be Clickable, element//*[@id='identifierId'] ...
-2022/12/13 05:29:34 PM INFO:Element found: 
-2022/12/13 05:29:35 PM INFO:Waiting seconds: 1
-2022/12/13 05:29:36 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="b5f2b38d67379ed4485f215b0e8b7aae", element="35d04131-cbdb-4620-9747-f7f697ed43c4")>
-2022/12/13 05:29:36 PM INFO:Clicking element...
-2022/12/13 05:29:36 PM INFO:Waiting element be Clickable, element//div[@id='identifierNext'] ...
-2022/12/13 05:29:36 PM INFO:Element found: 
-2022/12/13 05:29:36 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="b5f2b38d67379ed4485f215b0e8b7aae", element="81041024-8c23-40dd-b080-58b47bc607e9")>
-2022/12/13 05:29:36 PM INFO:Waiting seconds: 4
-2022/12/13 05:29:40 PM INFO:Sending keys: Selenium1 - In the element: //input[@name='password' or @name='Passwd'] ...
-2022/12/13 05:29:40 PM INFO:Waiting element be Clickable, element//input[@name='password' or @name='Passwd'] ...
-2022/12/13 05:32:44 PM INFO:====== WebDriver manager ======
-2022/12/13 05:32:45 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
-2022/12/13 05:32:46 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
-2022/12/13 05:32:48 PM INFO:Browser should be opened: Browser.CHROME
-2022/12/13 05:32:48 PM INFO:Loading Sites.CALENDAR
-2022/12/13 05:32:48 PM INFO:Going to site: https://calendar.google.com/calendar/
-2022/12/13 05:32:50 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
-2022/12/13 05:32:50 PM INFO:Waiting element be Clickable, element//*[@id='identifierId'] ...
-2022/12/13 05:32:50 PM INFO:Element found: 
-2022/12/13 05:32:51 PM INFO:Waiting seconds: 1
-2022/12/13 05:32:52 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="69c68db8-dc98-48a1-8e74-9f6533c34718")>
-2022/12/13 05:32:52 PM INFO:Clicking element...
 2022/12/13 05:32:52 PM INFO:Waiting element be Clickable, element//div[@id='identifierNext'] ...
 2022/12/13 05:32:52 PM INFO:Element found: 
 2022/12/13 05:32:52 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="17690c91-77f8-422a-a3ad-d6a4737f486c")>
@@ -760,3 +12,414 @@ DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 2022/12/13 05:32:57 PM INFO:Element found: 
 2022/12/13 05:32:57 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="2eedecd3039a6f0a951c809b31d055df", element="bd2e27fb-6102-432e-ae1f-bebce62dd7ab")>
 2022/12/13 05:32:57 PM INFO:Waiting seconds: 4
+2022/12/14 02:05:21 PM INFO:====== WebDriver manager ======
+2022/12/14 02:05:23 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/14 02:05:25 PM INFO:About to download new driver from https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
+2022/12/14 02:05:33 PM INFO:====== WebDriver manager ======
+2022/12/14 02:05:35 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/14 02:05:36 PM INFO:About to download new driver from https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
+2022/12/14 02:05:38 PM INFO:Driver has been saved in cache [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359]
+2022/12/14 02:05:40 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/14 02:05:40 PM INFO:Loading Sites.CALENDAR
+2022/12/14 02:05:40 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/14 02:05:42 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/14 02:05:42 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/14 02:05:42 PM INFO:Clicking element...
+2022/12/14 02:05:42 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/14 02:05:42 PM INFO:Waiting seconds: 4
+2022/12/15 12:26:24 PM INFO:====== WebDriver manager ======
+2022/12/15 12:26:25 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:26:27 PM INFO:About to download new driver from https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
+2022/12/15 12:26:29 PM INFO:Driver has been saved in cache [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359]
+2022/12/15 12:26:31 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:26:31 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:26:31 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:26:32 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:26:32 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:26:32 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/15 12:26:32 PM INFO:Clicking element...
+2022/12/15 12:26:32 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:26:32 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/15 12:26:32 PM INFO:Waiting seconds: 4
+2022/12/15 12:27:26 PM INFO:====== WebDriver manager ======
+2022/12/15 12:27:27 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:27:28 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:27:30 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:27:30 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:27:30 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:27:31 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:27:31 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:27:31 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/15 12:27:31 PM INFO:Clicking element...
+2022/12/15 12:27:31 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:27:31 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/15 12:27:31 PM INFO:Waiting seconds: 4
+2022/12/15 12:29:46 PM INFO:====== WebDriver manager ======
+2022/12/15 12:29:47 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:29:48 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:29:50 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:29:50 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:29:50 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:29:51 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:29:51 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:29:51 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/15 12:29:51 PM INFO:Clicking element...
+2022/12/15 12:29:51 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:29:51 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/15 12:29:51 PM INFO:Waiting seconds: 4
+2022/12/15 12:29:55 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:29:55 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:29:55 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 12:29:55 PM INFO:Clicking element...
+2022/12/15 12:29:55 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 12:29:55 PM ERROR:Element NOT FOUND: //*[@id='passwordNext']
+2022/12/15 12:29:55 PM INFO:Waiting seconds: 4
+2022/12/15 12:38:10 PM INFO:====== WebDriver manager ======
+2022/12/15 12:38:11 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:38:12 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:38:14 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:38:14 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:38:14 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:38:16 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:38:16 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:38:16 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/15 12:38:16 PM INFO:Clicking element...
+2022/12/15 12:38:16 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:38:16 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/15 12:38:16 PM INFO:Waiting seconds: 4
+2022/12/15 12:39:24 PM INFO:====== WebDriver manager ======
+2022/12/15 12:39:25 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:39:26 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:39:28 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:39:28 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:39:28 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:39:30 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:39:30 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:39:30 PM ERROR:Element NOT FOUND: //*[@id='identifierId']
+2022/12/15 12:39:30 PM INFO:Clicking element...
+2022/12/15 12:39:30 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:39:30 PM ERROR:Element NOT FOUND: //div[@id='identifierNext']
+2022/12/15 12:39:30 PM INFO:Waiting seconds: 4
+2022/12/15 12:42:02 PM INFO:====== WebDriver manager ======
+2022/12/15 12:42:03 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:42:04 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:42:06 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:42:06 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:42:06 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:42:08 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:48:57 PM INFO:====== WebDriver manager ======
+2022/12/15 12:48:58 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:48:59 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:49:01 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:49:01 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:49:01 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:49:03 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:49:03 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="f6fb5197-11b7-48e1-9922-d0b29fbcb2dc")>
+2022/12/15 12:49:03 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:49:03 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:49:03 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="f6fb5197-11b7-48e1-9922-d0b29fbcb2dc")>
+2022/12/15 12:49:03 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 12:49:03 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="f6fb5197-11b7-48e1-9922-d0b29fbcb2dc")>
+2022/12/15 12:49:03 PM INFO:Waiting seconds: 1
+2022/12/15 12:49:04 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="f6fb5197-11b7-48e1-9922-d0b29fbcb2dc")>
+2022/12/15 12:49:04 PM INFO:Clicking element...
+2022/12/15 12:49:04 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:49:04 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="9722737a-e873-4747-84f5-3b665d6d8164")>
+2022/12/15 12:49:04 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 12:49:04 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="9722737a-e873-4747-84f5-3b665d6d8164")>
+2022/12/15 12:49:04 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="9722737a-e873-4747-84f5-3b665d6d8164")>
+2022/12/15 12:49:04 PM INFO:Waiting seconds: 4
+2022/12/15 12:49:08 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:08 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:09 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="36bc0852-329d-4225-93b9-f329c5279b4f")>
+2022/12/15 12:49:09 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:09 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="36bc0852-329d-4225-93b9-f329c5279b4f")>
+2022/12/15 12:49:09 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 12:49:09 PM INFO:Clicking element...
+2022/12/15 12:49:09 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 12:49:09 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="1c7a4b6d-a44e-4750-a69d-0df1daf9a64f")>
+2022/12/15 12:49:09 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 12:49:09 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="1c7a4b6d-a44e-4750-a69d-0df1daf9a64f")>
+2022/12/15 12:49:09 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="a707c066420a0503d772bef04df33055", element="1c7a4b6d-a44e-4750-a69d-0df1daf9a64f")>
+2022/12/15 12:49:09 PM INFO:Waiting seconds: 4
+2022/12/15 12:49:43 PM INFO:====== WebDriver manager ======
+2022/12/15 12:49:44 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:49:45 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:49:46 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:49:46 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:49:46 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:49:48 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:49:48 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="20774498-c29d-4c78-9890-479a4aac59c3")>
+2022/12/15 12:49:48 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:49:48 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:49:48 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="20774498-c29d-4c78-9890-479a4aac59c3")>
+2022/12/15 12:49:48 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 12:49:48 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="20774498-c29d-4c78-9890-479a4aac59c3")>
+2022/12/15 12:49:48 PM INFO:Waiting seconds: 1
+2022/12/15 12:49:49 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="20774498-c29d-4c78-9890-479a4aac59c3")>
+2022/12/15 12:49:49 PM INFO:Clicking element...
+2022/12/15 12:49:49 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:49:49 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="c2f8349e-be26-4da5-a297-7a3e0daa9288")>
+2022/12/15 12:49:49 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 12:49:49 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="c2f8349e-be26-4da5-a297-7a3e0daa9288")>
+2022/12/15 12:49:49 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="c2f8349e-be26-4da5-a297-7a3e0daa9288")>
+2022/12/15 12:49:49 PM INFO:Waiting seconds: 4
+2022/12/15 12:49:53 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:53 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:53 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="e0d167db-e1b1-4527-9684-adf5bc36a65b")>
+2022/12/15 12:49:53 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:49:53 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="e0d167db-e1b1-4527-9684-adf5bc36a65b")>
+2022/12/15 12:49:53 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 12:49:53 PM INFO:Clicking element...
+2022/12/15 12:49:53 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 12:49:53 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="ffcc22e0-7e1b-41e9-9777-906cf3f925ca")>
+2022/12/15 12:49:53 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 12:49:53 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="ffcc22e0-7e1b-41e9-9777-906cf3f925ca")>
+2022/12/15 12:49:53 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="047eadda1bb9678b9907a1098a539240", element="ffcc22e0-7e1b-41e9-9777-906cf3f925ca")>
+2022/12/15 12:49:53 PM INFO:Waiting seconds: 4
+2022/12/15 12:54:25 PM INFO:====== WebDriver manager ======
+2022/12/15 12:54:26 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:54:27 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:54:29 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:54:29 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:54:29 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:54:30 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:54:30 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="ab2da267-04ac-4965-aacd-e927ebc6334c")>
+2022/12/15 12:54:30 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:54:30 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:54:30 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="ab2da267-04ac-4965-aacd-e927ebc6334c")>
+2022/12/15 12:54:30 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 12:54:30 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="ab2da267-04ac-4965-aacd-e927ebc6334c")>
+2022/12/15 12:54:30 PM INFO:Waiting seconds: 1
+2022/12/15 12:54:31 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="ab2da267-04ac-4965-aacd-e927ebc6334c")>
+2022/12/15 12:54:31 PM INFO:Clicking element...
+2022/12/15 12:54:31 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:54:32 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="e4e3be60-4efd-4719-ac3b-a47765f5ce78")>
+2022/12/15 12:54:32 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 12:54:32 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="e4e3be60-4efd-4719-ac3b-a47765f5ce78")>
+2022/12/15 12:54:32 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="e4e3be60-4efd-4719-ac3b-a47765f5ce78")>
+2022/12/15 12:54:32 PM INFO:Waiting seconds: 4
+2022/12/15 12:54:36 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:54:36 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:54:36 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="1722a9c5-b4c3-43cb-84da-6cf14339113c")>
+2022/12/15 12:54:36 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:54:36 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="1722a9c5-b4c3-43cb-84da-6cf14339113c")>
+2022/12/15 12:54:36 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 12:54:36 PM INFO:Clicking element...
+2022/12/15 12:54:36 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 12:54:36 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="b597f9cc-fb0b-4d77-9ebd-ea605c300b4c")>
+2022/12/15 12:54:36 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 12:54:36 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="b597f9cc-fb0b-4d77-9ebd-ea605c300b4c")>
+2022/12/15 12:54:36 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="539d83c2898aec4da52ada36e55e1148", element="b597f9cc-fb0b-4d77-9ebd-ea605c300b4c")>
+2022/12/15 12:54:36 PM INFO:Waiting seconds: 4
+2022/12/15 12:56:39 PM INFO:====== WebDriver manager ======
+2022/12/15 12:56:40 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 12:56:41 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 12:56:43 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 12:56:43 PM INFO:Loading Sites.CALENDAR
+2022/12/15 12:56:43 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 12:56:45 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:56:45 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="40f8f9a9-4ec2-4e03-9278-e71dd2e45caa")>
+2022/12/15 12:56:45 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 12:56:45 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 12:56:45 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="40f8f9a9-4ec2-4e03-9278-e71dd2e45caa")>
+2022/12/15 12:56:45 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 12:56:45 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="40f8f9a9-4ec2-4e03-9278-e71dd2e45caa")>
+2022/12/15 12:56:45 PM INFO:Waiting seconds: 1
+2022/12/15 12:56:46 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="40f8f9a9-4ec2-4e03-9278-e71dd2e45caa")>
+2022/12/15 12:56:46 PM INFO:Clicking element...
+2022/12/15 12:56:46 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 12:56:46 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="39355b61-7b85-4e81-984b-51995232b432")>
+2022/12/15 12:56:46 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 12:56:46 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="39355b61-7b85-4e81-984b-51995232b432")>
+2022/12/15 12:56:47 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="39355b61-7b85-4e81-984b-51995232b432")>
+2022/12/15 12:56:47 PM INFO:Waiting seconds: 4
+2022/12/15 12:56:51 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:56:51 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:56:51 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="95bfc992-5447-4e0d-8b02-67b06a60840c")>
+2022/12/15 12:56:51 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 12:56:51 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="95bfc992-5447-4e0d-8b02-67b06a60840c")>
+2022/12/15 12:56:51 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 12:56:51 PM INFO:Clicking element...
+2022/12/15 12:56:51 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 12:56:51 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="be3f4bfe-3384-4dc8-a8d1-7f93c4e31227")>
+2022/12/15 12:56:51 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 12:56:51 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="be3f4bfe-3384-4dc8-a8d1-7f93c4e31227")>
+2022/12/15 12:56:51 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="3368cae017c29d87b59268d156ae17a7", element="be3f4bfe-3384-4dc8-a8d1-7f93c4e31227")>
+2022/12/15 12:56:51 PM INFO:Waiting seconds: 4
+2022/12/15 01:38:59 PM INFO:====== WebDriver manager ======
+2022/12/15 01:39:00 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 01:39:01 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 01:39:03 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 01:39:03 PM INFO:Loading Sites.CALENDAR
+2022/12/15 01:39:03 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 01:39:05 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:39:05 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="54bdb7e1-47c1-4e05-8d65-468e76582cd3")>
+2022/12/15 01:39:05 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 01:39:05 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:39:05 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="54bdb7e1-47c1-4e05-8d65-468e76582cd3")>
+2022/12/15 01:39:05 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 01:39:06 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="54bdb7e1-47c1-4e05-8d65-468e76582cd3")>
+2022/12/15 01:39:06 PM INFO:Waiting seconds: 1
+2022/12/15 01:39:07 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="54bdb7e1-47c1-4e05-8d65-468e76582cd3")>
+2022/12/15 01:39:07 PM INFO:Clicking element...
+2022/12/15 01:39:07 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 01:39:07 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="783fb8f8-05e1-4329-8057-4bf5791c2124")>
+2022/12/15 01:39:07 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 01:39:07 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="783fb8f8-05e1-4329-8057-4bf5791c2124")>
+2022/12/15 01:39:07 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="783fb8f8-05e1-4329-8057-4bf5791c2124")>
+2022/12/15 01:39:07 PM INFO:Waiting seconds: 4
+2022/12/15 01:39:11 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:39:11 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:39:11 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="1c28656b-258d-452e-8fb1-9527b1d87452")>
+2022/12/15 01:39:11 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:39:11 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="1c28656b-258d-452e-8fb1-9527b1d87452")>
+2022/12/15 01:39:11 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 01:39:11 PM INFO:Clicking element...
+2022/12/15 01:39:11 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 01:39:11 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="1ddcd172-cef4-468e-850c-ebe0779a7e54")>
+2022/12/15 01:39:11 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 01:39:11 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="1ddcd172-cef4-468e-850c-ebe0779a7e54")>
+2022/12/15 01:39:11 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="b96da69f0a1157dd46c9eb92e810c7c0", element="1ddcd172-cef4-468e-850c-ebe0779a7e54")>
+2022/12/15 01:39:11 PM INFO:Waiting seconds: 4
+2022/12/15 01:40:32 PM INFO:====== WebDriver manager ======
+2022/12/15 01:40:33 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 01:40:34 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 01:40:36 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 01:40:36 PM INFO:Loading Sites.CALENDAR
+2022/12/15 01:40:36 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 01:40:37 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:40:37 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="9a7a6f78-7bdf-4dec-8788-839a36019c1e")>
+2022/12/15 01:40:37 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 01:40:37 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:40:37 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="9a7a6f78-7bdf-4dec-8788-839a36019c1e")>
+2022/12/15 01:40:37 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 01:40:37 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="9a7a6f78-7bdf-4dec-8788-839a36019c1e")>
+2022/12/15 01:40:38 PM INFO:Waiting seconds: 1
+2022/12/15 01:40:39 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="9a7a6f78-7bdf-4dec-8788-839a36019c1e")>
+2022/12/15 01:40:39 PM INFO:Clicking element...
+2022/12/15 01:40:39 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 01:40:39 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="a94281e5-edd3-4ea1-9a56-6767ae0d7c90")>
+2022/12/15 01:40:39 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 01:40:39 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="a94281e5-edd3-4ea1-9a56-6767ae0d7c90")>
+2022/12/15 01:40:39 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="a94281e5-edd3-4ea1-9a56-6767ae0d7c90")>
+2022/12/15 01:40:39 PM INFO:Waiting seconds: 4
+2022/12/15 01:40:43 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:40:43 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:40:43 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="1cdb14a5-ef1d-4e8b-b8b2-9cf1f3501784")>
+2022/12/15 01:40:43 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:40:43 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="1cdb14a5-ef1d-4e8b-b8b2-9cf1f3501784")>
+2022/12/15 01:40:43 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 01:40:43 PM INFO:Clicking element...
+2022/12/15 01:40:43 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 01:40:43 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="0cc2edf4-795a-40e7-afa4-b3abf96c129b")>
+2022/12/15 01:40:43 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 01:40:43 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="0cc2edf4-795a-40e7-afa4-b3abf96c129b")>
+2022/12/15 01:40:43 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="da5b62eca903842e92629d4baef67cf7", element="0cc2edf4-795a-40e7-afa4-b3abf96c129b")>
+2022/12/15 01:40:43 PM INFO:Waiting seconds: 4
+2022/12/15 01:43:14 PM INFO:====== WebDriver manager ======
+2022/12/15 01:43:15 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 01:43:17 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 01:43:18 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 01:43:18 PM INFO:Loading Sites.CALENDAR
+2022/12/15 01:43:18 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 01:43:20 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:43:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="0fb202ec-b53b-4a2a-b4a0-0c3648a539b3")>
+2022/12/15 01:43:20 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 01:43:20 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:43:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="0fb202ec-b53b-4a2a-b4a0-0c3648a539b3")>
+2022/12/15 01:43:20 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 01:43:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="0fb202ec-b53b-4a2a-b4a0-0c3648a539b3")>
+2022/12/15 01:43:21 PM INFO:Waiting seconds: 1
+2022/12/15 01:43:22 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="0fb202ec-b53b-4a2a-b4a0-0c3648a539b3")>
+2022/12/15 01:43:22 PM INFO:Clicking element...
+2022/12/15 01:43:22 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 01:43:22 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="9fa11a80-3336-4640-979e-b1f50ace7a8a")>
+2022/12/15 01:43:22 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 01:43:22 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="9fa11a80-3336-4640-979e-b1f50ace7a8a")>
+2022/12/15 01:43:22 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="9fa11a80-3336-4640-979e-b1f50ace7a8a")>
+2022/12/15 01:43:22 PM INFO:Waiting seconds: 4
+2022/12/15 01:43:26 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:43:26 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:43:26 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="12283b36-50b3-4acd-90d0-90e0d7641488")>
+2022/12/15 01:43:26 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:43:26 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="12283b36-50b3-4acd-90d0-90e0d7641488")>
+2022/12/15 01:43:26 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 01:43:26 PM INFO:Clicking element...
+2022/12/15 01:43:26 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 01:43:26 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="f84dc284-9425-46a5-b8de-bb95358b016b")>
+2022/12/15 01:43:26 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 01:43:26 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="f84dc284-9425-46a5-b8de-bb95358b016b")>
+2022/12/15 01:43:26 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="8297a49b0942fe6fa522ec177020ef6f", element="f84dc284-9425-46a5-b8de-bb95358b016b")>
+2022/12/15 01:43:26 PM INFO:Waiting seconds: 4
+2022/12/15 01:48:13 PM INFO:====== WebDriver manager ======
+2022/12/15 01:48:14 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 01:48:15 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 01:48:17 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 01:48:17 PM INFO:Loading Sites.CALENDAR
+2022/12/15 01:48:17 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 01:48:19 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:48:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="798a64cc-be43-4b52-b2ab-c02d9b66214e")>
+2022/12/15 01:48:20 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 01:48:20 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 01:48:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="798a64cc-be43-4b52-b2ab-c02d9b66214e")>
+2022/12/15 01:48:20 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 01:48:20 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="798a64cc-be43-4b52-b2ab-c02d9b66214e")>
+2022/12/15 01:48:20 PM INFO:Waiting seconds: 1
+2022/12/15 01:48:21 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="798a64cc-be43-4b52-b2ab-c02d9b66214e")>
+2022/12/15 01:48:21 PM INFO:Clicking element...
+2022/12/15 01:48:21 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 01:48:21 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="4325011c-132c-48bc-a971-5652e905b6a2")>
+2022/12/15 01:48:21 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 01:48:21 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="4325011c-132c-48bc-a971-5652e905b6a2")>
+2022/12/15 01:48:21 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="4325011c-132c-48bc-a971-5652e905b6a2")>
+2022/12/15 01:48:21 PM INFO:Waiting seconds: 4
+2022/12/15 01:48:25 PM INFO:Sending keys: None - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:48:25 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:48:25 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="6b27ce3a-c7af-4954-8fcd-5929781bb347")>
+2022/12/15 01:48:25 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 01:48:25 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="6b27ce3a-c7af-4954-8fcd-5929781bb347")>
+2022/12/15 01:48:25 PM ERROR:Element NOT FOUND: //input[@name='password' or @name='Passwd']
+2022/12/15 01:48:25 PM INFO:Clicking element...
+2022/12/15 01:48:25 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 01:48:25 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="26978b24-91f2-4b0c-b1fb-cc065a9af9cd")>
+2022/12/15 01:48:25 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 01:48:25 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="26978b24-91f2-4b0c-b1fb-cc065a9af9cd")>
+2022/12/15 01:48:25 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="1f6fc429f7b4f97bd6db6adfaa6d58ae", element="26978b24-91f2-4b0c-b1fb-cc065a9af9cd")>
+2022/12/15 01:48:25 PM INFO:Waiting seconds: 4
+2022/12/15 02:13:52 PM INFO:====== WebDriver manager ======
+2022/12/15 02:13:53 PM INFO:Get LATEST chromedriver version for google-chrome 108.0.5359
+2022/12/15 02:13:54 PM INFO:Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2022/12/15 02:13:55 PM INFO:Browser should be opened: Browser.CHROME
+2022/12/15 02:13:55 PM INFO:Loading Sites.CALENDAR
+2022/12/15 02:13:55 PM INFO:Going to site: https://calendar.google.com/calendar/
+2022/12/15 02:13:57 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 02:13:57 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="fd1192e1-227a-49b9-869a-c5bbb65bcd81")>
+2022/12/15 02:13:57 PM INFO:Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...
+2022/12/15 02:13:57 PM INFO:Waiting element to be Clickable, element//*[@id='identifierId'] ...
+2022/12/15 02:13:57 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="fd1192e1-227a-49b9-869a-c5bbb65bcd81")>
+2022/12/15 02:13:57 PM INFO:Looking for element: //*[@id='identifierId'] ...
+2022/12/15 02:13:57 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="fd1192e1-227a-49b9-869a-c5bbb65bcd81")>
+2022/12/15 02:13:57 PM INFO:Waiting seconds: 1
+2022/12/15 02:13:58 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="fd1192e1-227a-49b9-869a-c5bbb65bcd81")>
+2022/12/15 02:13:58 PM INFO:Clicking element...
+2022/12/15 02:13:58 PM INFO:Waiting element to be Clickable, element//div[@id='identifierNext'] ...
+2022/12/15 02:13:58 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="9caf54e0-d817-479c-b7a2-eb1c31a6e7e6")>
+2022/12/15 02:13:58 PM INFO:Looking for element: //div[@id='identifierNext'] ...
+2022/12/15 02:13:58 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="9caf54e0-d817-479c-b7a2-eb1c31a6e7e6")>
+2022/12/15 02:13:59 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="9caf54e0-d817-479c-b7a2-eb1c31a6e7e6")>
+2022/12/15 02:13:59 PM INFO:Waiting seconds: 4
+2022/12/15 02:14:03 PM INFO:Sending keys: Selenium1! - In the element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 02:14:03 PM INFO:Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...
+2022/12/15 02:14:03 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="055bdd80-91d4-4c14-968b-6b28260c9966")>
+2022/12/15 02:14:03 PM INFO:Looking for element: //input[@name='password' or @name='Passwd'] ...
+2022/12/15 02:14:03 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="055bdd80-91d4-4c14-968b-6b28260c9966")>
+2022/12/15 02:14:03 PM INFO:Waiting seconds: 1
+2022/12/15 02:14:04 PM INFO:Key sent to element: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="055bdd80-91d4-4c14-968b-6b28260c9966")>
+2022/12/15 02:14:04 PM INFO:Clicking element...
+2022/12/15 02:14:04 PM INFO:Waiting element to be Clickable, element//*[@id='passwordNext'] ...
+2022/12/15 02:14:04 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="352169a7-47fa-4ce7-9643-5bf4e9e2bf84")>
+2022/12/15 02:14:04 PM INFO:Looking for element: //*[@id='passwordNext'] ...
+2022/12/15 02:14:04 PM INFO:Element found: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="352169a7-47fa-4ce7-9643-5bf4e9e2bf84")>
+2022/12/15 02:14:04 PM INFO:Element clicked: <selenium.webdriver.remote.webelement.WebElement (session="1ce3002ecf1cbad2d59fb389007a99de", element="352169a7-47fa-4ce7-9643-5bf4e9e2bf84")>
+2022/12/15 02:14:04 PM INFO:Waiting seconds: 4

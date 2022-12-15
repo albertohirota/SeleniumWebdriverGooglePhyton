@@ -2,11 +2,12 @@ import sys
 import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
-from Base.CommonFunction import CommonFunction
+from Base.CommonFunction import CommonFunction as C
 from enum import Enum
 from selenium.webdriver.common.by import By
 from Base.Driver import Driver
 from Base.Driver import Browser
+from decouple import config
 
 class Sites(Enum):
     GMAIL = 1
@@ -16,15 +17,15 @@ class Sites(Enum):
     SHEETS = 5
     SLIDES = 6
 
-class GoogleLogin(CommonFunction):
+class GoogleLogin(C):
     GmailUrl = "https://gmail.com"
     CalendarUrl = "https://calendar.google.com/calendar/"
     DocUrl = "https://docs.google.com/document/u/0/?tgif=d"
     SheetUrl = "https://docs.google.com/spreadsheets/u/0/?tgif=d"
     SlideUrl = "https://docs.google.com/presentation/u/0/?tgif=d"
     DriveUrl = "https://drive.google.com/drive/my-drive?ths=true"
-    u = "eiti.hirota@gmail.com"
-    p = "Selenium1"
+    u = config("USER")
+    p = config("KEY")
     un = "//*[@id='identifierId']"
     nextButton = "//div[@id='identifierNext']"
     pa = "//input[@name='password' or @name='Passwd']"
@@ -34,22 +35,25 @@ class GoogleLogin(CommonFunction):
         pass
     
     def __UserLog():
-        CommonFunction.SendKey(By.XPATH, GoogleLogin.un, GoogleLogin.u)
-        CommonFunction.Click(By.XPATH, GoogleLogin.nextButton)
-        CommonFunction.Delay(4)
+        C.WaitElementBePresent(By.XPATH, GoogleLogin.un)
+        C.SendKey(By.XPATH, GoogleLogin.un, GoogleLogin.u)
+        C.Click(By.XPATH, GoogleLogin.nextButton)
+        C.Delay(4)
 
     def __UserPas():
-        CommonFunction.SendKey(By.XPATH, GoogleLogin.pa, GoogleLogin.p)
-        CommonFunction.Click(By.XPATH, GoogleLogin.logonButton)
-        CommonFunction.Delay(4)
+        #p = os.environ.get("PassSelenium")
+        #p = os.getenv("PassSelenium")
+        C.SendKey(By.XPATH, GoogleLogin.pa, GoogleLogin.p)
+        C.Click(By.XPATH, GoogleLogin.logonButton)
+        C.Delay(4)
 
     def LoginToSite(url):
-        CommonFunction.GoToSite(url)
+        C.GoToSite(url)
         GoogleLogin.__UserLog()
         GoogleLogin.__UserPas()
 
     def GoAndLogGoogleSite(site):
-        CommonFunction.LogInfo("Loading "+ str(site))
+        C.LogInfo("Loading "+ str(site))
         match site:
             case Sites.GMAIL:
                 GoogleLogin.LoginToSite(GoogleLogin.GmailUrl)
@@ -64,7 +68,7 @@ class GoogleLogin(CommonFunction):
             case Sites.SLIDES:
                 GoogleLogin.LoginToSite(GoogleLogin.SlideUrl)
             case __:
-                CommonFunction.LogError("Website not valid: "+ str(site))
+                C.LogError("Website not valid: "+ str(site))
     
     
 

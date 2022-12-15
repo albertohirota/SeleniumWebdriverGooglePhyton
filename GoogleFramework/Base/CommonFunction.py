@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 from Base.Driver import Driver
 import time
 
@@ -22,15 +23,14 @@ class CommonFunction(Driver):
         try:
             element = WebDriverWait(Driver.get_Instance(), time).until(EC.element_to_be_clickable((strategy, by)))
             CommonFunction.LogInfo("Element found: "+ str(element))
-        except:
+        except NoSuchElementException:
             CommonFunction.LogError("Element NOT FOUND: "+ str(by))
-            return null
-        return element
 
     def SendKey(strategy, by, text):
-        CommonFunction.LogInfo("Sending keys: "+ text +" - In the element: "+ str(by) + " ...")
+        CommonFunction.LogInfo("Sending keys: "+ str(text) +" - In the element: "+ str(by) + " ...")
         try:
-            element = CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(strategy, by)
+            element = CommonFunction.FindElement(strategy, by)
             element.send_keys(text)
             CommonFunction.Delay(1)
             CommonFunction.LogInfo("Key sent to element: "+ str(element))
@@ -50,7 +50,8 @@ class CommonFunction(Driver):
     def Click(strategy, by):
         CommonFunction.LogInfo("Clicking element...")
         try:
-            element = CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(strategy, by)
+            element = CommonFunction.FindElement(strategy, by)
             element.click()
             CommonFunction.LogInfo("Element clicked: " + str(element))
         except:
@@ -59,6 +60,10 @@ class CommonFunction(Driver):
     def GoToSite(url):
         CommonFunction.LogInfo("Going to site: "+ url)
         Driver.get_Instance().get(url)
+
+    def DoesElementExist(strategy, by):
+        exist = None
+
 
 
 #Driver().Initialize(Browser.CHROME)
