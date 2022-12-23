@@ -9,6 +9,7 @@ from Base.Driver import Driver
 from Base.Driver import Browser
 from decouple import config
 
+
 class Sites(Enum):
     GMAIL = 1
     CALENDAR = 2
@@ -41,14 +42,14 @@ class GoogleLogin(C):
         C.Delay(4)
 
     def __UserPas():
-        #p = os.environ.get("PassSelenium")
-        #p = os.getenv("PassSelenium")
-        C.SendKey(By.XPATH, GoogleLogin.pa, GoogleLogin.p)
+        C.WaitElementBePresent(By.XPATH, GoogleLogin.pa)
+        element = C.FindElement(By.XPATH, GoogleLogin.pa)
+        element.send_keys(GoogleLogin.p)
         C.Click(By.XPATH, GoogleLogin.logonButton)
         C.Delay(4)
 
     def LoginToSite(url):
-        C.GoToSite(url)
+        C.GoToPage(url)
         GoogleLogin.__UserLog()
         GoogleLogin.__UserPas()
 
@@ -71,7 +72,9 @@ class GoogleLogin(C):
                 C.LogError("Website not valid: "+ str(site))
     
     
+    
 
 
-Driver().Initialize(Browser.CHROME)
-GoogleLogin.GoAndLogGoogleSite(Sites.CALENDAR)
+
+#Driver().Initialize(Browser.CHROME)
+#GoogleLogin.GoAndLogGoogleSite(Sites.CALENDAR)
