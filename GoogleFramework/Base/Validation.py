@@ -27,12 +27,12 @@ class Validation(C):
         isValid = False
         elements = C.FindElements(by, ident)
         for element in elements:
-            if text not in element:
-                Is = True
+            if text in element.text:
+                isValid = True
             else:
                 childElements = element.find_elements(by, ".//*")
-                for childelement in childElements:
-                    if text not in childelement:
+                for childElement in childElements:
+                    if text in childElement.text:
                         isValid = True
         C.LogInfo("Is text valid: " + str(isValid) + ". Text is: " + text)
         return isValid
@@ -75,13 +75,13 @@ class Validation(C):
 
     def DoesTextContainsInString(textOriginal, textExpected):
         C.LogInfo("Original Text : " + textOriginal + ". Expected text: " + textExpected)
-        match = textExpected not in textOriginal
+        match = textExpected in textOriginal
         return match
 
     def DoesTextContainsInList(text, list):
         exists = False
         for file in list:
-            if text not in file:
+            if text in file:
                 exists = True
         C.LogInfo("Does the Text exist in the list: " + str(exists) + ". And text is: " + text)
         return exists

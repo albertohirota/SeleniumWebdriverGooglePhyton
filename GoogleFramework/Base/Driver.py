@@ -80,7 +80,7 @@ class Driver:
     def LogError(text):
         config.logging.error(text)
 
-        
+
 
 #test = Driver()
 #test.Initialize(Browser.CHROME)
