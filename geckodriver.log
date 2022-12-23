@@ -1,20 +1,67 @@
-1670780490764	geckodriver	INFO	Listening on 127.0.0.1:59249
-1670780493831	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59250" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileHjYOga"
-1670780495627	Marionette	INFO	Marionette enabled
-1670780495638	Marionette	INFO	Listening on port 59268
-Read port: 59268
-WebDriver BiDi listening on ws://127.0.0.1:59250
-1670780495942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileHjYOga\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:59250/devtools/browser/a2516f03-fc60-4b39-ae58-5582b20ff2bf
-JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
-1670780552530	geckodriver	INFO	Listening on 127.0.0.1:59480
-1670780555585	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59481" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileZVNZ7c"
-1670780556214	Marionette	INFO	Marionette enabled
-1670780556222	Marionette	INFO	Listening on port 59495
-Read port: 59495
-WebDriver BiDi listening on ws://127.0.0.1:59481
-1670780556497	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileZVNZ7c\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:59481/devtools/browser/1c885bd5-88a5-48ac-afec-3f7a55262416
-JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1671814664836	geckodriver	INFO	Listening on 127.0.0.1:54267
+1671814667909	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54268" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofilek0V2Kk"
+1671814669629	Marionette	INFO	Marionette enabled
+1671814669640	Marionette	INFO	Listening on port 54278
+Read port: 54278
+WebDriver BiDi listening on ws://127.0.0.1:54268
+1671814669946	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofilek0V2Kk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54268/devtools/browser/3387746a-edf6-4b2c-aa50-6f7861736e36
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S1762152300%3A1671814939769405&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh7kYT52ilTnNqeii0WIn8yJDuibokzjxMwjT0vbas8H040dqKq29w6VOEz0ug1GYyUaSywHlQ line 534 > injectedScript line 2 > eval line 5287 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S1762152300%3A1671814939769405&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh7kYT52ilTnNqeii0WIn8yJDuibokzjxMwjT0vbas8H040dqKq29w6VOEz0ug1GYyUaSywHlQ line 534 > injectedScript line 2 > eval line 1246 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://calendar.google.com."
+JavaScript warning: https://www.google.com/js/bg/HXK1UBO5dJ_nYlUyX89SMP4zFPzfcfFy3F4kBoREzco.js line 2 > eval line 7041 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1671818824081	Marionette	INFO	Stopped listening on port 54278
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "54905" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofilerKL8hz"
+1671815043254	Marionette	INFO	Marionette enabled
+1671815043262	Marionette	INFO	Listening on port 54914
+Read port: 54914
+WebDriver BiDi listening on ws://127.0.0.1:54905
+1671815043547	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofilerKL8hz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54905/devtools/browser/6656721b-8cd7-45f7-9bff-42f786411744
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S319285804%3A1671815273154549&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh60WciIoOPhp9pEomb3AqWnaG-KJ4LcfR48VzUlF_nGTca_Fw-DDe7wOupGhyJXgse-4led line 534 > injectedScript line 2 > eval line 2266 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1671818829529	Marionette	INFO	Stopped listening on port 54914
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+lber\\AppData\\Local\\Temp\\rust_mozprofileGarCi6"
+1671815635699	Marionette	INFO	Marionette enabled
+1671815635707	Marionette	INFO	Listening on port 55550
+Read port: 55550
+WebDriver BiDi listening on ws://127.0.0.1:55540
+1671815635975	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofileGarCi6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55540/devtools/browser/3d6048db-4dab-4b0d-9b6e-a80588c780e6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S-200745055%3A1671815998240972&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh6oLkJwVjTDFAA1UDT219-6i5mazhtGdvqxO1bFO04WmiDY0f_eE25PDbTiTDV7pQWnzM2g line 534 > injectedScript line 2 > eval line 2303 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1671818828001	Marionette	INFO	Stopped listening on port 55550
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+lber\\AppData\\Local\\Temp\\rust_mozprofilemQI5qS"
+1671816975227	Marionette	INFO	Marionette enabled
+1671816975257	Marionette	INFO	Listening on port 57618
+Read port: 57618
+WebDriver BiDi listening on ws://127.0.0.1:57600
+1671816976025	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\alber\\AppData\\Local\\Temp\\rust_mozprofilemQI5qS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57600/devtools/browser/1173deff-0e05-40d9-b89b-4c331a99eadb
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S-469283643%3A1671817333502289&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh56_k41bsDSQe0ra4Tpyg5J0_M_GAG9n9lhgbsYKhu91DBVwHf_erEIw6EWhTuCRkta53qjVw line 534 > injectedScript line 2 > eval line 514 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S-469283643%3A1671817333502289&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fr&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh56_k41bsDSQe0ra4Tpyg5J0_M_GAG9n9lhgbsYKhu91DBVwHf_erEIw6EWhTuCRkta53qjVw line 534 > injectedScript line 2 > eval line 3127 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://calendar.google.com."
+JavaScript warning: https://www.google.com/js/bg/HXK1UBO5dJ_nYlUyX89SMP4zFPzfcfFy3F4kBoREzco.js line 2 > eval line 1315 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+1671818822569	Marionette	INFO	Stopped listening on port 57618
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

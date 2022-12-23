@@ -7,7 +7,7 @@ Test Teardown     CalendarCleanUp
 
 
 *** Variables ***
-${browser}    chrome
+${browser}    edge
 
 
 

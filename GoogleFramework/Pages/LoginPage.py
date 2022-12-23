@@ -72,7 +72,9 @@ class GoogleLogin(C):
                 C.LogError("Website not valid: "+ str(site))
     
     
+    
 
 
-Driver().Initialize(Browser.CHROME)
-GoogleLogin.GoAndLogGoogleSite(Sites.CALENDAR)
+
+#Driver().Initialize(Browser.CHROME)
+#GoogleLogin.GoAndLogGoogleSite(Sites.CALENDAR)

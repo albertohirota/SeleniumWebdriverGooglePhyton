@@ -3,9 +3,7 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
@@ -15,6 +13,7 @@ from Screenshot import Screenshot
 from datetime import datetime
 from Base.Driver import Driver
 import time
+import config
 
 class CommonFunction(Driver):
 
@@ -22,100 +21,100 @@ class CommonFunction(Driver):
         CommonFunction.LogInfo("Waiting seconds: " + str(seconds))
         time.sleep(seconds)   
     
-    def WaitElementBePresent(strategy, by, time = 10):
-        CommonFunction.LogInfo("Waiting element to be Clickable, element"+ str(by) + " ...")
+    def WaitElementBePresent(by, ident, time = 10):
+        CommonFunction.LogInfo("Waiting element to be Clickable, element"+ str(ident) + " ...")
         try:
-            element = WebDriverWait(Driver.get_Instance(), time).until(EC.element_to_be_clickable((strategy, by)))
+            element = WebDriverWait(Driver.get_Instance(), time).until(EC.element_to_be_clickable((by, ident)))
             CommonFunction.LogInfo("Element found: "+ str(element))
         except NoSuchElementException:
-            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
+            CommonFunction.LogWarn("NoSuchElement, Element NOT FOUND: "+ str(ident))
+        except TimeoutException:
+            CommonFunction.LogWarn("TimeOut, Element NOT FOUND: "+ str(ident))
+        except Exception:
+            CommonFunction.LogWarn("Exception, Element NOT FOUND: "+ str(ident))
 
-    def WaitElementNotBePresent(strategy, by, time = 10):
+    def WaitElementNotBePresent(by, ident, time = 10):
         CommonFunction.LogInfo("Waiting element not be present...")
         try:
-            WebDriverWait(Driver.get_Instance(), time).until_not(EC.element_to_be_clickable((strategy, by)))
+            WebDriverWait(Driver.get_Instance(), time).until_not(EC.element_to_be_clickable((by, ident)))
             CommonFunction.LogInfo("Element no longer available")
         except TimeoutException:
-            CommonFunction.LogError("Element still available: "+ str(by))       
+            CommonFunction.LogError("Element still available: "+ str(ident))       
 
-    def SendKey(strategy, by, text):
-        CommonFunction.LogInfo("Sending keys: "+ str(text) +" - In the element: "+ str(by) + " ...")
+    def SendKey(by, ident, text):
+        CommonFunction.LogInfo("Sending keys: "+ str(text) +" - In the element: "+ str(ident) + " ...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(by, ident)
             if CommonFunction.DoesElementExist:
-                element = CommonFunction.FindElement(strategy, by)
+                element = CommonFunction.FindElement(by, ident)
                 element.send_keys(text)
                 CommonFunction.Delay(1)
                 CommonFunction.LogInfo("Key sent to element: "+ str(element))
             else:
                 CommonFunction.LogError("Element does NOT exist")
         except:
-            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(by))
+            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(ident))
 
-    def FindElement(strategy, by):
+    def FindElement(by, ident):
         try:
-            CommonFunction.LogInfo("Looking for element: " + str(by) + " ...")
-            element = Driver.get_Instance().find_element(strategy, by)
+            CommonFunction.LogInfo("Looking for element: " + str(ident) + " ...")
+            element = Driver.get_Instance().find_element(by, ident)
             CommonFunction.LogInfo("Element found: " + str(element))
         except:
-            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
+            CommonFunction.LogError("Element NOT FOUND: "+ str(ident))
         
         return element
     
-    def FindElements(strategy, by):
+    def FindElements(by, ident):
         CommonFunction.LogInfo("Finding elements...")
         try:
-            elements = Driver.get_Instance().find_elements(strategy, by)
+            elements = Driver.get_Instance().find_elements(by, ident)
             CommonFunction.LogInfo("Elements found: " + len(elements))
         except:
-            CommonFunction.LogError("Elements ERROR: "+ str(by)) 
+            CommonFunction.LogWarn("Elements ERROR: "+ str(ident)) 
         return elements   
 
-    def Click(strategy, by):
+    def Click(by, ident):
         CommonFunction.LogInfo("Clicking element...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
-            #element = CommonFunction.FindElement(strategy, by)
-            #element.click()
+            CommonFunction.WaitElementBePresent(by, ident)
             action = ActionChains(Driver.get_Instance())
-            element = CommonFunction.FindElement(strategy, by)
+            element = CommonFunction.FindElement(by, ident)
             action.click(on_element=element).perform()
             CommonFunction.LogInfo("Element clicked: " + str(element))
         except:
-            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
-    def RightClick(strategy, by):
+            CommonFunction.LogError("Element NOT FOUND: "+ str(ident))
+    def RightClick(by, ident):
         CommonFunction.LogInfo("Right clicking element...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(by, ident)
             action = ActionChains(Driver.get_Instance())
-            element = CommonFunction.FindElement(strategy, by)
+            element = CommonFunction.FindElement(by, ident)
             action.context_click(on_element=element).perform()
             CommonFunction.LogInfo("Element right-clicked: " + str(element))
-            # If start to fail, ActionBuilder or ActionChains may be required to install in this method
         except:
-            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
+            CommonFunction.LogError("Element NOT FOUND: "+ str(ident))
     
-    def Click_Parent(strategy, by):
+    def Click_Parent(by, ident):
         CommonFunction.LogInfo("Clicking Parent element...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(by, ident)
             action = ActionChains(Driver.get_Instance())
-            element = CommonFunction.FindElement(strategy, by)
-            parent = element.find_element(strategy, "./..")
+            element = CommonFunction.FindElement(by, ident)
+            parent = element.find_element(by, "./..")
             action.click(on_element=parent).perform()
             CommonFunction.LogInfo("Element right-clicked: " + str(element))
-            # If start to fail, ActionBuilder or ActionChains may be required to install in this method
         except:
-            CommonFunction.LogError("Element NOT FOUND: "+ str(by))
+            CommonFunction.LogError("Element NOT FOUND: "+ str(ident))
 
     def GoToPage(url):
         CommonFunction.LogInfo("Going to site: "+ url)
-        Driver.get_Instance().get(url)
+        config.Instance.get(url)
 
-    def DoesElementExist(strategy, by):
+    def DoesElementExist(by, ident, time = 10):
         CommonFunction.LogInfo("Checking if the element exists...")
-        CommonFunction.WaitElementBePresent(strategy, by)
-        elements = CommonFunction.FindElements(strategy, by)
+        CommonFunction.WaitElementBePresent(by, ident, time)
+        elements = CommonFunction.FindElements(by, ident)
         doesExist = (len(elements)>0)
         return doesExist
 
@@ -127,13 +126,13 @@ class CommonFunction(Driver):
         Driver.get_Instance().save_screenshot(path)
         CommonFunction.LogInfo("ScreenShot taken: " + path)
 
-    def SendKeyActionBuilder(strategy, by, text):
+    def SendKeyActionBuilder(by, ident, text):
         CommonFunction.LogInfo("Sending Key using Action builder...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(by, ident)
             if CommonFunction.DoesElementExist:
                 action = ActionChains(Driver.get_Instance())
-                element = CommonFunction.FindElement(strategy, by)
+                element = CommonFunction.FindElement(by, ident)
                 action.click(on_element=element)
                 action.send_keys(text).perform()
                 CommonFunction.Delay(1)
@@ -141,13 +140,13 @@ class CommonFunction(Driver):
             else:
                 CommonFunction.LogError("Element does NOT exist")
         except:
-            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(by))
+            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(ident))
     
-    def SendKeyAndEnter(strategy, by, text):
+    def SendKeyAndEnter(by, ident, text):
         CommonFunction.LogInfo("Sending Key and pressing Enter...")
-        CommonFunction.WaitElementPresent(by)
+        CommonFunction.WaitElementBePresent(by, ident)
         if CommonFunction.DoesElementExist:
-            element = CommonFunction.FindElement(strategy, by)
+            element = CommonFunction.FindElement(by, ident)
             element.send_keys(text)
             element.send_keys(Keys.ENTER)
             CommonFunction.Delay(1)
@@ -155,12 +154,12 @@ class CommonFunction(Driver):
         else:
             CommonFunction.LogError("Element does NOT exist")
 
-    def ClearTextElement(strategy, by):
+    def ClearTextElement(by, ident):
         CommonFunction.LogInfo("Clear element, send text and press Enter...")
         try:
-            CommonFunction.WaitElementBePresent(strategy, by)
+            CommonFunction.WaitElementBePresent(by, ident)
             if CommonFunction.DoesElementExist:
-                element = CommonFunction.FindElement(strategy, by)
+                element = CommonFunction.FindElement(by, ident)
                 element.send_keys(Keys.CONTROL+"a")
                 element.send_keys(Keys.DELETE)
                 CommonFunction.Delay(2)
@@ -168,17 +167,17 @@ class CommonFunction(Driver):
             else:
                 CommonFunction.LogError("Element does NOT exist")
         except:
-            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(by))
+            CommonFunction.LogError("Sendkey ERROR, verify: "+ str(ident))
 
-    def SwitchFrame(strategy, by):
+    def SwitchFrame(by, ident):
         CommonFunction.LogInfo("Switching frame...")
         Driver.get_Instance().switch_to.parent_frame()
         Driver.get_Instance().switch_to.default_content()
-        Driver.get_Instance().switch_to.frame(strategy, by)
+        Driver.get_Instance().switch_to.frame(by, ident)
 
-    def GetTextFromElement(strategy, by):
-        CommonFunction.WaitElementBePresent(strategy, by)
-        text = Driver.get_Instance().find_element(strategy, by).text
+    def GetTextFromElement(by, ident):
+        CommonFunction.WaitElementBePresent(by, ident)
+        text = Driver.get_Instance().find_element(by, ident).text
         CommonFunction.LogInfo("Getting text from element: " + text+" ...")
         CommonFunction.LogInfo("Text found: " + text)
         return text
@@ -198,8 +197,20 @@ class CommonFunction(Driver):
         Driver.get_Instance().switch_to.window(tab)
         CommonFunction.LogInfo("Going to tab: " + tab.ToString())
 
+    def IsElementVisible(by, ident):
+        CommonFunction.LogInfo("Checking if elenent is visible...")
+        isDisplayed = None
+        try:
+            element = CommonFunction.FindElement(by, ident)
+            isDisplayed = True if element.is_displayed else False
+            CommonFunction.LogInfo("Elements isDisplaued: " + str(isDisplayed))
+        except:
+            CommonFunction.LogError("Elements ERROR: "+ str(ident))         
+        return isDisplayed
 
-#Driver().Initialize(Browser.CHROME)
+
+#browserDriver = Driver.get_Browser("chrome")
+#Driver.Instance = Driver().Initialize(browserDriver)
 #Driver.get_Instance().get("https://yahoo.com")
 
 
