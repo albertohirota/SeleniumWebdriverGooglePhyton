@@ -19,9 +19,6 @@ class Browser(Enum):
 
 class Driver:
 
-    #def __init__(self):
-    #    pass
-
     @staticmethod
     def get_Instance():
         return config.Instance
@@ -40,6 +37,7 @@ class Driver:
                 return Browser.FIREFOX
             case __:
                 Driver.LogError("Browser could not be identified")
+                return Browser.CHROME
 
     def Initialize(self, browser):
         global Instance

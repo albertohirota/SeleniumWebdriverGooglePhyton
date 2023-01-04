@@ -67,9 +67,9 @@ class Validation(C):
         C.LogInfo("Does the Guest exist: " + str(exists))
         return exists
 
-    def DoesFileExistDocsSheetsSlides(file):
+    def DoesFileExistDocsSheetsSlides(file, time):
         path = "//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'" + file + "')]"
-        exists = C.DoesElementExist(By.XPATH, path)
+        exists = C.DoesElementExist(By.XPATH, path, time)
         C.LogInfo("Does the File in Docs/Sheets/Slides exist: " + str(exists))
         return exists
 

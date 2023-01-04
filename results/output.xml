@@ -1,512 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221223 15:29:44.694" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230104 16:46:29.537" rpa="false" schemaversion="3">
 <suite id="s1" name="SeleniumWebdriverPhyton" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton">
-<suite id="s1-s1" name="GoogleTestGmail" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestGmail">
-<suite id="s1-s1-s1" name="ChromeGmail" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestGmail\ChromeGmail.robot">
-<test id="s1-s1-s1-t1" name="TC005_ValidateReplyAllButtonIsDisplayed" line="31">
-<kw name="SetupGmail" library="Gmail" type="SETUP">
+<suite id="s1-s1" name="GoogleTestSlides" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestSlides">
+<suite id="s1-s1-s1" name="ChromeSlides" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestSlides\ChromeSlides.robot">
+<test id="s1-s1-s1-t1" name="TC503_ValidateTextInThePresentation" line="23">
+<kw name="SetupSlides" library="Slides" type="SETUP">
 <arg>${browser}</arg>
-<msg timestamp="20221223 15:30:10.225" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20221223 15:30:13.072" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
-<msg timestamp="20221223 15:30:15.630" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
-<msg timestamp="20221223 15:30:19.481" level="INFO">Browser should be opened: Browser.CHROME</msg>
-<msg timestamp="20221223 15:30:19.482" level="INFO">Loading Sites.GMAIL</msg>
-<msg timestamp="20221223 15:30:19.484" level="INFO">Going to site: https://gmail.com</msg>
-<msg timestamp="20221223 15:30:21.658" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:30:21.723" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="64c384d7-871c-45b5-99f9-b4f5702ee1bb")&gt;</msg>
-<msg timestamp="20221223 15:30:21.723" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:30:21.724" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:30:21.785" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="64c384d7-871c-45b5-99f9-b4f5702ee1bb")&gt;</msg>
-<msg timestamp="20221223 15:30:21.786" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:30:21.796" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="64c384d7-871c-45b5-99f9-b4f5702ee1bb")&gt;</msg>
-<msg timestamp="20221223 15:30:21.965" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:22.967" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="64c384d7-871c-45b5-99f9-b4f5702ee1bb")&gt;</msg>
-<msg timestamp="20221223 15:30:22.968" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:22.969" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:30:23.009" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="62d39a07-8fa8-403d-a7b1-a8094285474d")&gt;</msg>
-<msg timestamp="20221223 15:30:23.010" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:30:23.021" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="62d39a07-8fa8-403d-a7b1-a8094285474d")&gt;</msg>
-<msg timestamp="20221223 15:30:23.461" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="62d39a07-8fa8-403d-a7b1-a8094285474d")&gt;</msg>
-<msg timestamp="20221223 15:30:23.461" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:30:27.462" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:30:27.513" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="15cf5120-4223-424f-9cfb-561d71df2964")&gt;</msg>
-<msg timestamp="20221223 15:30:27.513" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:30:27.524" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="15cf5120-4223-424f-9cfb-561d71df2964")&gt;</msg>
-<msg timestamp="20221223 15:30:27.603" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:27.603" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:30:27.642" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a4628c88-1d3c-439f-94f7-fd793badfa40")&gt;</msg>
-<msg timestamp="20221223 15:30:27.642" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:30:27.652" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a4628c88-1d3c-439f-94f7-fd793badfa40")&gt;</msg>
-<msg timestamp="20221223 15:30:27.965" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a4628c88-1d3c-439f-94f7-fd793badfa40")&gt;</msg>
-<msg timestamp="20221223 15:30:27.966" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:30:31.970" level="INFO">Waiting seconds: 5</msg>
-<status status="PASS" starttime="20221223 15:30:10.224" endtime="20221223 15:30:36.972"/>
+<msg timestamp="20230104 16:46:30.449" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230104 16:46:32.910" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
+<msg timestamp="20230104 16:46:35.410" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
+<msg timestamp="20230104 16:46:37.149" level="INFO">Browser should be opened: Browser.CHROME</msg>
+<msg timestamp="20230104 16:46:37.152" level="INFO">Loading Sites.SLIDES</msg>
+<msg timestamp="20230104 16:46:37.154" level="INFO">Going to site: https://docs.google.com/presentation/u/0/?tgif=d</msg>
+<msg timestamp="20230104 16:46:38.667" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
+<msg timestamp="20230104 16:46:38.785" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
+<msg timestamp="20230104 16:46:38.786" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
+<msg timestamp="20230104 16:46:38.786" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
+<msg timestamp="20230104 16:46:38.852" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
+<msg timestamp="20230104 16:46:38.853" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
+<msg timestamp="20230104 16:46:38.873" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
+<msg timestamp="20230104 16:46:39.064" level="INFO">Waiting seconds: 1</msg>
+<msg timestamp="20230104 16:46:40.066" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
+<msg timestamp="20230104 16:46:40.067" level="INFO">Clicking element...</msg>
+<msg timestamp="20230104 16:46:40.068" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
+<msg timestamp="20230104 16:46:40.169" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
+<msg timestamp="20230104 16:46:40.169" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
+<msg timestamp="20230104 16:46:40.179" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
+<msg timestamp="20230104 16:46:40.610" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
+<msg timestamp="20230104 16:46:40.612" level="INFO">Waiting seconds: 4</msg>
+<msg timestamp="20230104 16:46:44.614" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
+<msg timestamp="20230104 16:46:44.650" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="3f56790b-158e-42ea-80aa-719167f62be8")&gt;</msg>
+<msg timestamp="20230104 16:46:44.650" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
+<msg timestamp="20230104 16:46:44.659" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="3f56790b-158e-42ea-80aa-719167f62be8")&gt;</msg>
+<msg timestamp="20230104 16:46:44.734" level="INFO">Clicking element...</msg>
+<msg timestamp="20230104 16:46:44.735" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
+<msg timestamp="20230104 16:46:44.771" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
+<msg timestamp="20230104 16:46:44.772" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
+<msg timestamp="20230104 16:46:44.781" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
+<msg timestamp="20230104 16:46:45.106" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
+<msg timestamp="20230104 16:46:45.107" level="INFO">Waiting seconds: 4</msg>
+<msg timestamp="20230104 16:46:49.109" level="INFO">Waiting seconds: 5</msg>
+<status status="PASS" starttime="20230104 16:46:30.448" endtime="20230104 16:46:54.110"/>
 </kw>
-<kw name="TC005" library="Gmail">
+<kw name="TC503" library="Slides">
 <var>${value}</var>
-<msg timestamp="20221223 15:30:36.974" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:36.974" level="INFO">Waiting element to be Clickable, element//div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:30:37.025" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="eb5c5eb5-42ad-4f01-8520-30f1810f782a")&gt;</msg>
-<msg timestamp="20221223 15:30:37.025" level="INFO">Looking for element: //div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:30:37.035" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="eb5c5eb5-42ad-4f01-8520-30f1810f782a")&gt;</msg>
-<msg timestamp="20221223 15:30:37.508" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="eb5c5eb5-42ad-4f01-8520-30f1810f782a")&gt;</msg>
-<msg timestamp="20221223 15:30:37.508" level="INFO">Waiting seconds: 3</msg>
-<msg timestamp="20221223 15:30:40.509" level="INFO">Populating email...</msg>
-<msg timestamp="20221223 15:30:40.510" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:30:42.512" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:30:42.512" level="INFO">Waiting element to be Clickable, element//*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:42.556" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="f4135d7a-c9ff-4105-ae10-28b11896e00c")&gt;</msg>
-<msg timestamp="20221223 15:30:42.557" level="INFO">Looking for element: //*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:42.568" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="f4135d7a-c9ff-4105-ae10-28b11896e00c")&gt;</msg>
-<msg timestamp="20221223 15:30:43.107" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:44.110" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="f4135d7a-c9ff-4105-ae10-28b11896e00c")&gt; And the text: albertohirota@gmail.com</msg>
-<msg timestamp="20221223 15:30:44.110" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:44.110" level="INFO">Waiting element to be Clickable, element//span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:30:44.157" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b34c0952-be76-46ae-86b2-e28731ba84e3")&gt;</msg>
-<msg timestamp="20221223 15:30:44.157" level="INFO">Looking for element: //span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:30:44.168" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b34c0952-be76-46ae-86b2-e28731ba84e3")&gt;</msg>
-<msg timestamp="20221223 15:30:44.495" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b34c0952-be76-46ae-86b2-e28731ba84e3")&gt;</msg>
-<msg timestamp="20221223 15:30:44.495" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:30:44.496" level="INFO">Waiting element to be Clickable, element//*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:44.547" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="05929000-22ee-45b8-a803-417697a07ecf")&gt;</msg>
-<msg timestamp="20221223 15:30:44.547" level="INFO">Looking for element: //*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:44.560" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="05929000-22ee-45b8-a803-417697a07ecf")&gt;</msg>
-<msg timestamp="20221223 15:30:45.077" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:46.079" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="05929000-22ee-45b8-a803-417697a07ecf")&gt; And the text: alberto.hirota@gmail.com</msg>
-<msg timestamp="20221223 15:30:46.079" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:46.080" level="INFO">Waiting element to be Clickable, element//span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:30:46.151" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="42af050a-3c78-4717-a856-e704f6f1cef3")&gt;</msg>
-<msg timestamp="20221223 15:30:46.151" level="INFO">Looking for element: //span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:30:46.163" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="42af050a-3c78-4717-a856-e704f6f1cef3")&gt;</msg>
-<msg timestamp="20221223 15:30:46.487" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="42af050a-3c78-4717-a856-e704f6f1cef3")&gt;</msg>
-<msg timestamp="20221223 15:30:46.489" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:30:46.490" level="INFO">Waiting element to be Clickable, element//*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:46.536" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a1a5c8da-a3e5-4485-9193-ed527cb9e500")&gt;</msg>
-<msg timestamp="20221223 15:30:46.536" level="INFO">Looking for element: //*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:30:46.549" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a1a5c8da-a3e5-4485-9193-ed527cb9e500")&gt;</msg>
-<msg timestamp="20221223 15:30:46.944" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:47.946" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a1a5c8da-a3e5-4485-9193-ed527cb9e500")&gt; And the text: eitihirota@gmail.com</msg>
-<msg timestamp="20221223 15:30:47.946" level="INFO">Sending keys: Test Receiving - In the element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:30:47.946" level="INFO">Waiting element to be Clickable, element//*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:30:47.989" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="0da409bf-ee1c-47f4-a4e6-4c4ddbfb8bbd")&gt;</msg>
-<msg timestamp="20221223 15:30:47.990" level="INFO">Looking for element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:30:48.013" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="0da409bf-ee1c-47f4-a4e6-4c4ddbfb8bbd")&gt;</msg>
-<msg timestamp="20221223 15:30:48.127" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:49.128" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="0da409bf-ee1c-47f4-a4e6-4c4ddbfb8bbd")&gt;</msg>
-<msg timestamp="20221223 15:30:49.129" level="INFO">Sending keys: Test body receiving email - In the element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:30:49.129" level="INFO">Waiting element to be Clickable, element//*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:30:49.188" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="1658e4b3-db23-46f4-8dc3-0346fb001b73")&gt;</msg>
-<msg timestamp="20221223 15:30:49.189" level="INFO">Looking for element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:30:49.203" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="1658e4b3-db23-46f4-8dc3-0346fb001b73")&gt;</msg>
-<msg timestamp="20221223 15:30:49.425" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:30:50.427" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="1658e4b3-db23-46f4-8dc3-0346fb001b73")&gt;</msg>
-<msg timestamp="20221223 15:30:50.428" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:50.428" level="INFO">Waiting element to be Clickable, element//*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:30:50.484" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="83a4118e-5dac-456c-9907-23a8f1b1315c")&gt;</msg>
-<msg timestamp="20221223 15:30:50.484" level="INFO">Looking for element: //*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:30:50.498" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="83a4118e-5dac-456c-9907-23a8f1b1315c")&gt;</msg>
-<msg timestamp="20221223 15:30:50.862" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="83a4118e-5dac-456c-9907-23a8f1b1315c")&gt;</msg>
-<msg timestamp="20221223 15:30:50.864" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:30:52.867" level="INFO">Waiting to receive and Open email</msg>
-<msg timestamp="20221223 15:30:52.867" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:30:54.868" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:30:54.900" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:30:54.935" level="INFO">New email found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="50ce456c-87fa-418c-9191-68e93b51fc73")&gt;</msg>
-<msg timestamp="20221223 15:30:55.251" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:30:57.253" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:30:57.275" level="WARN">Elements ERROR: //span[text()='Reply all' and @role='link']</msg>
-<msg timestamp="20221223 15:30:57.294" level="INFO">Is element visible: True. Element is: Reply all</msg>
-<msg timestamp="20221223 15:30:57.295" level="INFO">${value} = True</msg>
-<status status="PASS" starttime="20221223 15:30:36.973" endtime="20221223 15:30:57.296"/>
+<msg timestamp="20230104 16:46:54.112" level="INFO">Clicking element...</msg>
+<msg timestamp="20230104 16:46:54.112" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
+<msg timestamp="20230104 16:46:54.163" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
+<msg timestamp="20230104 16:46:54.163" level="INFO">Looking for element: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
+<msg timestamp="20230104 16:46:54.177" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
+<msg timestamp="20230104 16:46:58.580" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
+<msg timestamp="20230104 16:46:58.584" level="INFO">Getting Presentation Texts</msg>
+<msg timestamp="20230104 16:46:58.584" level="INFO">Getting Google Sheets spreadshet</msg>
+<msg timestamp="20230104 16:46:58.586" level="INFO">Getting Google Slides Service</msg>
+<msg timestamp="20230104 16:46:58.587" level="INFO">Getting Google Credential</msg>
+<msg timestamp="20230104 16:46:58.596" level="INFO">file_cache is only supported with oauth2client&lt;4.0.0</msg>
+<msg timestamp="20230104 16:46:58.603" level="INFO">Getting Google Document Id for app: slides</msg>
+<msg timestamp="20230104 16:46:58.618" level="INFO">Id found python is: 1D3VDmrqq27J6FLHc9je9ify7PTHXCEj4ifObYhciVZs</msg>
+<msg timestamp="20230104 16:46:58.917" level="INFO">Does the Text exist in the list: True. And text is: Hello World</msg>
+<msg timestamp="20230104 16:46:58.918" level="INFO">Clicking element...</msg>
+<msg timestamp="20230104 16:46:58.918" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230104 16:46:58.971" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
+<msg timestamp="20230104 16:46:58.971" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230104 16:46:58.984" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
+<msg timestamp="20230104 16:47:00.570" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
+<msg timestamp="20230104 16:47:00.570" level="INFO">Value: Test Case 501
+
+Value: SubTitle TC501
+
+Value: Slider number 2
+
+Value: Hello World</msg>
+<msg timestamp="20230104 16:47:00.571" level="INFO">${value} = True</msg>
+<status status="PASS" starttime="20230104 16:46:54.111" endtime="20230104 16:47:00.573"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${Value}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221223 15:30:57.297" endtime="20221223 15:30:57.298"/>
+<status status="PASS" starttime="20230104 16:47:00.575" endtime="20230104 16:47:00.576"/>
 </kw>
-<kw name="GmailCleanUp" library="Gmail" type="TEARDOWN">
-<msg timestamp="20221223 15:30:57.299" level="INFO">--------Gmail Cleanup--------</msg>
-<msg timestamp="20221223 15:30:57.300" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:57.302" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:30:57.342" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b47e75d2-f9cc-4920-851a-824fe274e97a")&gt;</msg>
-<msg timestamp="20221223 15:30:57.344" level="INFO">Looking for element: //div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:30:57.354" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b47e75d2-f9cc-4920-851a-824fe274e97a")&gt;</msg>
-<msg timestamp="20221223 15:30:57.692" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="b47e75d2-f9cc-4920-851a-824fe274e97a")&gt;</msg>
-<msg timestamp="20221223 15:30:57.694" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:30:59.696" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:30:59.696" level="INFO">Waiting element to be Clickable, element//span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:30:59.733" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="7fe0a0b2-fc73-4150-bb67-1f933b89c587")&gt;</msg>
-<msg timestamp="20221223 15:30:59.733" level="INFO">Looking for element: //span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:30:59.743" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="7fe0a0b2-fc73-4150-bb67-1f933b89c587")&gt;</msg>
-<msg timestamp="20221223 15:31:00.049" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="7fe0a0b2-fc73-4150-bb67-1f933b89c587")&gt;</msg>
-<msg timestamp="20221223 15:31:00.049" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:02.051" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:02.052" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:31:02.101" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a87b4c4f-2969-4468-818b-9215e02f7822")&gt;</msg>
-<msg timestamp="20221223 15:31:02.101" level="INFO">Looking for element: //div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:31:02.114" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a87b4c4f-2969-4468-818b-9215e02f7822")&gt;</msg>
-<msg timestamp="20221223 15:31:02.401" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="bca38c262a6a66179769f4d2283c8119", element="a87b4c4f-2969-4468-818b-9215e02f7822")&gt;</msg>
-<msg timestamp="20221223 15:31:02.401" level="INFO">Waiting seconds: 2</msg>
-<status status="PASS" starttime="20221223 15:30:57.299" endtime="20221223 15:31:04.402"/>
+<kw name="SlidesCleanUp" library="Slides" type="TEARDOWN">
+<msg timestamp="20230104 16:47:00.578" level="INFO">--------Slides Cleanup--------</msg>
+<msg timestamp="20230104 16:47:00.579" level="INFO">Clicking element...</msg>
+<msg timestamp="20230104 16:47:00.580" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230104 16:47:11.143" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:11.147" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230104 16:47:21.168" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:21.174" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:21.178" level="INFO">Checking if the element exists...</msg>
+<msg timestamp="20230104 16:47:21.178" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')] ...</msg>
+<msg timestamp="20230104 16:47:31.709" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230104 16:47:31.712" level="INFO">Finding elements...</msg>
+<msg timestamp="20230104 16:47:41.785" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230104 16:47:41.789" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
+<msg timestamp="20230104 16:47:41.790" level="INFO">Checking if the element exists...</msg>
+<msg timestamp="20230104 16:47:41.790" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')] ...</msg>
+<msg timestamp="20230104 16:47:52.321" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
+<msg timestamp="20230104 16:47:52.324" level="INFO">Finding elements...</msg>
+<msg timestamp="20230104 16:48:02.365" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
+<msg timestamp="20230104 16:48:02.371" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
+<msg timestamp="20230104 16:48:02.372" level="INFO">Checking if the element exists...</msg>
+<msg timestamp="20230104 16:48:02.373" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')] ...</msg>
+<msg timestamp="20230104 16:48:12.904" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230104 16:48:12.907" level="INFO">Finding elements...</msg>
+<msg timestamp="20230104 16:48:22.937" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230104 16:48:22.939" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
+<msg timestamp="20230104 16:48:22.940" level="INFO">Waiting seconds: 3</msg>
+<status status="PASS" starttime="20230104 16:47:00.577" endtime="20230104 16:48:25.942"/>
 </kw>
-<status status="PASS" starttime="20221223 15:30:10.223" endtime="20221223 15:31:04.403"/>
+<status status="PASS" starttime="20230104 16:46:30.446" endtime="20230104 16:48:25.943"/>
 </test>
-<test id="s1-s1-s1-t2" name="TC006_ValidateReplyPage" line="35">
-<kw name="SetupGmail" library="Gmail" type="SETUP">
-<arg>${browser}</arg>
-<msg timestamp="20221223 15:31:04.436" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20221223 15:31:06.883" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
-<msg timestamp="20221223 15:31:09.385" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
-<msg timestamp="20221223 15:31:13.156" level="INFO">Browser should be opened: Browser.CHROME</msg>
-<msg timestamp="20221223 15:31:13.156" level="INFO">Loading Sites.GMAIL</msg>
-<msg timestamp="20221223 15:31:13.158" level="INFO">Going to site: https://gmail.com</msg>
-<msg timestamp="20221223 15:31:14.845" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:31:14.919" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="066e1d90-19a7-40ea-ae67-d32d98952ae9")&gt;</msg>
-<msg timestamp="20221223 15:31:14.920" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:31:14.921" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:31:14.966" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="066e1d90-19a7-40ea-ae67-d32d98952ae9")&gt;</msg>
-<msg timestamp="20221223 15:31:14.967" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:31:14.978" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="066e1d90-19a7-40ea-ae67-d32d98952ae9")&gt;</msg>
-<msg timestamp="20221223 15:31:15.146" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:16.148" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="066e1d90-19a7-40ea-ae67-d32d98952ae9")&gt;</msg>
-<msg timestamp="20221223 15:31:16.148" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:16.149" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:31:16.187" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a22caad7-812e-4144-bf0e-e03029e7e17b")&gt;</msg>
-<msg timestamp="20221223 15:31:16.187" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:31:16.198" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a22caad7-812e-4144-bf0e-e03029e7e17b")&gt;</msg>
-<msg timestamp="20221223 15:31:16.638" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a22caad7-812e-4144-bf0e-e03029e7e17b")&gt;</msg>
-<msg timestamp="20221223 15:31:16.639" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:31:20.640" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:31:20.686" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="ad29adcf-4b7e-43c2-bcf4-ef40dfbf84ed")&gt;</msg>
-<msg timestamp="20221223 15:31:20.687" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:31:20.700" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="ad29adcf-4b7e-43c2-bcf4-ef40dfbf84ed")&gt;</msg>
-<msg timestamp="20221223 15:31:20.797" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:20.798" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:31:20.840" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="9aca9513-1dd1-41f7-aa0b-d994c1ae1cf8")&gt;</msg>
-<msg timestamp="20221223 15:31:20.841" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:31:20.852" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="9aca9513-1dd1-41f7-aa0b-d994c1ae1cf8")&gt;</msg>
-<msg timestamp="20221223 15:31:21.187" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="9aca9513-1dd1-41f7-aa0b-d994c1ae1cf8")&gt;</msg>
-<msg timestamp="20221223 15:31:21.187" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:31:25.188" level="INFO">Waiting seconds: 5</msg>
-<status status="PASS" starttime="20221223 15:31:04.435" endtime="20221223 15:31:30.190"/>
-</kw>
-<kw name="TC006" library="Gmail">
-<var>${value}</var>
-<msg timestamp="20221223 15:31:30.192" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:30.193" level="INFO">Waiting element to be Clickable, element//div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:31:30.239" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="24e7a349-f31a-48e3-89e9-81cd0fcf4395")&gt;</msg>
-<msg timestamp="20221223 15:31:30.239" level="INFO">Looking for element: //div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:31:30.250" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="24e7a349-f31a-48e3-89e9-81cd0fcf4395")&gt;</msg>
-<msg timestamp="20221223 15:31:30.692" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="24e7a349-f31a-48e3-89e9-81cd0fcf4395")&gt;</msg>
-<msg timestamp="20221223 15:31:30.693" level="INFO">Waiting seconds: 3</msg>
-<msg timestamp="20221223 15:31:33.696" level="INFO">Populating email...</msg>
-<msg timestamp="20221223 15:31:33.697" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:35.699" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:31:35.699" level="INFO">Waiting element to be Clickable, element//*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:35.743" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="f9744f69-9c9f-4341-bd6d-f08880aecdae")&gt;</msg>
-<msg timestamp="20221223 15:31:35.743" level="INFO">Looking for element: //*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:35.756" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="f9744f69-9c9f-4341-bd6d-f08880aecdae")&gt;</msg>
-<msg timestamp="20221223 15:31:36.333" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:37.335" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="f9744f69-9c9f-4341-bd6d-f08880aecdae")&gt; And the text: albertohirota@gmail.com</msg>
-<msg timestamp="20221223 15:31:37.336" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:37.337" level="INFO">Waiting element to be Clickable, element//span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:31:37.387" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2182a868-69d1-413a-b98b-88f540c1ffc3")&gt;</msg>
-<msg timestamp="20221223 15:31:37.388" level="INFO">Looking for element: //span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:31:37.398" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2182a868-69d1-413a-b98b-88f540c1ffc3")&gt;</msg>
-<msg timestamp="20221223 15:31:37.696" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2182a868-69d1-413a-b98b-88f540c1ffc3")&gt;</msg>
-<msg timestamp="20221223 15:31:37.698" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:31:37.699" level="INFO">Waiting element to be Clickable, element//*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:37.801" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a06593c8-fe11-4d92-9cf6-61df89612a8a")&gt;</msg>
-<msg timestamp="20221223 15:31:37.801" level="INFO">Looking for element: //*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:37.829" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a06593c8-fe11-4d92-9cf6-61df89612a8a")&gt;</msg>
-<msg timestamp="20221223 15:31:38.292" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:39.293" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="a06593c8-fe11-4d92-9cf6-61df89612a8a")&gt; And the text: alberto.hirota@gmail.com</msg>
-<msg timestamp="20221223 15:31:39.293" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:39.294" level="INFO">Waiting element to be Clickable, element//span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:31:39.337" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="c176d315-d54d-440f-875c-7263932a351a")&gt;</msg>
-<msg timestamp="20221223 15:31:39.338" level="INFO">Looking for element: //span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:31:39.351" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="c176d315-d54d-440f-875c-7263932a351a")&gt;</msg>
-<msg timestamp="20221223 15:31:39.674" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="c176d315-d54d-440f-875c-7263932a351a")&gt;</msg>
-<msg timestamp="20221223 15:31:39.674" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:31:39.674" level="INFO">Waiting element to be Clickable, element//*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:39.716" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2b50d759-ec54-46af-983c-33de1e246350")&gt;</msg>
-<msg timestamp="20221223 15:31:39.717" level="INFO">Looking for element: //*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:31:39.729" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2b50d759-ec54-46af-983c-33de1e246350")&gt;</msg>
-<msg timestamp="20221223 15:31:40.179" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:41.181" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="2b50d759-ec54-46af-983c-33de1e246350")&gt; And the text: eitihirota@gmail.com</msg>
-<msg timestamp="20221223 15:31:41.182" level="INFO">Sending keys: Test Receiving - In the element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:31:41.183" level="INFO">Waiting element to be Clickable, element//*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:31:41.238" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="e9010786-8574-42ee-9e0f-7f03225896e9")&gt;</msg>
-<msg timestamp="20221223 15:31:41.239" level="INFO">Looking for element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:31:41.252" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="e9010786-8574-42ee-9e0f-7f03225896e9")&gt;</msg>
-<msg timestamp="20221223 15:31:41.373" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:42.376" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="e9010786-8574-42ee-9e0f-7f03225896e9")&gt;</msg>
-<msg timestamp="20221223 15:31:42.376" level="INFO">Sending keys: Test body receiving email - In the element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:31:42.377" level="INFO">Waiting element to be Clickable, element//*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:31:42.444" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="53ef4cfb-06c5-4740-8922-46d493ea9df6")&gt;</msg>
-<msg timestamp="20221223 15:31:42.444" level="INFO">Looking for element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:31:42.458" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="53ef4cfb-06c5-4740-8922-46d493ea9df6")&gt;</msg>
-<msg timestamp="20221223 15:31:42.691" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:31:43.692" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="53ef4cfb-06c5-4740-8922-46d493ea9df6")&gt;</msg>
-<msg timestamp="20221223 15:31:43.692" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:43.693" level="INFO">Waiting element to be Clickable, element//*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:31:43.762" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="3a238a16-6a5c-403a-8140-96c9eb4e2559")&gt;</msg>
-<msg timestamp="20221223 15:31:43.763" level="INFO">Looking for element: //*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:31:43.777" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="3a238a16-6a5c-403a-8140-96c9eb4e2559")&gt;</msg>
-<msg timestamp="20221223 15:31:44.150" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="3a238a16-6a5c-403a-8140-96c9eb4e2559")&gt;</msg>
-<msg timestamp="20221223 15:31:44.151" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:46.153" level="INFO">Waiting to receive and Open email</msg>
-<msg timestamp="20221223 15:31:46.153" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:48.155" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:31:48.181" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:31:48.214" level="INFO">New email found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="5e1236b2-dfe5-48a4-944c-1b110c2e3038")&gt;</msg>
-<msg timestamp="20221223 15:31:48.544" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:50.546" level="INFO">Checking if the element exists...</msg>
-<msg timestamp="20221223 15:31:50.547" level="INFO">Waiting element to be Clickable, element//span[@email='albertohirota@gmail.com'] ...</msg>
-<msg timestamp="20221223 15:31:50.601" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="5ee9fb45-1d48-4438-99e6-0e46ac4b63b1")&gt;</msg>
-<msg timestamp="20221223 15:31:50.601" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:31:50.616" level="WARN">Elements ERROR: //span[@email='albertohirota@gmail.com']</msg>
-<msg timestamp="20221223 15:31:50.619" level="INFO">Does the object exist: True</msg>
-<msg timestamp="20221223 15:31:50.619" level="INFO">${value} = True</msg>
-<status status="PASS" starttime="20221223 15:31:30.191" endtime="20221223 15:31:50.620"/>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<arg>${Value}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221223 15:31:50.621" endtime="20221223 15:31:50.622"/>
-</kw>
-<kw name="GmailCleanUp" library="Gmail" type="TEARDOWN">
-<msg timestamp="20221223 15:31:50.624" level="INFO">--------Gmail Cleanup--------</msg>
-<msg timestamp="20221223 15:31:50.624" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:50.625" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:31:50.666" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="8be32e2d-1511-427a-a6d7-35c0fe479330")&gt;</msg>
-<msg timestamp="20221223 15:31:50.666" level="INFO">Looking for element: //div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:31:50.677" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="8be32e2d-1511-427a-a6d7-35c0fe479330")&gt;</msg>
-<msg timestamp="20221223 15:31:50.991" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="8be32e2d-1511-427a-a6d7-35c0fe479330")&gt;</msg>
-<msg timestamp="20221223 15:31:50.992" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:52.994" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:52.995" level="INFO">Waiting element to be Clickable, element//span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:31:53.041" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="79d62d7c-f78b-4f6b-8d11-595c8b2e3cf6")&gt;</msg>
-<msg timestamp="20221223 15:31:53.042" level="INFO">Looking for element: //span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:31:53.052" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="79d62d7c-f78b-4f6b-8d11-595c8b2e3cf6")&gt;</msg>
-<msg timestamp="20221223 15:31:53.347" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="79d62d7c-f78b-4f6b-8d11-595c8b2e3cf6")&gt;</msg>
-<msg timestamp="20221223 15:31:53.348" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:31:55.350" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:31:55.351" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:31:55.403" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="aa43c4cb-d5d7-4f97-8785-8bcf0bac111d")&gt;</msg>
-<msg timestamp="20221223 15:31:55.404" level="INFO">Looking for element: //div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:31:55.414" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="aa43c4cb-d5d7-4f97-8785-8bcf0bac111d")&gt;</msg>
-<msg timestamp="20221223 15:31:55.718" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="e198933495fc7c6e55ef6e5c6ded382e", element="aa43c4cb-d5d7-4f97-8785-8bcf0bac111d")&gt;</msg>
-<msg timestamp="20221223 15:31:55.719" level="INFO">Waiting seconds: 2</msg>
-<status status="PASS" starttime="20221223 15:31:50.623" endtime="20221223 15:31:57.720"/>
-</kw>
-<status status="PASS" starttime="20221223 15:31:04.424" endtime="20221223 15:31:57.722"/>
-</test>
-<test id="s1-s1-s1-t3" name="TC007_ValidateForwardAndSendEmail" line="39">
-<kw name="SetupGmail" library="Gmail" type="SETUP">
-<arg>${browser}</arg>
-<msg timestamp="20221223 15:31:57.732" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20221223 15:32:00.209" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
-<msg timestamp="20221223 15:32:02.693" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
-<msg timestamp="20221223 15:32:06.445" level="INFO">Browser should be opened: Browser.CHROME</msg>
-<msg timestamp="20221223 15:32:06.446" level="INFO">Loading Sites.GMAIL</msg>
-<msg timestamp="20221223 15:32:06.447" level="INFO">Going to site: https://gmail.com</msg>
-<msg timestamp="20221223 15:32:08.101" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:32:08.193" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e59eda0d-9cd6-4625-825a-b18417634c83")&gt;</msg>
-<msg timestamp="20221223 15:32:08.194" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:32:08.195" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:32:08.245" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e59eda0d-9cd6-4625-825a-b18417634c83")&gt;</msg>
-<msg timestamp="20221223 15:32:08.246" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20221223 15:32:08.257" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e59eda0d-9cd6-4625-825a-b18417634c83")&gt;</msg>
-<msg timestamp="20221223 15:32:08.415" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:09.417" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e59eda0d-9cd6-4625-825a-b18417634c83")&gt;</msg>
-<msg timestamp="20221223 15:32:09.417" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:09.418" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:32:09.459" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="04f4fe38-5311-4b5d-83e5-4a1e971d8c19")&gt;</msg>
-<msg timestamp="20221223 15:32:09.460" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
-<msg timestamp="20221223 15:32:09.472" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="04f4fe38-5311-4b5d-83e5-4a1e971d8c19")&gt;</msg>
-<msg timestamp="20221223 15:32:09.890" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="04f4fe38-5311-4b5d-83e5-4a1e971d8c19")&gt;</msg>
-<msg timestamp="20221223 15:32:09.891" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:32:13.893" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:32:13.941" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="55530bc6-ebd6-4758-ad7e-299888726680")&gt;</msg>
-<msg timestamp="20221223 15:32:13.942" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20221223 15:32:13.953" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="55530bc6-ebd6-4758-ad7e-299888726680")&gt;</msg>
-<msg timestamp="20221223 15:32:14.030" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:14.030" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:32:14.066" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e6e8aa87-123c-4e67-b757-8dd61f7f3d24")&gt;</msg>
-<msg timestamp="20221223 15:32:14.066" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
-<msg timestamp="20221223 15:32:14.075" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e6e8aa87-123c-4e67-b757-8dd61f7f3d24")&gt;</msg>
-<msg timestamp="20221223 15:32:14.397" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="e6e8aa87-123c-4e67-b757-8dd61f7f3d24")&gt;</msg>
-<msg timestamp="20221223 15:32:14.398" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20221223 15:32:18.399" level="INFO">Waiting seconds: 5</msg>
-<status status="PASS" starttime="20221223 15:31:57.731" endtime="20221223 15:32:23.402"/>
-</kw>
-<kw name="TC007" library="Gmail">
-<var>${value}</var>
-<msg timestamp="20221223 15:32:23.403" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:23.403" level="INFO">Waiting element to be Clickable, element//div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:32:23.446" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="d0b4078e-648b-4a45-85d5-21d9e3dfef48")&gt;</msg>
-<msg timestamp="20221223 15:32:23.446" level="INFO">Looking for element: //div[@class='T-I T-I-KE L3'] ...</msg>
-<msg timestamp="20221223 15:32:23.458" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="d0b4078e-648b-4a45-85d5-21d9e3dfef48")&gt;</msg>
-<msg timestamp="20221223 15:32:23.886" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="d0b4078e-648b-4a45-85d5-21d9e3dfef48")&gt;</msg>
-<msg timestamp="20221223 15:32:23.887" level="INFO">Waiting seconds: 3</msg>
-<msg timestamp="20221223 15:32:26.889" level="INFO">Populating email...</msg>
-<msg timestamp="20221223 15:32:26.890" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:28.894" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:32:28.894" level="INFO">Waiting element to be Clickable, element//*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:28.943" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="72e6fc0a-b8a9-4b75-8b74-6e84a21e6ddb")&gt;</msg>
-<msg timestamp="20221223 15:32:28.943" level="INFO">Looking for element: //*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:28.954" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="72e6fc0a-b8a9-4b75-8b74-6e84a21e6ddb")&gt;</msg>
-<msg timestamp="20221223 15:32:29.495" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:30.497" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="72e6fc0a-b8a9-4b75-8b74-6e84a21e6ddb")&gt; And the text: albertohirota@gmail.com</msg>
-<msg timestamp="20221223 15:32:30.498" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:30.499" level="INFO">Waiting element to be Clickable, element//span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:32:30.563" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="68109a69-e558-4460-9ee0-31c9806aa1da")&gt;</msg>
-<msg timestamp="20221223 15:32:30.564" level="INFO">Looking for element: //span[@class='aB gQ pE'] ...</msg>
-<msg timestamp="20221223 15:32:30.583" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="68109a69-e558-4460-9ee0-31c9806aa1da")&gt;</msg>
-<msg timestamp="20221223 15:32:30.920" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="68109a69-e558-4460-9ee0-31c9806aa1da")&gt;</msg>
-<msg timestamp="20221223 15:32:30.921" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:32:30.923" level="INFO">Waiting element to be Clickable, element//*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:31.003" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="586fde2f-9ee1-4af9-a8a3-1759458beb72")&gt;</msg>
-<msg timestamp="20221223 15:32:31.004" level="INFO">Looking for element: //*[@name='cc']//*[@name='cc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:31.026" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="586fde2f-9ee1-4af9-a8a3-1759458beb72")&gt;</msg>
-<msg timestamp="20221223 15:32:31.506" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:32.507" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="586fde2f-9ee1-4af9-a8a3-1759458beb72")&gt; And the text: alberto.hirota@gmail.com</msg>
-<msg timestamp="20221223 15:32:32.507" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:32.508" level="INFO">Waiting element to be Clickable, element//span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:32:32.565" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ac9eb38-3bd1-4a5b-b9e8-6c236db3449e")&gt;</msg>
-<msg timestamp="20221223 15:32:32.565" level="INFO">Looking for element: //span[@class='aB  gQ pB'] ...</msg>
-<msg timestamp="20221223 15:32:32.577" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ac9eb38-3bd1-4a5b-b9e8-6c236db3449e")&gt;</msg>
-<msg timestamp="20221223 15:32:32.889" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ac9eb38-3bd1-4a5b-b9e8-6c236db3449e")&gt;</msg>
-<msg timestamp="20221223 15:32:32.889" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:32:32.891" level="INFO">Waiting element to be Clickable, element//*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:32.935" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="f0af0b8a-b095-49c8-a92c-c76292dfdb34")&gt;</msg>
-<msg timestamp="20221223 15:32:32.936" level="INFO">Looking for element: //*[@name='bcc']//*[@name='bcc' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:32.947" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="f0af0b8a-b095-49c8-a92c-c76292dfdb34")&gt;</msg>
-<msg timestamp="20221223 15:32:33.306" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:34.308" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="f0af0b8a-b095-49c8-a92c-c76292dfdb34")&gt; And the text: eitihirota@gmail.com</msg>
-<msg timestamp="20221223 15:32:34.308" level="INFO">Sending keys: Test Receiving - In the element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:32:34.309" level="INFO">Waiting element to be Clickable, element//*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:32:34.363" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="b33da78f-6fef-4bbc-a42c-4ea9c3ea79be")&gt;</msg>
-<msg timestamp="20221223 15:32:34.363" level="INFO">Looking for element: //*[@name='subjectbox'] ...</msg>
-<msg timestamp="20221223 15:32:34.375" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="b33da78f-6fef-4bbc-a42c-4ea9c3ea79be")&gt;</msg>
-<msg timestamp="20221223 15:32:34.484" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:35.487" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="b33da78f-6fef-4bbc-a42c-4ea9c3ea79be")&gt;</msg>
-<msg timestamp="20221223 15:32:35.488" level="INFO">Sending keys: Test body receiving email - In the element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:32:35.489" level="INFO">Waiting element to be Clickable, element//*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:32:35.554" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ec593633-4663-4255-8b66-5cf0b7f013b2")&gt;</msg>
-<msg timestamp="20221223 15:32:35.555" level="INFO">Looking for element: //*[contains(@class,'Am Al editable LW-avf')] ...</msg>
-<msg timestamp="20221223 15:32:35.569" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ec593633-4663-4255-8b66-5cf0b7f013b2")&gt;</msg>
-<msg timestamp="20221223 15:32:35.826" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:36.828" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ec593633-4663-4255-8b66-5cf0b7f013b2")&gt;</msg>
-<msg timestamp="20221223 15:32:36.829" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:36.830" level="INFO">Waiting element to be Clickable, element//*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:32:36.881" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="92c5deb2-f7ad-49b9-8695-8bf2d299416a")&gt;</msg>
-<msg timestamp="20221223 15:32:36.881" level="INFO">Looking for element: //*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:32:36.897" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="92c5deb2-f7ad-49b9-8695-8bf2d299416a")&gt;</msg>
-<msg timestamp="20221223 15:32:37.263" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="92c5deb2-f7ad-49b9-8695-8bf2d299416a")&gt;</msg>
-<msg timestamp="20221223 15:32:37.264" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:39.265" level="INFO">Waiting to receive and Open email</msg>
-<msg timestamp="20221223 15:32:39.266" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:41.269" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:32:41.290" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:32:41.341" level="INFO">New email found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="6f09036c-f13c-4e09-919b-ea83d8df5753")&gt;</msg>
-<msg timestamp="20221223 15:32:41.685" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:43.687" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:43.688" level="INFO">Waiting element to be Clickable, element//span[text()='Forward' and @role='link'] ...</msg>
-<msg timestamp="20221223 15:32:43.737" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0f6f1146-39c7-4c04-a268-4e1e326836a4")&gt;</msg>
-<msg timestamp="20221223 15:32:43.738" level="INFO">Looking for element: //span[text()='Forward' and @role='link'] ...</msg>
-<msg timestamp="20221223 15:32:43.748" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0f6f1146-39c7-4c04-a268-4e1e326836a4")&gt;</msg>
-<msg timestamp="20221223 15:32:44.135" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0f6f1146-39c7-4c04-a268-4e1e326836a4")&gt;</msg>
-<msg timestamp="20221223 15:32:44.135" level="INFO">Sending Key and pressing Enter...</msg>
-<msg timestamp="20221223 15:32:44.137" level="INFO">Waiting element to be Clickable, element//*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:44.234" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="56f63de9-3ee0-4a09-a7dd-61ed0726a1eb")&gt;</msg>
-<msg timestamp="20221223 15:32:44.234" level="INFO">Looking for element: //*[@name='to']//*[@name='to' or @class='agP aFw'] ...</msg>
-<msg timestamp="20221223 15:32:44.246" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="56f63de9-3ee0-4a09-a7dd-61ed0726a1eb")&gt;</msg>
-<msg timestamp="20221223 15:32:44.683" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20221223 15:32:45.684" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="56f63de9-3ee0-4a09-a7dd-61ed0726a1eb")&gt; And the text: eitihirota@gmail.com</msg>
-<msg timestamp="20221223 15:32:45.685" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:45.689" level="INFO">Waiting element to be Clickable, element//*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:32:45.899" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="7999863d-88df-42a6-8bf8-51b0f4a490e7")&gt;</msg>
-<msg timestamp="20221223 15:32:45.900" level="INFO">Looking for element: //*[@role='button' and text()='Send'] ...</msg>
-<msg timestamp="20221223 15:32:45.917" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="7999863d-88df-42a6-8bf8-51b0f4a490e7")&gt;</msg>
-<msg timestamp="20221223 15:32:46.269" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="7999863d-88df-42a6-8bf8-51b0f4a490e7")&gt;</msg>
-<msg timestamp="20221223 15:32:46.269" level="INFO">Waiting seconds: 3</msg>
-<msg timestamp="20221223 15:32:49.271" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:49.272" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:49.317" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:49.318" level="INFO">Looking for element: //div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:49.382" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:49.730" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:49.731" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:49.732" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:49.832" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:49.833" level="INFO">Looking for element: //div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:49.846" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:50.123" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:50.124" level="INFO">Finding elements...</msg>
-<msg timestamp="20221223 15:32:50.135" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:32:50.163" level="INFO">Is text valid: True. Text is: Forwarded message</msg>
-<msg timestamp="20221223 15:32:50.163" level="INFO">${value} = True</msg>
-<status status="PASS" starttime="20221223 15:32:23.402" endtime="20221223 15:32:50.164"/>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<arg>${Value}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221223 15:32:50.165" endtime="20221223 15:32:50.166"/>
-</kw>
-<kw name="GmailCleanUp" library="Gmail" type="TEARDOWN">
-<msg timestamp="20221223 15:32:50.167" level="INFO">--------Gmail Cleanup--------</msg>
-<msg timestamp="20221223 15:32:50.168" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:50.169" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:50.204" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:50.205" level="INFO">Looking for element: //div[@data-tooltip='Inbox'] ...</msg>
-<msg timestamp="20221223 15:32:50.219" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:50.515" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="3c01192b-5f01-477b-938b-70bd96f9c022")&gt;</msg>
-<msg timestamp="20221223 15:32:50.516" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:52.517" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:52.518" level="INFO">Waiting element to be Clickable, element//span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:32:52.564" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ebb2ef3d-33fb-4cda-9fc1-5b31687a27b5")&gt;</msg>
-<msg timestamp="20221223 15:32:52.564" level="INFO">Looking for element: //span[@class='T-Jo J-J5-Ji'] ...</msg>
-<msg timestamp="20221223 15:32:52.574" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ebb2ef3d-33fb-4cda-9fc1-5b31687a27b5")&gt;</msg>
-<msg timestamp="20221223 15:32:52.882" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="ebb2ef3d-33fb-4cda-9fc1-5b31687a27b5")&gt;</msg>
-<msg timestamp="20221223 15:32:52.883" level="INFO">Waiting seconds: 2</msg>
-<msg timestamp="20221223 15:32:54.884" level="INFO">Clicking element...</msg>
-<msg timestamp="20221223 15:32:54.884" level="INFO">Waiting element to be Clickable, element//div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:32:54.929" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ee924fa-5ecb-4eee-95b1-a6ea0202cab1")&gt;</msg>
-<msg timestamp="20221223 15:32:54.929" level="INFO">Looking for element: //div[@data-tooltip='Delete'] ...</msg>
-<msg timestamp="20221223 15:32:54.940" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ee924fa-5ecb-4eee-95b1-a6ea0202cab1")&gt;</msg>
-<msg timestamp="20221223 15:32:55.221" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="8bdd18d77bb7a701c35966dee2a48ebb", element="0ee924fa-5ecb-4eee-95b1-a6ea0202cab1")&gt;</msg>
-<msg timestamp="20221223 15:32:55.222" level="INFO">Waiting seconds: 2</msg>
-<status status="PASS" starttime="20221223 15:32:50.167" endtime="20221223 15:32:57.225"/>
-</kw>
-<status status="PASS" starttime="20221223 15:31:57.727" endtime="20221223 15:32:57.226"/>
-</test>
-<status status="PASS" starttime="20221223 15:29:44.743" endtime="20221223 15:32:57.229"/>
+<status status="PASS" starttime="20230104 16:46:29.592" endtime="20230104 16:48:25.946"/>
 </suite>
-<status status="PASS" starttime="20221223 15:29:44.737" endtime="20221223 15:32:57.233"/>
+<status status="PASS" starttime="20230104 16:46:29.587" endtime="20230104 16:48:25.950"/>
 </suite>
-<status status="PASS" starttime="20221223 15:29:44.704" endtime="20221223 15:32:57.236"/>
+<status status="PASS" starttime="20230104 16:46:29.553" endtime="20230104 16:48:25.954"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="SeleniumWebdriverPhyton">SeleniumWebdriverPhyton</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="GoogleTestGmail">SeleniumWebdriverPhyton.GoogleTestGmail</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1-s1" name="ChromeGmail">SeleniumWebdriverPhyton.GoogleTestGmail.ChromeGmail</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="SeleniumWebdriverPhyton">SeleniumWebdriverPhyton</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="GoogleTestSlides">SeleniumWebdriverPhyton.GoogleTestSlides</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="ChromeSlides">SeleniumWebdriverPhyton.GoogleTestSlides.ChromeSlides</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221223 15:30:09.670" level="WARN">Elements ERROR: //*[@class='aYF']</msg>
-<msg timestamp="20221223 15:30:54.900" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:30:57.275" level="WARN">Elements ERROR: //span[text()='Reply all' and @role='link']</msg>
-<msg timestamp="20221223 15:31:48.181" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:31:50.616" level="WARN">Elements ERROR: //span[@email='albertohirota@gmail.com']</msg>
-<msg timestamp="20221223 15:32:41.290" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
-<msg timestamp="20221223 15:32:50.135" level="WARN">Elements ERROR: //tr[@class='zA zE']</msg>
+<msg timestamp="20230104 16:47:11.143" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:21.168" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:21.174" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230104 16:47:31.709" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230104 16:47:41.785" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230104 16:47:52.321" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
+<msg timestamp="20230104 16:48:02.365" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
+<msg timestamp="20230104 16:48:12.904" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230104 16:48:22.937" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
 </errors>
 </robot>

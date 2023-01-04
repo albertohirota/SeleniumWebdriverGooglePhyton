@@ -160,6 +160,7 @@ class CommonFunction(Driver):
             CommonFunction.WaitElementBePresent(by, ident)
             if CommonFunction.DoesElementExist:
                 element = CommonFunction.FindElement(by, ident)
+                element = CommonFunction.FindElement(by, ident)
                 element.send_keys(Keys.CONTROL+"a")
                 element.send_keys(Keys.DELETE)
                 CommonFunction.Delay(2)
@@ -169,10 +170,13 @@ class CommonFunction(Driver):
         except:
             CommonFunction.LogError("Sendkey ERROR, verify: "+ str(ident))
 
+    def SwitchToDefaultContent():
+        Driver.get_Instance().switch_to.default_content()
+
     def SwitchFrame(by, ident):
         CommonFunction.LogInfo("Switching frame...")
         Driver.get_Instance().switch_to.parent_frame()
-        Driver.get_Instance().switch_to.default_content()
+        CommonFunction.SwitchToDefaultContent()
         Driver.get_Instance().switch_to.frame(by, ident)
 
     def GetTextFromElement(by, ident):
@@ -190,12 +194,12 @@ class CommonFunction(Driver):
         CommonFunction.LogInfo("Closing Tab: "+ str(tab)+" ...")
         Driver.get_Instance().window_handles[tab]
         Driver.get_Instance().close()
-        CommonFunction.LogInfo("Closing browser tab: " + tab.ToString())
+        CommonFunction.LogInfo("Closing browser tab: " + str(tab))
     
     def GoToTab(tab):
         CommonFunction.LogInfo("Going to Tab: " + str(tab) + " ...")
         Driver.get_Instance().switch_to.window(tab)
-        CommonFunction.LogInfo("Going to tab: " + tab.ToString())
+        CommonFunction.LogInfo("Going to tab: " + str(tab))
 
     def IsElementVisible(by, ident):
         CommonFunction.LogInfo("Checking if elenent is visible...")
