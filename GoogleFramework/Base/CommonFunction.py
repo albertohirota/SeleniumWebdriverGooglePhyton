@@ -177,7 +177,8 @@ class CommonFunction(Driver):
         CommonFunction.LogInfo("Switching frame...")
         Driver.get_Instance().switch_to.parent_frame()
         CommonFunction.SwitchToDefaultContent()
-        Driver.get_Instance().switch_to.frame(by, ident)
+        frame = Driver.get_Instance().find_element(by, ident)
+        Driver.get_Instance().switch_to.frame(frame)
 
     def GetTextFromElement(by, ident):
         CommonFunction.WaitElementBePresent(by, ident)

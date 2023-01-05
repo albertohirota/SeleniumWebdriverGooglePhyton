@@ -7,63 +7,67 @@ from GoogleFramework.Base.CommonFunction import CommonFunction as C
 from GoogleFramework.Base.Driver import Driver
 from GoogleFramework.Pages.LoginPage import GoogleLogin
 from GoogleFramework.Pages.LoginPage import Sites
-from GoogleFramework.Pages.SlidesPage import SlidesPage as sp
+from GoogleFramework.Pages.DocsPage import DocsPage as dp
 from GoogleFramework.Base.Validation import Validation as val
 from GoogleFramework.Pages.GOfficePage import GOfficePage as GO
 from robot.api.deco import keyword
 import robot.api.logger
 import robot.utils.asserts
 
-@keyword("TC501")
-def TC501():
-    validation = val.DoesFileExistDocsSheetsSlides("TC501", 10)
+@keyword("TC301")
+def TC301():
+    validation = val.DoesFileExistDocsSheetsSlides("TC401", 10)
     return validation
 
-@keyword("TC502")
-def TC502():
+@keyword("TC302")
+def TC302():
     GO.Click_DocumentBlank()
     C.Delay(7)
-    GO.RenameDocumentName("TC502")
+    GO.RenameDocumentName("TC402")
     GO.Click_ButtonGoogle()
     C.Delay(2)
-    validation = val.DoesFileExistDocsSheetsSlides("TC502", 10)
-    GO.DeleteFile("TC502")
+    validation = val.DoesFileExistDocsSheetsSlides("TC402", 10)
+    GO.DeleteFile("TC402")
     return validation
 
-@keyword("TC503")
-def TC503():
-    GO.Click_OpenFile("TC501")
-    validation = val.DoesTextContainsInList("Hello World", sp.GetSlidesTexts(False))
+@keyword("TC303")
+def TC303():
+    GO.Click_OpenFile("TC401")
+    validation = val.DoesTextContainsInList("Test Case 401", sp.GetSheetsEntry("A2"))
     GO.Click_ButtonGoogle()
     return validation
 
-@keyword("TC504")
-def TC504():
+@keyword("TC304")
+def TC304():
     GO.Click_DocumentBlank()
     C.Delay(4)
-    GO.RenameDocumentName("TC504")
+    GO.RenameDocumentName("TC404")
     C.Delay(1)
-    sp.SendText_PresentationBody("TC504 - Hello")
+    sp.SendKeysOnSheet("A1:B2","TC404 - Hello",True)
     C.Delay(1)
-    GO.RenameDocumentName("TC504")
+    GO.RenameDocumentName("TC404")
     C.Delay(1)
-    validation = val.DoesTextContainsInList("TC504 - Hello", sp.GetSlidesTexts(True))
+    validation = val.DoesTextContainsInList("TC504 - Hello", sp.GetSheetsEntry("A1"))
     GO.Click_ButtonGoogle()
-    GO.DeleteFile("TC504")
+    GO.DeleteFile("TC404")
     return validation
 
-@keyword("SetupSlides")
-def SetupSlides(browser):
+@keyword("TC305")
+def TC305():
+    GO.Click_OpenFile("TC401")
+
+@keyword("SetupDocs")
+def SetupDocs(browser):
     browserDriver = Driver.get_Browser(browser)
     Driver().Initialize(browserDriver)
-    GoogleLogin.GoAndLogGoogleSite(Sites.SLIDES)
+    GoogleLogin.GoAndLogGoogleSite(Sites.SHEETS)
     C.Delay(5)
 
-@keyword("SlidesCleanUp")
-def SlidesCleanUp():
+@keyword("DocsCleanUp")
+def DocsCleanUp():
     C.LogInfo("--------Slides Cleanup--------")
     GO.Click_ButtonGoogle()
-    files = [ "TC502", "TC504"]
+    files = [ "TC402", "TC404"]
     for file in files:
         while val.DoesFileExistDocsSheetsSlides(file, 3):
             GO.DeleteFile(file)
@@ -73,8 +77,8 @@ def SlidesCleanUp():
 
 
 
-#browserDriver = Driver.get_Browser("firefox")
+#browserDriver = Driver.get_Browser("chrome")
 #Driver().Initialize(browserDriver)
-#GoogleLogin.GoAndLogGoogleSite(Sites.SLIDES)
-#isTrue = TC504()
+#GoogleLogin.GoAndLogGoogleSite(Sites.SHEETS)
+#isTrue = TC404()
 #print(isTrue)
