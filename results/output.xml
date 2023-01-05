@@ -1,120 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230104 16:46:29.537" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230105 11:50:02.205" rpa="false" schemaversion="3">
 <suite id="s1" name="SeleniumWebdriverPhyton" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton">
 <suite id="s1-s1" name="GoogleTestSlides" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestSlides">
 <suite id="s1-s1-s1" name="ChromeSlides" source="C:\Users\alber\source\repos\SeleniumWebdriverPhyton\SeleniumWebdriverPhyton\GoogleTestSlides\ChromeSlides.robot">
 <test id="s1-s1-s1-t1" name="TC503_ValidateTextInThePresentation" line="23">
 <kw name="SetupSlides" library="Slides" type="SETUP">
 <arg>${browser}</arg>
-<msg timestamp="20230104 16:46:30.449" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20230104 16:46:32.910" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
-<msg timestamp="20230104 16:46:35.410" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
-<msg timestamp="20230104 16:46:37.149" level="INFO">Browser should be opened: Browser.CHROME</msg>
-<msg timestamp="20230104 16:46:37.152" level="INFO">Loading Sites.SLIDES</msg>
-<msg timestamp="20230104 16:46:37.154" level="INFO">Going to site: https://docs.google.com/presentation/u/0/?tgif=d</msg>
-<msg timestamp="20230104 16:46:38.667" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20230104 16:46:38.785" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
-<msg timestamp="20230104 16:46:38.786" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20230104 16:46:38.786" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
-<msg timestamp="20230104 16:46:38.852" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
-<msg timestamp="20230104 16:46:38.853" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
-<msg timestamp="20230104 16:46:38.873" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
-<msg timestamp="20230104 16:46:39.064" level="INFO">Waiting seconds: 1</msg>
-<msg timestamp="20230104 16:46:40.066" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="f2140471-27fe-4283-9e92-9c20ffe31406")&gt;</msg>
-<msg timestamp="20230104 16:46:40.067" level="INFO">Clicking element...</msg>
-<msg timestamp="20230104 16:46:40.068" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
-<msg timestamp="20230104 16:46:40.169" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
-<msg timestamp="20230104 16:46:40.169" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
-<msg timestamp="20230104 16:46:40.179" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
-<msg timestamp="20230104 16:46:40.610" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="fd97a5ee-2e0b-4bcd-a1c4-1b48a340a79b")&gt;</msg>
-<msg timestamp="20230104 16:46:40.612" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20230104 16:46:44.614" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20230104 16:46:44.650" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="3f56790b-158e-42ea-80aa-719167f62be8")&gt;</msg>
-<msg timestamp="20230104 16:46:44.650" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
-<msg timestamp="20230104 16:46:44.659" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="3f56790b-158e-42ea-80aa-719167f62be8")&gt;</msg>
-<msg timestamp="20230104 16:46:44.734" level="INFO">Clicking element...</msg>
-<msg timestamp="20230104 16:46:44.735" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
-<msg timestamp="20230104 16:46:44.771" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
-<msg timestamp="20230104 16:46:44.772" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
-<msg timestamp="20230104 16:46:44.781" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
-<msg timestamp="20230104 16:46:45.106" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="23daed30-645e-4eee-b9b1-dabd1c1e4c92")&gt;</msg>
-<msg timestamp="20230104 16:46:45.107" level="INFO">Waiting seconds: 4</msg>
-<msg timestamp="20230104 16:46:49.109" level="INFO">Waiting seconds: 5</msg>
-<status status="PASS" starttime="20230104 16:46:30.448" endtime="20230104 16:46:54.110"/>
+<msg timestamp="20230105 11:50:03.293" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230105 11:50:05.931" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
+<msg timestamp="20230105 11:50:09.135" level="INFO">Driver [C:\Users\alber\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
+<msg timestamp="20230105 11:50:11.062" level="INFO">Browser should be opened: Browser.CHROME</msg>
+<msg timestamp="20230105 11:50:11.064" level="INFO">Loading Sites.SLIDES</msg>
+<msg timestamp="20230105 11:50:11.068" level="INFO">Going to site: https://docs.google.com/presentation/u/0/?tgif=d</msg>
+<msg timestamp="20230105 11:50:12.798" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
+<msg timestamp="20230105 11:50:12.910" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="f41ac8bb-2bb8-4c2c-8e38-59a489e50d87")&gt;</msg>
+<msg timestamp="20230105 11:50:12.911" level="INFO">Sending keys: eiti.hirota@gmail.com - In the element: //*[@id='identifierId'] ...</msg>
+<msg timestamp="20230105 11:50:12.913" level="INFO">Waiting element to be Clickable, element//*[@id='identifierId'] ...</msg>
+<msg timestamp="20230105 11:50:12.962" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="f41ac8bb-2bb8-4c2c-8e38-59a489e50d87")&gt;</msg>
+<msg timestamp="20230105 11:50:12.963" level="INFO">Looking for element: //*[@id='identifierId'] ...</msg>
+<msg timestamp="20230105 11:50:12.975" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="f41ac8bb-2bb8-4c2c-8e38-59a489e50d87")&gt;</msg>
+<msg timestamp="20230105 11:50:13.144" level="INFO">Waiting seconds: 1</msg>
+<msg timestamp="20230105 11:50:14.146" level="INFO">Key sent to element: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="f41ac8bb-2bb8-4c2c-8e38-59a489e50d87")&gt;</msg>
+<msg timestamp="20230105 11:50:14.147" level="INFO">Clicking element...</msg>
+<msg timestamp="20230105 11:50:14.148" level="INFO">Waiting element to be Clickable, element//div[@id='identifierNext'] ...</msg>
+<msg timestamp="20230105 11:50:14.193" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="86116c9b-87c8-4bb6-9ccc-f6d8ce16721c")&gt;</msg>
+<msg timestamp="20230105 11:50:14.193" level="INFO">Looking for element: //div[@id='identifierNext'] ...</msg>
+<msg timestamp="20230105 11:50:14.205" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="86116c9b-87c8-4bb6-9ccc-f6d8ce16721c")&gt;</msg>
+<msg timestamp="20230105 11:50:14.625" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="86116c9b-87c8-4bb6-9ccc-f6d8ce16721c")&gt;</msg>
+<msg timestamp="20230105 11:50:14.626" level="INFO">Waiting seconds: 4</msg>
+<msg timestamp="20230105 11:50:18.628" level="INFO">Waiting element to be Clickable, element//input[@name='password' or @name='Passwd'] ...</msg>
+<msg timestamp="20230105 11:50:18.671" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="10fc4c93-af9d-49d0-91d2-96fea1a40395")&gt;</msg>
+<msg timestamp="20230105 11:50:18.671" level="INFO">Looking for element: //input[@name='password' or @name='Passwd'] ...</msg>
+<msg timestamp="20230105 11:50:18.682" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="10fc4c93-af9d-49d0-91d2-96fea1a40395")&gt;</msg>
+<msg timestamp="20230105 11:50:18.768" level="INFO">Clicking element...</msg>
+<msg timestamp="20230105 11:50:18.769" level="INFO">Waiting element to be Clickable, element//*[@id='passwordNext'] ...</msg>
+<msg timestamp="20230105 11:50:18.811" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="bd2361f7-3d5d-407c-b7b6-67d4960abd21")&gt;</msg>
+<msg timestamp="20230105 11:50:18.812" level="INFO">Looking for element: //*[@id='passwordNext'] ...</msg>
+<msg timestamp="20230105 11:50:18.823" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="bd2361f7-3d5d-407c-b7b6-67d4960abd21")&gt;</msg>
+<msg timestamp="20230105 11:50:19.138" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="bd2361f7-3d5d-407c-b7b6-67d4960abd21")&gt;</msg>
+<msg timestamp="20230105 11:50:19.140" level="INFO">Waiting seconds: 4</msg>
+<msg timestamp="20230105 11:50:23.144" level="INFO">Waiting seconds: 5</msg>
+<status status="PASS" starttime="20230105 11:50:03.292" endtime="20230105 11:50:28.145"/>
 </kw>
 <kw name="TC503" library="Slides">
 <var>${value}</var>
-<msg timestamp="20230104 16:46:54.112" level="INFO">Clicking element...</msg>
-<msg timestamp="20230104 16:46:54.112" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
-<msg timestamp="20230104 16:46:54.163" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
-<msg timestamp="20230104 16:46:54.163" level="INFO">Looking for element: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
-<msg timestamp="20230104 16:46:54.177" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
-<msg timestamp="20230104 16:46:58.580" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="b1c1d3d7-fd8c-43fc-8cd5-9c71e09273a4")&gt;</msg>
-<msg timestamp="20230104 16:46:58.584" level="INFO">Getting Presentation Texts</msg>
-<msg timestamp="20230104 16:46:58.584" level="INFO">Getting Google Sheets spreadshet</msg>
-<msg timestamp="20230104 16:46:58.586" level="INFO">Getting Google Slides Service</msg>
-<msg timestamp="20230104 16:46:58.587" level="INFO">Getting Google Credential</msg>
-<msg timestamp="20230104 16:46:58.596" level="INFO">file_cache is only supported with oauth2client&lt;4.0.0</msg>
-<msg timestamp="20230104 16:46:58.603" level="INFO">Getting Google Document Id for app: slides</msg>
-<msg timestamp="20230104 16:46:58.618" level="INFO">Id found python is: 1D3VDmrqq27J6FLHc9je9ify7PTHXCEj4ifObYhciVZs</msg>
-<msg timestamp="20230104 16:46:58.917" level="INFO">Does the Text exist in the list: True. And text is: Hello World</msg>
-<msg timestamp="20230104 16:46:58.918" level="INFO">Clicking element...</msg>
-<msg timestamp="20230104 16:46:58.918" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
-<msg timestamp="20230104 16:46:58.971" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
-<msg timestamp="20230104 16:46:58.971" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
-<msg timestamp="20230104 16:46:58.984" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
-<msg timestamp="20230104 16:47:00.570" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="57ae9c6571a17622e1dc643c53cba5cf", element="41f5beac-ff1a-4e9e-9238-16f124b74b7e")&gt;</msg>
-<msg timestamp="20230104 16:47:00.570" level="INFO">Value: Test Case 501
+<msg timestamp="20230105 11:50:28.147" level="INFO">Clicking element...</msg>
+<msg timestamp="20230105 11:50:28.148" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
+<msg timestamp="20230105 11:50:28.205" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="8f7d87b7-e599-43b8-9449-61bf176ddd3d")&gt;</msg>
+<msg timestamp="20230105 11:50:28.206" level="INFO">Looking for element: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC501')] ...</msg>
+<msg timestamp="20230105 11:50:28.218" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="8f7d87b7-e599-43b8-9449-61bf176ddd3d")&gt;</msg>
+<msg timestamp="20230105 11:50:33.621" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="8f7d87b7-e599-43b8-9449-61bf176ddd3d")&gt;</msg>
+<msg timestamp="20230105 11:50:33.622" level="INFO">Getting Presentation Texts</msg>
+<msg timestamp="20230105 11:50:33.624" level="INFO">Getting Google Sheets spreadshet</msg>
+<msg timestamp="20230105 11:50:33.626" level="INFO">Getting Google Slides Service</msg>
+<msg timestamp="20230105 11:50:33.640" level="INFO">file_cache is only supported with oauth2client&lt;4.0.0</msg>
+<msg timestamp="20230105 11:50:33.646" level="INFO">Getting Google Document Id for app: slides</msg>
+<msg timestamp="20230105 11:50:33.655" level="INFO">Id found python is: 1D3VDmrqq27J6FLHc9je9ify7PTHXCEj4ifObYhciVZs</msg>
+<msg timestamp="20230105 11:50:34.493" level="INFO">Does the Text exist in the list: True. And text is: Hello World</msg>
+<msg timestamp="20230105 11:50:34.494" level="INFO">Clicking element...</msg>
+<msg timestamp="20230105 11:50:34.495" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230105 11:50:34.547" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="64e1f3c5-6564-4b54-bcd4-4cc00e811f1c")&gt;</msg>
+<msg timestamp="20230105 11:50:34.547" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230105 11:50:34.561" level="INFO">Element found: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="64e1f3c5-6564-4b54-bcd4-4cc00e811f1c")&gt;</msg>
+<msg timestamp="20230105 11:50:36.333" level="INFO">Element clicked: &lt;selenium.webdriver.remote.webelement.WebElement (session="b15f5ae1bc742867211136008f929eb2", element="64e1f3c5-6564-4b54-bcd4-4cc00e811f1c")&gt;</msg>
+<msg timestamp="20230105 11:50:36.334" level="INFO">Value: Test Case 501
 
 Value: SubTitle TC501
 
 Value: Slider number 2
 
 Value: Hello World</msg>
-<msg timestamp="20230104 16:47:00.571" level="INFO">${value} = True</msg>
-<status status="PASS" starttime="20230104 16:46:54.111" endtime="20230104 16:47:00.573"/>
+<msg timestamp="20230105 11:50:36.335" level="INFO">${value} = True</msg>
+<status status="PASS" starttime="20230105 11:50:28.146" endtime="20230105 11:50:36.337"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${Value}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20230104 16:47:00.575" endtime="20230104 16:47:00.576"/>
+<status status="PASS" starttime="20230105 11:50:36.340" endtime="20230105 11:50:36.341"/>
 </kw>
 <kw name="SlidesCleanUp" library="Slides" type="TEARDOWN">
-<msg timestamp="20230104 16:47:00.578" level="INFO">--------Slides Cleanup--------</msg>
-<msg timestamp="20230104 16:47:00.579" level="INFO">Clicking element...</msg>
-<msg timestamp="20230104 16:47:00.580" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
-<msg timestamp="20230104 16:47:11.143" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:11.147" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
-<msg timestamp="20230104 16:47:21.168" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:21.174" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:21.178" level="INFO">Checking if the element exists...</msg>
-<msg timestamp="20230104 16:47:21.178" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')] ...</msg>
-<msg timestamp="20230104 16:47:31.709" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
-<msg timestamp="20230104 16:47:31.712" level="INFO">Finding elements...</msg>
-<msg timestamp="20230104 16:47:41.785" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
-<msg timestamp="20230104 16:47:41.789" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
-<msg timestamp="20230104 16:47:41.790" level="INFO">Checking if the element exists...</msg>
-<msg timestamp="20230104 16:47:41.790" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')] ...</msg>
-<msg timestamp="20230104 16:47:52.321" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
-<msg timestamp="20230104 16:47:52.324" level="INFO">Finding elements...</msg>
-<msg timestamp="20230104 16:48:02.365" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
-<msg timestamp="20230104 16:48:02.371" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
-<msg timestamp="20230104 16:48:02.372" level="INFO">Checking if the element exists...</msg>
-<msg timestamp="20230104 16:48:02.373" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')] ...</msg>
-<msg timestamp="20230104 16:48:12.904" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
-<msg timestamp="20230104 16:48:12.907" level="INFO">Finding elements...</msg>
-<msg timestamp="20230104 16:48:22.937" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
-<msg timestamp="20230104 16:48:22.939" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
-<msg timestamp="20230104 16:48:22.940" level="INFO">Waiting seconds: 3</msg>
-<status status="PASS" starttime="20230104 16:47:00.577" endtime="20230104 16:48:25.942"/>
+<msg timestamp="20230105 11:50:36.343" level="INFO">--------Slides Cleanup--------</msg>
+<msg timestamp="20230105 11:50:36.345" level="INFO">Clicking element...</msg>
+<msg timestamp="20230105 11:50:36.347" level="INFO">Waiting element to be Clickable, element//*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230105 11:50:46.902" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:50:46.904" level="INFO">Looking for element: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home'] ...</msg>
+<msg timestamp="20230105 11:50:56.939" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:50:56.942" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:50:56.944" level="INFO">Checking if the element exists...</msg>
+<msg timestamp="20230105 11:50:56.945" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')] ...</msg>
+<msg timestamp="20230105 11:51:07.500" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230105 11:51:07.503" level="INFO">Finding elements...</msg>
+<msg timestamp="20230105 11:51:17.567" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230105 11:51:17.569" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
+<msg timestamp="20230105 11:51:17.570" level="INFO">Checking if the element exists...</msg>
+<msg timestamp="20230105 11:51:17.571" level="INFO">Waiting element to be Clickable, element//div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')] ...</msg>
+<msg timestamp="20230105 11:51:28.132" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230105 11:51:28.134" level="INFO">Finding elements...</msg>
+<msg timestamp="20230105 11:51:38.182" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230105 11:51:38.184" level="INFO">Does the File in Docs/Sheets/Slides exist: False</msg>
+<msg timestamp="20230105 11:51:38.185" level="INFO">Waiting seconds: 3</msg>
+<status status="PASS" starttime="20230105 11:50:36.342" endtime="20230105 11:51:41.186"/>
 </kw>
-<status status="PASS" starttime="20230104 16:46:30.446" endtime="20230104 16:48:25.943"/>
+<status status="PASS" starttime="20230105 11:50:03.290" endtime="20230105 11:51:41.187"/>
 </test>
-<status status="PASS" starttime="20230104 16:46:29.592" endtime="20230104 16:48:25.946"/>
+<status status="PASS" starttime="20230105 11:50:02.302" endtime="20230105 11:51:41.190"/>
 </suite>
-<status status="PASS" starttime="20230104 16:46:29.587" endtime="20230104 16:48:25.950"/>
+<status status="PASS" starttime="20230105 11:50:02.255" endtime="20230105 11:51:41.194"/>
 </suite>
-<status status="PASS" starttime="20230104 16:46:29.553" endtime="20230104 16:48:25.954"/>
+<status status="PASS" starttime="20230105 11:50:02.222" endtime="20230105 11:51:41.199"/>
 </suite>
 <statistics>
 <total>
@@ -129,14 +122,12 @@ Value: Hello World</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230104 16:47:11.143" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:21.168" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:21.174" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
-<msg timestamp="20230104 16:47:31.709" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
-<msg timestamp="20230104 16:47:41.785" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
-<msg timestamp="20230104 16:47:52.321" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
-<msg timestamp="20230104 16:48:02.365" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC503')]</msg>
-<msg timestamp="20230104 16:48:12.904" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
-<msg timestamp="20230104 16:48:22.937" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230105 11:50:46.902" level="WARN">TimeOut, Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:50:56.939" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:50:56.942" level="ERROR">Element NOT FOUND: //*[@data-tooltip='Docs home' or @data-tooltip='Sheets home'or @data-tooltip='Slides home']</msg>
+<msg timestamp="20230105 11:51:07.500" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230105 11:51:17.567" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC502')]</msg>
+<msg timestamp="20230105 11:51:28.132" level="WARN">TimeOut, Element NOT FOUND: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
+<msg timestamp="20230105 11:51:38.182" level="WARN">Elements ERROR: //div[@class='docs-homescreen-list-item-title-value'][contains(text(),'TC504')]</msg>
 </errors>
 </robot>

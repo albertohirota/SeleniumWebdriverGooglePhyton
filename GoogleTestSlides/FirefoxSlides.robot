@@ -7,7 +7,7 @@ Test Teardown     SlidesCleanUp
 
 
 *** Variables ***
-${browser}    chrome
+${browser}    firefox
 
 
 
@@ -27,7 +27,6 @@ TC503_ValidateTextInThePresentation
 TC504_ValidateBodyTextInNewFile
     ${value}    TC504
     Should Be True   ${Value}
-
 
 *** Keywords ***
 

@@ -43,11 +43,10 @@ class GOfficePage(C):
         GOfficePage.WaitDocumentBeingSaved()
 
     def NotifyPeopleInSharing(notify):
-        C.LogInfo("Notify people: "+notify.ToString())
+        C.LogInfo("Notify people: "+str(notify))
         selected = Driver.get_Instance().find_element(By.XPATH, GOfficePage.CheckBoxNotify).is_selected()
-        C.SwitchToDefaultContent()
         if (selected != notify):
-            C.SendKey(By.XPATH, GOfficePage.CheckBoxNotify, Keys.Space)
+            C.SendKey(By.XPATH, GOfficePage.CheckBoxNotify, Keys.SPACE)
 
     def DeleteFile(fileName):
         C.LogInfo("Deleting file: "+ fileName)
@@ -84,7 +83,7 @@ class GOfficePage(C):
     
     def SharePublic(user):
         C.LogInfo("Sharing document with: "+ user)
-        C.WaitElementBePresent(GOfficePage.ButtonShare)
+        C.WaitElementBePresent(By.XPATH,GOfficePage.ButtonShare)
         GOfficePage.Click_ButtonShare()
         GOfficePage.AddSharedUser(user)
         GOfficePage.Click_SendInSharingWindow()
