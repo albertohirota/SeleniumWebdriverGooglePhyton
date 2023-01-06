@@ -69,7 +69,7 @@ def SlidesCleanUp():
             GO.DeleteFile(file)
             C.Delay(2)
     C.Delay(3)
-
+    Driver.CloseBrowser()
 
 
 

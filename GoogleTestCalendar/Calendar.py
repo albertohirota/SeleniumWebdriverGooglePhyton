@@ -71,7 +71,7 @@ def CalendarCleanUp():
             cal.Click_ButtonSend()
             C.Delay(2)
     C.Delay(3)
-
+    Driver.CloseBrowser()
 
 
 

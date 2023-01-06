@@ -41,7 +41,11 @@ class GoogleApi(C):
                 regex = "/presentation/d/([a-zA-Z0-9-_]+)"
         
         URL =  Driver.get_Instance().current_url
-        idAll =  re.search(regex,URL).group()
+        try:    
+            idAll =  re.search(regex,URL).group()
+        except:
+            C.Delay(5)
+            idAll =  re.search(regex,URL).group()
         id = idAll[idAll.find('/d/')+3:]
         C.LogInfo("Id found python is: " + id)
         return id

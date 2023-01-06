@@ -61,11 +61,12 @@ class Driver:
         config.Instance.implicitly_wait(10)
         Driver.LogInfo("Browser should be opened: "+str(browser))
            
-    def CloseBrowser(self):
+    def CloseBrowser():    
         config.Instance.close()
+        Driver.InstanceClose()
         Driver.LogInfo("Browser Closed")
     
-    def InstanceClose(self):
+    def InstanceClose():
         config.Instance.quit()
         Driver.LogInfo("Instance Quit")
 
