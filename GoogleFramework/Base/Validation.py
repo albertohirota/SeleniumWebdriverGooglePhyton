@@ -43,9 +43,9 @@ class Validation(C):
         C.LogInfo("Does the object exist: " + str(exists))
         return exists
 
-    def DoesFileInGDriveExists(fileName):
+    def DoesFileInGDriveExists(fileName, time):
         path = "//div[@class='KL4NAf '][contains(text(),'" + fileName + "')]"
-        exists = C.DoesElementExist(By.XPATH, path)
+        exists = C.DoesElementExist(By.XPATH, path, time)
         C.LogInfo("Does the FileName exist: " + str(exists))
         return exists
 

@@ -16,69 +16,72 @@ import robot.utils.asserts
 
 @keyword("TC301")
 def TC301():
-    validation = val.DoesFileExistDocsSheetsSlides("TC401", 10)
+    validation = val.DoesFileExistDocsSheetsSlides("TC301", 10)
     return validation
 
 @keyword("TC302")
 def TC302():
     GO.Click_DocumentBlank()
     C.Delay(7)
-    GO.RenameDocumentName("TC402")
+    GO.RenameDocumentName("TC302")
     GO.Click_ButtonGoogle()
     C.Delay(2)
-    validation = val.DoesFileExistDocsSheetsSlides("TC402", 10)
-    GO.DeleteFile("TC402")
+    validation = val.DoesFileExistDocsSheetsSlides("TC302", 10)
+    GO.DeleteFile("TC302")
     return validation
 
 @keyword("TC303")
 def TC303():
-    GO.Click_OpenFile("TC401")
-    validation = val.DoesTextContainsInList("Test Case 401", sp.GetSheetsEntry("A2"))
+    GO.Click_OpenFile("TC301")
+    validation = val.DoesTextContainsInList("Test Case 301 and 303", dp.GetDocumentBody(False))
     GO.Click_ButtonGoogle()
     return validation
 
 @keyword("TC304")
 def TC304():
-    GO.Click_DocumentBlank()
-    C.Delay(4)
-    GO.RenameDocumentName("TC404")
-    C.Delay(1)
-    sp.SendKeysOnSheet("A1:B2","TC404 - Hello",True)
-    C.Delay(1)
-    GO.RenameDocumentName("TC404")
-    C.Delay(1)
-    validation = val.DoesTextContainsInList("TC504 - Hello", sp.GetSheetsEntry("A1"))
+    GO.Click_OpenFile("TC301")
+    validation = val.DoesTextContainsInList("Hello World", dp.GetDocumentHeader(False))
     GO.Click_ButtonGoogle()
-    GO.DeleteFile("TC404")
     return validation
 
 @keyword("TC305")
 def TC305():
-    GO.Click_OpenFile("TC401")
+    GO.Click_DocumentBlank()
+    C.Delay(4)
+    GO.RenameDocumentName("TC305")
+    C.Delay(1)
+    dp.SendText_DocumentBody("Test Case 305")
+    C.Delay(1)
+    GO.RenameDocumentName("TC305")
+    C.Delay(1)
+    validation = val.DoesTextContainsInList("Test Case 305", dp.GetDocumentBody(True))
+    GO.Click_ButtonGoogle()
+    GO.DeleteFile("TC305")
+    return validation
 
 @keyword("SetupDocs")
 def SetupDocs(browser):
     browserDriver = Driver.get_Browser(browser)
     Driver().Initialize(browserDriver)
-    GoogleLogin.GoAndLogGoogleSite(Sites.SHEETS)
+    GoogleLogin.GoAndLogGoogleSite(Sites.DOCS)
     C.Delay(5)
 
 @keyword("DocsCleanUp")
 def DocsCleanUp():
-    C.LogInfo("--------Slides Cleanup--------")
+    C.LogInfo("--------Docs Cleanup--------")
     GO.Click_ButtonGoogle()
-    files = [ "TC402", "TC404"]
+    files = [ "TC302", "TC305"]
     for file in files:
         while val.DoesFileExistDocsSheetsSlides(file, 3):
             GO.DeleteFile(file)
             C.Delay(2)
     C.Delay(3)
-
+    Driver.CloseBrowser()
 
 
 
 #browserDriver = Driver.get_Browser("chrome")
 #Driver().Initialize(browserDriver)
-#GoogleLogin.GoAndLogGoogleSite(Sites.SHEETS)
-#isTrue = TC404()
+#GoogleLogin.GoAndLogGoogleSite(Sites.DOCS)
+#isTrue = TC305()
 #print(isTrue)

@@ -105,7 +105,7 @@ def GmailCleanUp():
     C.Delay(2)
     gm.Click_ButtonDelete()
     C.Delay(2)
-
+    Driver.CloseBrowser()
 
 
 

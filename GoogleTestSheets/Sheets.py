@@ -33,6 +33,7 @@ def TC402():
 @keyword("TC403")
 def TC403():
     GO.Click_OpenFile("TC401")
+    C.Delay(5)
     validation = val.DoesTextContainsInList("Test Case 401", sp.GetSheetsEntry("A2"))
     GO.Click_ButtonGoogle()
     return validation
@@ -47,7 +48,7 @@ def TC404():
     C.Delay(1)
     GO.RenameDocumentName("TC404")
     C.Delay(1)
-    validation = val.DoesTextContainsInList("TC504 - Hello", sp.GetSheetsEntry("A1"))
+    validation = val.DoesTextContainsInList("TC404 - Hello", sp.GetSheetsEntry("A1"))
     GO.Click_ButtonGoogle()
     GO.DeleteFile("TC404")
     return validation
@@ -69,12 +70,13 @@ def SheetsCleanUp():
             GO.DeleteFile(file)
             C.Delay(2)
     C.Delay(3)
+    Driver.CloseBrowser()
 
 
 
 
-#browserDriver = Driver.get_Browser("chrome")
+#browserDriver = Driver.get_Browser("firefox")
 #Driver().Initialize(browserDriver)
 #GoogleLogin.GoAndLogGoogleSite(Sites.SHEETS)
-#isTrue = TC404()
+#isTrue = TC403()
 #print(isTrue)

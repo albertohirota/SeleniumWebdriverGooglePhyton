@@ -199,7 +199,8 @@ class CommonFunction(Driver):
     
     def GoToTab(tab):
         CommonFunction.LogInfo("Going to Tab: " + str(tab) + " ...")
-        Driver.get_Instance().switch_to.window(tab)
+        windowTarget = Driver.get_Instance().window_handles[tab]
+        Driver.get_Instance().switch_to.window(windowTarget)
         CommonFunction.LogInfo("Going to tab: " + str(tab))
 
     def IsElementVisible(by, ident):
